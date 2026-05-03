@@ -1,0 +1,200 @@
+[
+  {
+    "id": "q1",
+    "slashedText": "We / can see them almost every night / on the TV news / thousands of refugees / who have chosen to cross international borders / to save their lives.",
+    "translation": "私たちは、生き延びるために国境を越えることを選んだ何千人もの難民の姿を、ほぼ毎晩テレビニュースで目にすることができる。",
+    "svoc": [
+      "S: We",
+      "V: can see",
+      "O: them (thousands of refugees)"
+    ],
+    "explanation": [
+      "can see は述部なので区切ります。",
+      "on the TV news は場所・手段を表す前置詞句なので区切ります。",
+      "thousands of refugees は them を具体的に説明する同格表現なので区切ります。",
+      "who は関係代名詞なので区切ります。",
+      "to cross は chosen の目的語となる不定詞なので、ルール④の例外に従い区切りません。",
+      "to save は目的を表す不定詞の副詞的用法なので区切ります。"
+    ]
+  },
+  {
+    "id": "q2",
+    "slashedText": "What / is causing these enormous floods / of refugees?",
+    "translation": "何がこのような膨大な数の難民の流出を引き起こしているのだろうか。",
+    "svoc": [
+      "S: What",
+      "V: is causing",
+      "O: these enormous floods"
+    ],
+    "explanation": [
+      "is causing は述部なので区切ります。",
+      "of refugees は floods を修飾する前置詞句なので区切ります。"
+    ]
+  },
+  {
+    "id": "q3",
+    "slashedText": "The answer / is threefold.",
+    "translation": "その答えは3つある。",
+    "svoc": [
+      "S: The answer",
+      "V: is",
+      "C: threefold"
+    ],
+    "explanation": [
+      "is は述部なので区切ります。"
+    ]
+  },
+  {
+    "id": "q4",
+    "slashedText": "First, millions / of people / are trying to escape / from political violence.",
+    "translation": "第一に、数百万もの人々が政治的暴力から逃れようとしている。",
+    "svoc": [
+      "S: millions of people",
+      "V: are trying",
+      "O: to escape"
+    ],
+    "explanation": [
+      "of people は millions を修飾する前置詞句なので区切ります。",
+      "are trying は述部なので区切ります。",
+      "to escape は trying の目的語となる不定詞なので区切りません。",
+      "from は前置詞なので区切ります。"
+    ]
+  },
+  {
+    "id": "q5",
+    "slashedText": "Second, hunger / is driving millions more / from their homeland, especially / in northern and eastern Africa.",
+    "translation": "第二に、飢餓によってさらに数百万人もの人々が故郷を追われており、特にアフリカ北部と東部で顕著である。",
+    "svoc": [
+      "S: hunger",
+      "V: is driving",
+      "O: millions more"
+    ],
+    "explanation": [
+      "is driving は述部なので区切ります。",
+      "from は前置詞なので区切ります。",
+      "in は前置詞なので、場所を特定する後置修飾として区切ります。"
+    ]
+  },
+  {
+    "id": "q6",
+    "slashedText": "And third, there / are over ten million environmental refugees.",
+    "translation": "そして第三に、1,000万人以上の環境難民が存在する。",
+    "svoc": [
+      "V: are",
+      "S: over ten million environmental refugees"
+    ],
+    "explanation": [
+      "are は述部なので区切ります。"
+    ]
+  },
+  {
+    "id": "q7",
+    "slashedText": "These people / can no longer live / on their own land / because of drought, floods, or other environmental problems.",
+    "translation": "これらの人々は、干ばつや洪水、あるいはその他の環境問題のために、もはや自分たちの土地で暮らすことができない。",
+    "svoc": [
+      "S: These people",
+      "V: can live",
+      "M: on their own land"
+    ],
+    "explanation": [
+      "can live は述部なので区切ります。",
+      "on は前置詞なので区切ります。",
+      "because of は群前置詞なので、理由を示すまとまりとして区切ります。"
+    ]
+  },
+  {
+    "id": "q8",
+    "slashedText": "In today's world, larger numbers / of people / than ever before / are asking / for political asylum / in other countries.",
+    "translation": "今日の世界では、かつてないほど多くの人々が、他国に政治的亡命を求めている。",
+    "svoc": [
+      "S: larger numbers of people",
+      "V: are asking",
+      "O: for political asylum (群動詞として扱う)"
+    ],
+    "explanation": [
+      "of people は numbers を修飾する前置詞句なので区切ります。",
+      "than ever before は比較による後置修飾なので区切ります。",
+      "are asking は述部なので区切ります。",
+      "for は前置詞なので区切ります。",
+      "in other countries は場所を表す前置詞句なので区切ります。"
+    ]
+  },
+  {
+    "id": "q9",
+    "slashedText": "One reason / for this / is the bad economic situation / in much / of the world.",
+    "translation": "この理由の一つは、世界の多くの地域における経済状況の悪化である。",
+    "svoc": [
+      "S: One reason",
+      "V: is",
+      "C: the bad economic situation"
+    ],
+    "explanation": [
+      "for this は reason を修飾する前置詞句なので区切ります。",
+      "is は述部なので区切ります。",
+      "in は前置詞なので区切ります。",
+      "of the world は much を修飾する前置詞句なので区切ります。"
+    ]
+  },
+  {
+    "id": "q10",
+    "slashedText": "In bad times, people / often point / to minority groups / as the cause / of their troubles.",
+    "translation": "不況の時には、人々はしばしば少数派グループを自分たちの不幸の原因として指し示す。",
+    "svoc": [
+      "S: people",
+      "V: point",
+      "M: to minority groups"
+    ],
+    "explanation": [
+      "point は述部なので区切ります。",
+      "to は前置詞なので区切ります。",
+      "as は前置詞（〜として）なので区切ります。",
+      "of their troubles は cause を修飾する前置詞句なので区切ります。"
+    ]
+  },
+  {
+    "id": "q11",
+    "slashedText": "Another reason, surprisingly, / is the end / of the Cold War.",
+    "translation": "驚くべきことに、もう一つの理由は冷戦の終結である。",
+    "svoc": [
+      "S: Another reason",
+      "V: is",
+      "C: the end"
+    ],
+    "explanation": [
+      "is は述部なので区切ります。",
+      "of the Cold War は end を修飾する前置詞句なので区切ります。"
+    ]
+  },
+  {
+    "id": "q12",
+    "slashedText": "Until the late 1980s, communist governments / in eastern Europe and the USSR / did not approve / of religious or political expression, and they / did not allow racial or national conflicts.",
+    "translation": "1980年代後半まで、東欧やソ連の共産主義政府は宗教的あるいは政治的な表現を認めず、人種的あるいは民族的な紛争を許容しなかった。",
+    "svoc": [
+      "Sentence 1: S: communist governments, V: did not approve, O: of religious or political expression",
+      "Sentence 2: S: they, V: did not allow, O: racial or national conflicts"
+    ],
+    "explanation": [
+      "in eastern Europe は governments を修飾する前置詞句なので区切ります。",
+      "did not approve は述部なので区切ります。",
+      "of は前置詞なので区切ります。",
+      "did not allow は2つ目の節の述部なので区切ります。"
+    ]
+  },
+  {
+    "id": "q13",
+    "slashedText": "But / as communism / fell and the former Soviet Union / broke up, old ethnic anger and hatred / began to appear and then to explode.",
+    "translation": "しかし、共産主義が崩壊し、旧ソ連が解体されると、古くからの民族的な怒りと憎しみが現れ始め、そして爆発した。",
+    "svoc": [
+      "S: old ethnic anger and hatred",
+      "V: began",
+      "O: to appear and then to explode"
+    ],
+    "explanation": [
+      "as は接続詞なので区切ります。",
+      "fell は as 節内の述部なので区切ります。",
+      "broke up は as 節内の述部なので区切ります。",
+      "began は文の主述部（動詞）なので区切ります。",
+      "to appear および to explode は began の目的語となる不定詞であるため、ルール④の例外に従い区切りません。"
+    ]
+  }
+]

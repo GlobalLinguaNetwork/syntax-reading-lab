@@ -1,0 +1,176 @@
+[
+  {
+    "id": "q1",
+    "slashedText": "Most people / find it difficult / to say / what is covered / by the term \"economics.\"",
+    "translation": "ほとんどの人は、「経済学」という用語で何がカバーされているかを言うのは難しいと感じている。",
+    "svoc": [
+      "S: Most people",
+      "V: find",
+      "O: it (形式目的語)",
+      "C: difficult",
+      "真目的語: to say what is covered by the term \"economics.\""
+    ],
+    "explanation": [
+      "find は述部なので区切ります。",
+      "to say は形式目的語 it の内容を指す真目的語（名詞的用法）であり、形容詞 difficult の後に続いているため区切ります。",
+      "what は間接疑問文を導く疑問詞なので区切ります。",
+      "by は前置詞なので区切ります。"
+    ]
+  },
+  {
+    "id": "q2",
+    "slashedText": "It / includes some aspects / of trade, but it / is also concerned / with taxation and government expenditure, money and banking, salaries and profits, land and rent, savings and investment, and the structure / of industry and the distribution / of goods.",
+    "translation": "それは貿易のいくつかの側面を含んでいるが、税制と政府支出、貨幣と銀行、給与と利益、土地と地代、貯蓄と投資、そして産業構造と財の分配にも関わっている。",
+    "svoc": [
+      "（前半）S: It, V: includes, O: some aspects of trade",
+      "（後半）S: it, V: is concerned, 修飾語: with taxation... and the distribution of goods"
+    ],
+    "explanation": [
+      "includes と is concerned は述部なので区切ります。",
+      "of, with は前置詞なので区切ります。",
+      "and の前にはルールに基づきスラッシュを入れません。"
+    ]
+  },
+  {
+    "id": "q3",
+    "slashedText": "The element / that links all these subjects together / under the heading / of economics / is scarcity.",
+    "translation": "これらのすべての主題を経済学という見出しの下に結びつけている要素は、希少性である。",
+    "svoc": [
+      "S: The element (that links all these subjects together under the heading of economics)",
+      "V: is",
+      "C: scarcity"
+    ],
+    "explanation": [
+      "that は関係代名詞で、the element を修飾するため区切ります。",
+      "under と of は前置詞なので区切ります。",
+      "is は述部なので区切ります。"
+    ]
+  },
+  {
+    "id": "q4",
+    "slashedText": "Few / of the material essentials / of life and none / of the luxuries / are available freely / at all times / to everyone / who wants them.",
+    "translation": "生活上の物質的な必需品で、また贅沢品の中で、常にすべての人に自由に手に入るものはほとんどない。",
+    "svoc": [
+      "S: Few of the material essentials of life and none of the luxuries",
+      "V: are",
+      "C: available"
+    ],
+    "explanation": [
+      "of, at, to は前置詞なので区切ります。",
+      "are は述部なので区切ります。",
+      "who は関係代名詞で、everyone を修飾するため区切ります。"
+    ]
+  },
+  {
+    "id": "q5",
+    "slashedText": "The scarcity / of goods and services / arises / because the resources / available / at any one place and time / to produce them the skilled labor, machines and raw materials / are limited.",
+    "translation": "財やサービスの希少性は、それらを生産するための、ある特定の場所と時間において利用可能な資源（熟練労働者、機械、原材料）が限られているために生じる。",
+    "svoc": [
+      "S: The scarcity of goods and services",
+      "V: arises",
+      "修飾語: because節（S: the resources ..., V: are, C: limited）"
+    ],
+    "explanation": [
+      "of は前置詞なので区切ります。",
+      "arises は述部なので区切ります。",
+      "because は接続詞なので区切ります。",
+      "available は resources を後ろから修飾する形容詞（分詞的役割）のため区切ります。",
+      "at は前置詞なので区切ります。",
+      "to produce は resources を修飾する不定詞の形容詞的用法であるため区切ります。",
+      "are は述部なので区切ります。"
+    ]
+  },
+  {
+    "id": "q6",
+    "slashedText": "The important factor / in economics / is not the availability / of goods and services, but / what is available / in relation / to the effective demand / for them / that is, demand / backed / by purchasing power.",
+    "translation": "経済学における重要な要因は、財やサービスの可用性ではなく、購買力に裏打ちされた需要、すなわち有効需要との関係で何が利用可能かということである。",
+    "svoc": [
+      "S: The important factor in economics",
+      "V: is",
+      "C: not the availability ... but what is available ..."
+    ],
+    "explanation": [
+      "in, of, in, to, for, by は前置詞なので区切ります。",
+      "is は述部なので区切ります。",
+      "what は疑問詞（関係代名詞）なので区切ります。",
+      "that is は挿入句的な接続表現ですが、ここでは demand を説明する文脈のため、その後の修飾構造を明確にするため区切ります。",
+      "backed は demand を後ろから修飾する過去分詞なので区切ります。"
+    ]
+  },
+  {
+    "id": "q7",
+    "slashedText": "Men / may be unemployed and machines idle / in the motor industry, / even though many more people / would like to have new cars.",
+    "translation": "多くの人々が新しい車を欲しがっているとしても、自動車産業において人間は失業し、機械はアイドル状態（遊休状態）であるかもしれない。",
+    "svoc": [
+      "S1: Men, V1: may be, C1: unemployed / S2: machines, (V2: may be), C2: idle",
+      "修飾語: even though節（S: many more people, V: would like, O: to have new cars）"
+    ],
+    "explanation": [
+      "may be は述部なので区切ります。",
+      "in は前置詞なので区切ります。",
+      "even though は接続詞なので区切ります。",
+      "would like は述部なので区切ります。",
+      "to have は動詞 like の目的語(O)になっているため、ルール④に基づき区切りません。"
+    ]
+  },
+  {
+    "id": "q8",
+    "slashedText": "This / happens / because not everyone / who would like a new car / can afford to buy one.",
+    "translation": "これは、新しい車を欲しがるすべての人に、それを買う余裕があるわけではないために起こる。",
+    "svoc": [
+      "S: This",
+      "V: happens",
+      "修飾語: because節（S: not everyone who would like a new car, V: can afford, O: to buy one）"
+    ],
+    "explanation": [
+      "happens は述部なので区切ります。",
+      "because は接続詞なので区切ります。",
+      "who は関係代名詞で everyone を修飾するため区切ります。",
+      "would like および can afford は述部なので区切ります。",
+      "to buy は afford の目的語(O)であるため、ルール④に基づき区切りません。"
+    ]
+  },
+  {
+    "id": "q9",
+    "slashedText": "Economics, then, / deals / with the problem / of sharing out scarce resources / among alternative users and uses.",
+    "translation": "したがって経済学は、限られた資源を代替的な利用者や用途の間でどのように分配するかという問題を扱う。",
+    "svoc": [
+      "S: Economics",
+      "V: deals",
+      "修飾語: with the problem of sharing out..."
+    ],
+    "explanation": [
+      "deals は述部なので区切ります。",
+      "with, of, among は前置詞なので区切ります。"
+    ]
+  },
+  {
+    "id": "q10",
+    "slashedText": "An economy / is the environment / where this sharing out / takes place.",
+    "translation": "経済とは、この分配が行われる環境のことである。",
+    "svoc": [
+      "S: An economy",
+      "V: is",
+      "C: the environment (where this sharing out takes place)"
+    ],
+    "explanation": [
+      "is は述部なので区切ります。",
+      "where は関係副詞で environment を修飾するため区切ります。",
+      "takes place は述部（群動詞）なので区切ります。"
+    ]
+  },
+  {
+    "id": "q11",
+    "slashedText": "Its size / can range / from that / of a small island / to the entire world.",
+    "translation": "その規模は、小さな島から全世界まで及ぶことがある。",
+    "svoc": [
+      "S: Its size",
+      "V: can range",
+      "修飾語: from that of a small island to the entire world"
+    ],
+    "explanation": [
+      "can range は述部なので区切ります。",
+      "from, of, to は前置詞なので区切ります。"
+    ]
+  }
+]

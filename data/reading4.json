@@ -1,0 +1,126 @@
+[
+  {
+    "id": "q1",
+    "slashedText": "Part / of the complexity / of globalism / comes / from the different ways / in which globalization / is approached.",
+    "translation": "グローバリズムの複雑さの一端は、グローバル化へのアプローチの仕方が多様であることに起因している。",
+    "svoc": [
+      "S: Part",
+      "V: comes",
+      "M: from the different ways"
+    ],
+    "explanation": [
+      "of は名詞を修飾する前置詞なので区切ります。",
+      "comes は述部なので区切ります。",
+      "from は前置詞なので区切ります。",
+      "in which は関係代名詞節の始まりなので区切ります。",
+      "is approached は関係詞節内の述部なので区切ります。"
+    ]
+  },
+  {
+    "id": "q2",
+    "slashedText": "Some analysts / embrace it enthusiastically / as a positive feature / of a changing world / in which access / to technology, information, services and markets / will be / of benefit / to local communities.",
+    "translation": "一部の分析家は、テクノロジー、情報、サービス、そして市場へのアクセスが地域社会に利益をもたらすであろう変化しつつある世界の肯定的な特徴として、それを熱心に受け入れている。",
+    "svoc": [
+      "S: Some analysts",
+      "V: embrace",
+      "O: it"
+    ],
+    "explanation": [
+      "embrace は述部なので区切ります。",
+      "as, of は前置詞なので区切ります。",
+      "in which は関係代名詞節の始まりなので区切ります。",
+      "to は前置詞なので区切ります。",
+      "will be は述部なので区切ります。",
+      "of, to は前置詞なので区切ります。"
+    ]
+  },
+  {
+    "id": "q3",
+    "slashedText": "They / believe / that, by globalization, dominant forms / of social organization / will lead / to universal prosperity, peace, and freedom.",
+    "translation": "彼らは、グローバル化によって、社会組織の支配的な形態が普遍的な繁栄、平和、そして自由へと導くと信じている。",
+    "svoc": [
+      "S: They",
+      "V: believe",
+      "O: that節"
+    ],
+    "explanation": [
+      "believe は述部なので区切ります。",
+      "that は接続詞なので区切ります。",
+      "by globalization の前にあるカンマの直後には、ルールに基づきスラッシュを入れません。",
+      "of は前置詞なので区切ります。",
+      "will lead は述部なので区切ります。",
+      "to は前置詞なので区切ります。"
+    ]
+  },
+  {
+    "id": "q4",
+    "slashedText": "They / even expect / that perception / of a global environment / will lead / to a global ecological concern.",
+    "translation": "彼らはさらに、地球環境という認識が、地球規模の生態学的な関心につながることを期待している。",
+    "svoc": [
+      "S: They",
+      "V: even expect",
+      "O: that節"
+    ],
+    "explanation": [
+      "expect は述部なので区切ります。",
+      "that は接続詞なので区切ります。",
+      "of は前置詞なので区切ります。",
+      "will lead は述部なので区切ります。",
+      "to は前置詞なので区切ります。"
+    ]
+  },
+  {
+    "id": "q5",
+    "slashedText": "For this group, globalism / is a term / for values / which / treat global issues / as a matter / of personal and collective responsibility.",
+    "translation": "このグループにとって、グローバリズムとは、地球規模の問題を個人および集団の責任の問題として扱う価値観を指す用語である。",
+    "svoc": [
+      "S: globalism",
+      "V: is",
+      "C: a term"
+    ],
+    "explanation": [
+      "is は述部なので区切ります。",
+      "for は前置詞なので区切ります。",
+      "which は関係代名詞なので区切ります。",
+      "treat は関係詞節内の述部なので区切ります。",
+      "as, of は前置詞なので区切ります。"
+    ]
+  },
+  {
+    "id": "q6",
+    "slashedText": "Others / reject it / as a form / of domination / by advanced countries / over developing ones, in which individual distinctions / of culture and society / become erased / by an increasingly homogeneous global culture / while local economies / are more firmly incorporated / into a system / of global capital.",
+    "translation": "他の人々は、それを先進国による発展途上国への支配の一形態として拒絶している。そこでは、文化や社会の個別の特性が、ますます均質化する地球規模の文化によって消し去られ、一方で地域経済が地球規模の資本システムにより強固に組み込まれていくのである。",
+    "svoc": [
+      "S: Others",
+      "V: reject",
+      "O: it"
+    ],
+    "explanation": [
+      "reject は述部なので区切ります。",
+      "as, of, by, over は前置詞なので区切ります。",
+      "in which の前にあるカンマの直後にはスラッシュを入れません。",
+      "of は前置詞なので区切ります。",
+      "become erased は述部（be動詞相当＋過去分詞）なので区切ります。",
+      "by は前置詞なので区切ります。",
+      "while は接続詞なので区切ります。",
+      "are more firmly incorporated は述部なので区切ります。",
+      "into, of は前置詞なので区切ります。"
+    ]
+  },
+  {
+    "id": "q7",
+    "slashedText": "For this group, globalism / is a political doctrine / which / provides, explains, and justifies an interlocking system / of world trade.",
+    "translation": "このグループにとって、グローバリズムとは、世界貿易の相互に関連し合うシステムを提供し、説明し、そして正当化する政治的教義である。",
+    "svoc": [
+      "S: globalism",
+      "V: is",
+      "C: a political doctrine"
+    ],
+    "explanation": [
+      "is は述部なので区切ります。",
+      "which は関係代名詞なので区切ります。",
+      "provides, explains, and justifies は関係詞節内の述部なので区切ります（and の前は区切らないルールを適用）。",
+      "of は前置詞なので区切ります。"
+    ]
+  }
+]

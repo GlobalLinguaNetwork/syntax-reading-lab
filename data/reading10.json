@@ -1,0 +1,170 @@
+[
+  {
+    "id": "q1",
+    "slashedText": "The word \"ethics\" / has caught on / across the Pacific.",
+    "translation": "「倫理」という言葉が太平洋地域に浸透した。",
+    "svoc": [
+      "S: The word \"ethics\"",
+      "V: has caught on",
+      "M: across the Pacific"
+    ],
+    "explanation": [
+      "has caught on は述部（現在完了形）なのでスラッシュを入れます。",
+      "across は前置詞なので、その前で区切ります。"
+    ]
+  },
+  {
+    "id": "q2",
+    "slashedText": "Increasingly, people / are using it / in reference / to the behavior / of corporate executives, rather than / about the behavior / of individuals.",
+    "translation": "ますます多くの人々が、個人の行動についてではなく、企業の経営者の行動に関してこの言葉を使うようになっている。",
+    "svoc": [
+      "S: people",
+      "V: are using",
+      "O: it",
+      "M: in reference to the behavior of corporate executives, rather than about the behavior of individuals"
+    ],
+    "explanation": [
+      "are using は述部（現在進行形）なので区切ります。",
+      "in, to, of, about はすべて前置詞なので、それぞれの前で区切ります。",
+      "rather than は比較を表す表現であり、その後の about という前置詞句の起点となるため区切ります。"
+    ]
+  },
+  {
+    "id": "q3",
+    "slashedText": "What / has made it so popular / is widespread dishonest practices / by companies / both in Japan and the United States.",
+    "translation": "それをこれほど普及させたのは、日本と米国の両方における企業の広範な不正行為である。",
+    "svoc": [
+      "S: What has made it so popular",
+      "V: is",
+      "C: widespread dishonest practices by companies both in Japan and the United States"
+    ],
+    "explanation": [
+      "What は主語節を導く関係代名詞ですが、節内の述部 has made の前で区切ります。",
+      "is は文全体の主節の述部なので区切ります。",
+      "by, in は前置詞なので区切ります。and の前にはルールによりスラッシュを入れません。"
+    ]
+  },
+  {
+    "id": "q4",
+    "slashedText": "In America, a sense / of crisis / is / in the air / that capitalism / not tempered / by ethics / is doomed.",
+    "translation": "アメリカでは、倫理によって抑制されない資本主義は運命づけられている（破滅する）という危機感が漂っている。",
+    "svoc": [
+      "S: a sense of crisis",
+      "V: is",
+      "M: in the air",
+      "M: that capitalism not tempered by ethics is doomed (同格のthat節)"
+    ],
+    "explanation": [
+      "of, in は前置詞なので区切ります。",
+      "is は述部なので区切ります。",
+      "that は同格の接続詞なので区切ります。",
+      "tempered は capitalism を後ろから修飾する過去分詞なので区切ります。",
+      "by は前置詞なので区切ります。"
+    ]
+  },
+  {
+    "id": "q5",
+    "slashedText": "One after another, revelations / have been made / that financial statements / by failed major corporations / involved window dressing.",
+    "translation": "相次いで、破綻した大企業の財務諸表に粉飾決算が含まれていたことが明らかになった。",
+    "svoc": [
+      "S: revelations",
+      "V: have been made",
+      "O: that financial statements by failed major corporations involved window dressing (同格のthat節)"
+    ],
+    "explanation": [
+      "have been made は述部（現在完了受動態）なので区切ります。",
+      "that は revelations の内容を説明する同格の接続詞なので区切ります。",
+      "by は前置詞なので区切ります。"
+    ]
+  },
+  {
+    "id": "q6",
+    "slashedText": "What / makes it worse / is / that the fraud / was committed / with the help / of accounting firms.",
+    "translation": "さらに悪いことに、その不正は会計事務所の協力を得て行われていた。",
+    "svoc": [
+      "S: What makes it worse",
+      "V: is",
+      "C: that the fraud was committed with the help of accounting firms"
+    ],
+    "explanation": [
+      "makes, is, was committed はそれぞれ述部なので区切ります。",
+      "that は補語(C)となる節を導く接続詞なので区切ります。",
+      "with, of は前置詞なので区切ります。"
+    ]
+  },
+  {
+    "id": "q7",
+    "slashedText": "Anxious / to rebuild corporate America, President George W. Bush / had declared, \"There / is no capitalism / without conscience.\"",
+    "translation": "アメリカの企業社会を再建したいと切望し、ジョージ・W・ブッシュ大統領は「良心のない資本主義は存在しない」と宣言した。",
+    "svoc": [
+      "M: Anxious to rebuild corporate America",
+      "S: President George W. Bush",
+      "V: had declared",
+      "O: \"There is no capitalism without conscience.\""
+    ],
+    "explanation": [
+      "to rebuild は形容詞 Anxious を修飾する不定詞の副詞的用法なので区切ります。",
+      "had declared は述部なので区切ります。",
+      "is は述部なので区切ります。",
+      "without は前置詞なので区切ります。"
+    ]
+  },
+  {
+    "id": "q8",
+    "slashedText": "Why / did capitalism develop / in the United States and Europe?",
+    "translation": "なぜ資本主義は米国と欧州で発展したのか。",
+    "svoc": [
+      "M: Why",
+      "S: capitalism",
+      "V: did develop",
+      "M: in the United States and Europe"
+    ],
+    "explanation": [
+      "Why は疑問詞（文頭のためスラッシュは入れないが、構造上の区切りとして提示）であり、述部 did develop の前で区切ります。",
+      "in は前置詞なので区切ります。"
+    ]
+  },
+  {
+    "id": "q9",
+    "slashedText": "Naturally, various theories / have been advanced / about this question.",
+    "translation": "当然ながら、この問いについてさまざまな理論が提唱されてきた。",
+    "svoc": [
+      "S: various theories",
+      "V: have been advanced",
+      "M: about this question"
+    ],
+    "explanation": [
+      "have been advanced は述部（現在完了受動態）なので区切ります。",
+      "about は前置詞なので区切ります。"
+    ]
+  },
+  {
+    "id": "q10",
+    "slashedText": "German sociologist Max Weber / linked it / to religion.",
+    "translation": "ドイツの社会学者マックス・ヴェーバーは、それを宗教に結びつけた。",
+    "svoc": [
+      "S: German sociologist Max Weber",
+      "V: linked",
+      "O: it",
+      "M: to religion"
+    ],
+    "explanation": [
+      "linked は述部なので区切ります。",
+      "to は前置詞なので区切ります。"
+    ]
+  },
+  {
+    "id": "q11",
+    "slashedText": "Simply put, his theory / boiled down to: \"Honesty / is the best marketing policy.\"",
+    "translation": "簡単に言えば、彼の理論は「正直さは最善のマーケティング戦略である」ということに集約された。",
+    "svoc": [
+      "S: his theory",
+      "V: boiled down to",
+      "O: \"Honesty is the best marketing policy.\""
+    ],
+    "explanation": [
+      "boiled down to は群動詞（述部）なので区切ります。",
+      "is は引用句内の述部なので区切ります。"
+    ]
+  }
+]
