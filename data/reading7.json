@@ -1,176 +1,363 @@
 [
   {
-    "id": "q1",
-    "slashedText": "Most people / find it difficult / to say / what / is covered / by the term \"economics.\"",
-    "chunkElements": ["S", "V", "O", "C", "-", "-", "V", "-", "-", "-"],
-    "svoc": [
-      "S: people",
-      "V: find",
-      "O: it (形式目的語)",
-      "C: difficult",
-      "真目的語: to say what is covered by the term \"economics.\""
+    "sentence": "Most people find it difficult to say what is covered by the term \"economics.\"",
+    "translation": "ほとんどの人は、「経済学」という言葉で何がカバーされているかを言うのは難しいと感じている。",
+    "words": [
+      {"text": "Most", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "people", "slashAfter": true, "slashReason": "① 述部の前（find の前）なので区切ります。"},
+      {"text": "find", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "it", "slashAfter": false, "slashReason": "目的語であり、直後に補語が続くため区切りません。"},
+      {"text": "difficult", "slashAfter": false, "slashReason": "to say は形式目的語 it の真目的語（名詞的用法）であり、名詞を後置修飾しているわけではないため、ルール④に基づき区切りません。"},
+      {"text": "to", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "say", "slashAfter": true, "slashReason": "⑨ 疑問詞(what)の前なので区切ります。"},
+      {"text": "what", "slashAfter": false, "slashReason": "間接疑問文の主語です。"},
+      {"text": "is", "slashAfter": false, "slashReason": "述部(受動態)の途中なので区切りません。"},
+      {"text": "covered", "slashAfter": true, "slashReason": "② 前置詞(by)の前なので区切ります。"},
+      {"text": "by", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "term", "slashAfter": false, "slashReason": "名詞の途中です。"},
+      {"text": "\"economics.\"", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "find は述部なので区切ります。",
-      "to say は形式目的語 it の内容を指す真目的語（名詞的用法）であり、形容詞 difficult の後に続いているため区切ります。",
-      "what は間接疑問文を導く疑問詞なので区切ります。",
-      "by は前置詞なので区切ります。"
+    "chunks": [
+      {"text": "Most people", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "find", "svoc": "V", "svocReason": "述部です。"},
+      {"text": "it", "svoc": "O", "svocReason": "形式目的語です。"},
+      {"text": "difficult", "svoc": "C", "svocReason": "目的語の状態を説明する補語です。"},
+      {"text": "to say what is covered by the term \"economics.\"", "svoc": "O", "svocReason": "形式目的語 it の内容を示す真目的語です。"}
     ]
   },
   {
-    "id": "q2",
-    "slashedText": "It / includes some aspects / of trade, but it / is concerned / with taxation and government expenditure, money and banking, salaries and profits, land and rent, savings and investment, and the structure / of industry and the distribution / of goods.",
-    "chunkElements": ["S", "V", "-", "-", "S", "-", "V", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
-    "svoc": [
-      "（前半）S: It, V: includes, O: aspects",
-      "（後半）S: it, V: concerned, 修飾語: with taxation... and the distribution of goods"
+    "sentence": "It includes some aspects of trade, but it is concerned with taxation and government expenditure, money and banking, salaries and profits, land and rent, savings and investment, and the structure of industry and the distribution of goods.",
+    "translation": "それは貿易のいくつかの側面を含んでいるが、税制と政府支出、通貨と銀行業務、給与と利益、土地と地代、貯蓄と投資、そして産業構造と財の分配に関わっている。",
+    "words": [
+      {"text": "It", "slashAfter": true, "slashReason": "① 述部の前（includes の前）なので区切ります。"},
+      {"text": "includes", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "some", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "aspects", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "trade", "slashAfter": true, "slashReason": "⑧ 接続詞(but)の前なので区切ります。"},
+      {"text": ", ", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "but", "slashAfter": false, "slashReason": "接続詞の直後は区切らないルールに基づきます。"},
+      {"text": "it", "slashAfter": true, "slashReason": "① 述部の前（is concerned の前）なので区切ります。"},
+      {"text": "is", "slashAfter": false, "slashReason": "述部(受動態的な表現)の途中なので区切りません。"},
+      {"text": "concerned", "slashAfter": true, "slashReason": "② 前置詞(with)の前なので区切ります。"},
+      {"text": "with", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "taxation", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "and", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "government", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "expenditure,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "money", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "and", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "banking,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "salaries", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "and", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "profits,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "land", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "and", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "rent,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "savings", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "and", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "investment,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "and", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "structure", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "industry", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "and", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "distribution", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "goods.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "includes と is concerned は述部なので区切ります。",
-      "of, with は前置詞なので区切ります。",
-      "and の前にはルールに基づきスラッシュを入れません。"
+    "chunks": [
+      {"text": "It", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "includes", "svoc": "V", "svocReason": "述部です。"},
+      {"text": "some aspects of trade,", "svoc": "O", "svocReason": "述部の目的語です。"},
+      {"text": "but it", "svoc": "S", "svocReason": "接続詞後の2つ目の節の主語です。"},
+      {"text": "is concerned", "svoc": "V", "svocReason": "述部です。"},
+      {"text": "with taxation and government expenditure, money and banking, salaries and profits, land and rent, savings and investment, and the structure of industry and the distribution of goods.", "svoc": "-", "svocReason": "concernedを補足する前置詞句（修飾語）です。"}
     ]
   },
   {
-    "id": "q3",
-    "slashedText": "The element / that / links all these subjects together / under the heading / of economics / is scarcity.",
-    "chunkElements": ["S", "-", "V", "-", "-", "-", "-", "-", "V", "C"],
-    "svoc": [
-      "S: The element (that links all these subjects together under the heading of economics)",
-      "V: is",
-      "C: scarcity"
+    "sentence": "The element that links all these subjects together under the heading of economics is scarcity.",
+    "translation": "これらのすべての主題を経済学という見出しの下に結びつけている要素は、希少性である。",
+    "words": [
+      {"text": "The", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "element", "slashAfter": true, "slashReason": "⑦ 関係詞(that)の前なので区切ります。"},
+      {"text": "that", "slashAfter": false, "slashReason": "関係詞節の主語です。"},
+      {"text": "links", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "all", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "these", "slashAfter": false, "slashReason": "指示形容詞と名詞の間は区切りません。"},
+      {"text": "subjects", "slashAfter": false, "slashReason": "名詞と副詞の間は区切りません。"},
+      {"text": "together", "slashAfter": true, "slashReason": "② 前置詞(under)の前なので区切ります。"},
+      {"text": "under", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "heading", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "economics", "slashAfter": true, "slashReason": "① 述部の前（is の前）なので区切ります。"},
+      {"text": "is", "slashAfter": false, "slashReason": "述部です。"},
+      {"text": "scarcity.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "that は関係代名詞で、the element を修飾するため区切ります。",
-      "under と of は前置詞なので区切ります。",
-      "is は述部なので区切ります。"
+    "chunks": [
+      {"text": "The element that links all these subjects together under the heading of economics", "svoc": "S", "svocReason": "関係詞節を伴う長い主語です。"},
+      {"text": "is", "svoc": "V", "svocReason": "連結動詞（be動詞）です。"},
+      {"text": "scarcity.", "svoc": "C", "svocReason": "主語の内容を説明する補語です。"}
     ]
   },
   {
-    "id": "q4",
-    "slashedText": "Few / of the material essentials / of life and none / of the luxuries / are available freely / at all times / to everyone / who / wants them.",
-    "chunkElements": ["S", "-", "-", "-", "-", "-", "-", "V", "C", "-", "-", "-", "-", "-", "-", "V", "-"],
-    "svoc": [
-      "S: Few",
-      "V: are",
-      "C: available"
+    "sentence": "Few of the material essentials of life and none of the luxuries are available freely at all times to everyone who wants them.",
+    "translation": "生活に必要な物質的必需品も、贅沢品も、あらゆる時に誰に対しても自由に利用できるものはほとんどない。",
+    "words": [
+      {"text": "Few", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "material", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "essentials", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "life", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "and", "slashAfter": false, "slashReason": "名詞句の連結です。"},
+      {"text": "none", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "luxuries", "slashAfter": true, "slashReason": "① 述部の前（are の前）なので区切ります。"},
+      {"text": "are", "slashAfter": false, "slashReason": "述部です。"},
+      {"text": "available", "slashAfter": false, "slashReason": "補語と副詞の間は区切りません。"},
+      {"text": "freely", "slashAfter": true, "slashReason": "② 前置詞(at)の前なので区切ります。"},
+      {"text": "at", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "all", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "times", "slashAfter": true, "slashReason": "② 前置詞(to)の前なので区切ります。"},
+      {"text": "to", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "everyone", "slashAfter": true, "slashReason": "⑦ 関係詞(who)の前なので区切ります。"},
+      {"text": "who", "slashAfter": false, "slashReason": "関係詞節の主語です。"},
+      {"text": "wants", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "them.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "of, at, to は前置詞なので区切ります。",
-      "are は述部なので区切ります。",
-      "who は関係代名詞で、everyone を修飾するため区切ります。"
+    "chunks": [
+      {"text": "Few of the material essentials of life and none of the luxuries", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "are", "svoc": "V", "svocReason": "述部です。"},
+      {"text": "available", "svoc": "C", "svocReason": "主語の状態を説明する補語です。"},
+      {"text": "freely at all times to everyone who wants them.", "svoc": "-", "svocReason": "条件や対象を示す修飾語句です。"}
     ]
   },
   {
-    "id": "q5",
-    "slashedText": "The scarcity / of goods and services / arises / because the resources available / at any one place and time / to produce them the skilled labor, machines and raw materials / are limited.",
-    "chunkElements": ["S", "-", "-", "V", "-", "S", "-", "-", "-", "-", "V", "-", "-", "-", "-", "-", "V", "C"],
-    "svoc": [
-      "S: scarcity",
-      "V: arises",
-      "修飾語: because節（S: the resources ..., V: are, C: limited）"
+    "sentence": "The scarcity of goods and services arises because the resources available at any one place and time to produce them the skilled labor, machines and raw materials are limited.",
+    "translation": "財やサービスの不足が生じるのは、それらを生産するための熟練労働者、機械、原材料といった資源が、ある特定の場所と時間において限られているからである。",
+    "words": [
+      {"text": "The", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "scarcity", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "goods", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "and", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "services", "slashAfter": true, "slashReason": "① 述部の前（arises の前）なので区切ります。"},
+      {"text": "arises", "slashAfter": true, "slashReason": "⑧ 接続詞(because)の前なので区切ります。"},
+      {"text": "because", "slashAfter": false, "slashReason": "接続詞の直後は区切らないルールに基づきます。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "resources", "slashAfter": true, "slashReason": "⑤/⑥-ish 形容詞(available)が後置修飾を開始しているため、その起点で区切ります。"},
+      {"text": "available", "slashAfter": true, "slashReason": "② 前置詞(at)の前なので区切ります。"},
+      {"text": "at", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "any", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "one", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "place", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "and", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "time", "slashAfter": true, "slashReason": "④ to produce は resources を後置修飾する形容詞的用法であるため、ルール④に基づき区切ります。"},
+      {"text": "to", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "produce", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "them", "slashAfter": false, "slashReason": "名詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "skilled", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "labor,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "machines", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "and", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "raw", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "materials", "slashAfter": true, "slashReason": "① 述部の前（are の前）なので区切ります。"},
+      {"text": "are", "slashAfter": false, "slashReason": "述部です。"},
+      {"text": "limited.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "of は前置詞なので区切ります。",
-      "arises は述部なので区切ります。",
-      "because は接続詞なので区切ります。",
-      "available は resources を後ろから修飾する形容詞（分詞的役割）のため区切ります。",
-      "at は前置詞なので区切ります。",
-      "to produce は resources を修飾する不定詞の形容詞的用法であるため区切ります。",
-      "are は述部なので区切ります。"
+    "chunks": [
+      {"text": "The scarcity of goods and services", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "arises", "svoc": "V", "svocReason": "述部です。"},
+      {"text": "because the resources available at any one place and time to produce them the skilled labor, machines and raw materials are limited.", "svoc": "-", "svocReason": "理由を示す従属節（修飾語）です。"}
     ]
   },
   {
-    "id": "q6",
-    "slashedText": "The important factor / in economics / is not the availability / of / goods and services, but / what / is available / in relation / to the effective demand / for them, that is, demand / backed by purchasing power.",
-    "chunkElements": ["S", "-", "-", "V", "C", "-", "-", "-", "V", "-", "-", "-", "-", "-", "-", "-", "-", "-", "V", "-", "-"],
-    "svoc": [
-      "S: factor",
-      "V: is",
-      "C: not the availability ... but what is available ..."
+    "sentence": "The important factor in economics is not the availability of goods and services, but what is available in relation to the effective demand for them, that is, demand backed by purchasing power.",
+    "translation": "経済学における重要な要因は、財やサービスの利用可能性ではなく、購買力に裏打ちされた需要、すなわち有効需要に照らして何が利用可能かということである。",
+    "words": [
+      {"text": "The", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "important", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "factor", "slashAfter": true, "slashReason": "② 前置詞(in)の前なので区切ります。"},
+      {"text": "in", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "economics", "slashAfter": true, "slashReason": "① 述部の前（is の前）なので区切ります。"},
+      {"text": "is", "slashAfter": false, "slashReason": "述部です。"},
+      {"text": "not", "slashAfter": false, "slashReason": "否定語であり述部に付随します。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "availability", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "goods", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "and", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "services,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "but", "slashAfter": true, "slashReason": "⑨ 疑問詞/関係代名詞(what)の前なので区切ります。"},
+      {"text": "what", "slashAfter": false, "slashReason": "節の主語です。"},
+      {"text": "is", "slashAfter": false, "slashReason": "述部です。"},
+      {"text": "available", "slashAfter": true, "slashReason": "② 前置詞(in)の前なので区切ります。"},
+      {"text": "in", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "relation", "slashAfter": true, "slashReason": "② 前置詞(to)の前なので区切ります。"},
+      {"text": "to", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "effective", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "demand", "slashAfter": true, "slashReason": "② 前置詞(for)の前なので区切ります。"},
+      {"text": "for", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "them,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "that", "slashAfter": false, "slashReason": "挿入的な表現 (that is) の途中です。"},
+      {"text": "is,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "demand", "slashAfter": true, "slashReason": "⑥ 過去分詞(backed)が後置修飾を開始しているため、その起点で区切ります。"},
+      {"text": "backed", "slashAfter": true, "slashReason": "② 前置詞(by)の前なので区切ります。"},
+      {"text": "by", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "purchasing", "slashAfter": false, "slashReason": "名詞を修飾する現在分詞的な役割ですが、ここでは purchasing power で一つの名詞句です。"},
+      {"text": "power.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "in, of, in, to, for, by は前置詞なので区切ります。",
-      "is は述部なので区切ります。",
-      "what は疑問詞（関係代名詞）なので区切ります。",
-      "that is は挿入句的な接続表現ですが、ここでは demand を説明する文脈のため、その後の修飾構造を明確にするため区切ります。",
-      "backed は demand を後ろから修飾する過去分詞なので区切ります。"
+    "chunks": [
+      {"text": "The important factor in economics", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "is", "svoc": "V", "svocReason": "連結動詞（be動詞）です。"},
+      {"text": "not the availability of goods and services, but what is available in relation to the effective demand for them, that is, demand backed by purchasing power.", "svoc": "C", "svocReason": "not A but B の構成で、主語の内容を説明する補語です。"}
     ]
   },
   {
-    "id": "q7",
-    "slashedText": "Men / may be unemployed and machines / idle / in the motor industry, even though / many more people / would like to have new cars.",
-    "chunkElements": ["S", "-", "V", "C", "S", "C", "-", "-", "-", "-", "-", "V", "-", "-"],
-    "svoc": [
-      "S1: Men, V1: be, C1: unemployed / S2: machines, (V2: be), C2: idle",
-      "修飾語: even though節（S: many more people, V: would like, O: to have new cars）"
+    "sentence": "Men may be unemployed and machines idle in the motor industry, even though many more people would like to have new cars.",
+    "translation": "自動車産業において、人間が失業し機械が遊んでいることがあり得るが、それでもなお多くの人々が新車を欲しがっている。",
+    "words": [
+      {"text": "Men", "slashAfter": true, "slashReason": "① 述部の前（may be の前）なので区切ります。"},
+      {"text": "may", "slashAfter": false, "slashReason": "述部(助動詞＋本動詞)の途中なので区切りません。"},
+      {"text": "be", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "unemployed", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "and", "slashAfter": false, "slashReason": "節の連結です。"},
+      {"text": "machines", "slashAfter": true, "slashReason": "① 述部の前（省略された be の位置）なので区切ります。"},
+      {"text": "idle", "slashAfter": true, "slashReason": "② 前置詞(in)の前なので区切ります。"},
+      {"text": "in", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "motor", "slashAfter": false, "slashReason": "形容詞的な名詞の連結です。"},
+      {"text": "industry,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "even", "slashAfter": false, "slashReason": "接続詞(even though)の途中です。"},
+      {"text": "though", "slashAfter": false, "slashReason": "接続詞の直後は区切らないルールに基づきます。"},
+      {"text": "many", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "more", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "people", "slashAfter": true, "slashReason": "① 述部の前（would like の前）なので区切ります。"},
+      {"text": "would", "slashAfter": false, "slashReason": "述部(助動詞＋本動詞)の途中なので区切りません。"},
+      {"text": "like", "slashAfter": false, "slashReason": "to have は動詞 like の目的語（名詞的用法）であるため、ルール④に基づき区切りません。"},
+      {"text": "to", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "have", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "new", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "cars.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "may be は述部なので区切ります。",
-      "in は前置詞なので区切ります。",
-      "even though は接続詞なので区切ります。",
-      "would like は述部なので区切ります。",
-      "to have は動詞 like の目的語(O)になっているため、ルール④に基づき区切りません。"
+    "chunks": [
+      {"text": "Men", "svoc": "S", "svocReason": "1つ目の節の主語です。"},
+      {"text": "may be", "svoc": "V", "svocReason": "述部です。"},
+      {"text": "unemployed", "svoc": "C", "svocReason": "補語です。"},
+      {"text": "and machines", "svoc": "S", "svocReason": "2つ目の主語です。"},
+      {"text": "idle", "svoc": "C", "svocReason": "補語です（述部 be は省略されています）。"},
+      {"text": "in the motor industry,", "svoc": "-", "svocReason": "場所を示す修飾語です。"},
+      {"text": "even though many more people would like to have new cars.", "svoc": "-", "svocReason": "譲歩を示す従属節（修飾語）です。"}
     ]
   },
   {
-    "id": "q8",
-    "slashedText": "This / happens / because not everyone / who / would like a new car / can afford / to buy one.",
-    "chunkElements": ["S", "V", "-", "S", "-", "-", "V", "-", "-", "V", "-"],
-    "svoc": [
-      "S: This",
-      "V: happens",
-      "修飾語: because節（S: not everyone who would like a new car, V: can afford, O: to buy one）"
+    "sentence": "This happens because not everyone who would like a new car can afford to buy one.",
+    "translation": "これは、新車を欲しがるすべての人々が、それを買う余裕があるとは限らないために起こる。",
+    "words": [
+      {"text": "This", "slashAfter": true, "slashReason": "① 述部の前（happens の前）なので区切ります。"},
+      {"text": "happens", "slashAfter": true, "slashReason": "⑧ 接続詞(because)の前なので区切ります。"},
+      {"text": "because", "slashAfter": false, "slashReason": "接続詞の直後は区切らないルールに基づきます。"},
+      {"text": "not", "slashAfter": false, "slashReason": "否定語であり主語の一部です。"},
+      {"text": "everyone", "slashAfter": true, "slashReason": "⑦ 関係詞(who)の前なので区切ります。"},
+      {"text": "who", "slashAfter": false, "slashReason": "関係詞節の主語です。"},
+      {"text": "would", "slashAfter": false, "slashReason": "述部(助動詞＋本動詞)の途中なので区切りません。"},
+      {"text": "like", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "a", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "new", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "car", "slashAfter": true, "slashReason": "① 述部の前（can afford の前）なので区切ります。"},
+      {"text": "can", "slashAfter": false, "slashReason": "述部(助動詞＋本動詞)の途中なので区切りません。"},
+      {"text": "afford", "slashAfter": false, "slashReason": "to buy は afford の目的語（名詞的用法）であるため、ルール④に基づき区切りません。"},
+      {"text": "to", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "buy", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "one.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "happens は述部なので区切ります。",
-      "because は接続詞なので区切ります。",
-      "who は関係代名詞で everyone を修飾するため区切ります。",
-      "would like および can afford は述部なので区切ります。",
-      "to buy は afford の目的語(O)であるため、ルール④に基づき区切りません。"
+    "chunks": [
+      {"text": "This", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "happens", "svoc": "V", "svocReason": "述部です。"},
+      {"text": "because not everyone who would like a new car can afford to buy one.", "svoc": "-", "svocReason": "理由を示す従属節（修飾語）です。"}
     ]
   },
   {
-    "id": "q9",
-    "slashedText": "Economics, then, deals / with the problem / of sharing out scarce resources / among alternative users and uses.",
-    "chunkElements": ["S", "V", "-", "-", "-", "-", "-", "-", "-"],
-    "svoc": [
-      "S: Economics",
-      "V: deals",
-      "修飾語: with the problem of sharing out..."
+    "sentence": "Economics, then, deals with the problem of sharing out scarce resources among alternative users and uses.",
+    "translation": "したがって経済学とは、希少な資源を代替的な利用者や用途の間で分かち合うという問題に取り組むものである。",
+    "words": [
+      {"text": "Economics,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "then,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "deals", "slashAfter": false, "slashReason": "deal with は群動詞(V)なので区切りません。"},
+      {"text": "with", "slashAfter": false, "slashReason": "群動詞の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "problem", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "sharing", "slashAfter": false, "slashReason": "share out は群動詞的な動名詞なので区切りません。"},
+      {"text": "out", "slashAfter": false, "slashReason": "動名詞句の途中です。"},
+      {"text": "scarce", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "resources", "slashAfter": true, "slashReason": "② 前置詞(among)の前なので区切ります。"},
+      {"text": "among", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "alternative", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "users", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "and", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "uses.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "deals は述部なので区切ります。",
-      "with, of, among は前置詞なので区切ります。"
+    "chunks": [
+      {"text": "Economics, then,", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "deals with", "svoc": "V", "svocReason": "群動詞としての述部です。"},
+      {"text": "the problem of sharing out scarce resources among alternative users and uses.", "svoc": "O", "svocReason": "述部の目的語です。"}
     ]
   },
   {
-    "id": "q10",
-    "slashedText": "An economy / is the environment / where this sharing out / takes place.",
-    "chunkElements": ["S", "V", "C", "-", "-", "V", "-"],
-    "svoc": [
-      "S: economy",
-      "V: is",
-      "C: environment (where this sharing out takes place)"
+    "sentence": "An economy is the environment where this sharing out takes place.",
+    "translation": "経済とは、この分かち合いが行われる環境のことである。",
+    "words": [
+      {"text": "An", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "economy", "slashAfter": true, "slashReason": "① 述部の前（is の前）なので区切ります。"},
+      {"text": "is", "slashAfter": false, "slashReason": "述部です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "environment", "slashAfter": true, "slashReason": "⑦ 関係副詞(where)の前なので区切ります。"},
+      {"text": "where", "slashAfter": false, "slashReason": "関係詞節の途中です。"},
+      {"text": "this", "slashAfter": false, "slashReason": "指示形容詞と名詞の間は区切りません。"},
+      {"text": "sharing", "slashAfter": false, "slashReason": "share out は群動詞的な名詞句なので区切りません。"},
+      {"text": "out", "slashAfter": true, "slashReason": "① 述部の前（takes place の前）なので区切ります。"},
+      {"text": "takes", "slashAfter": false, "slashReason": "take place は群動詞(V)なので区切りません。"},
+      {"text": "place.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "is は述部なので区切ります。",
-      "where は関係副詞で environment を修飾するため区切ります。",
-      "takes place は述部（群動詞）なので区切ります。"
+    "chunks": [
+      {"text": "An economy", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "is", "svoc": "V", "svocReason": "連結動詞（be動詞）です。"},
+      {"text": "the environment where this sharing out takes place.", "svoc": "C", "svocReason": "主語の内容を説明する補語です。"}
     ]
   },
   {
-    "id": "q11",
-    "slashedText": "Its size / can range / from / that / of a small island / to the entire world.",
-    "chunkElements": ["S", "-", "V", "-", "-", "-", "-", "-", "-"],
-    "svoc": [
-      "S: size",
-      "V: range",
-      "修飾語: from that of a small island to the entire world"
+    "sentence": "Its size can range from that of a small island to the entire world.",
+    "translation": "その規模は、小さな島から全世界まで及び得る。",
+    "words": [
+      {"text": "Its", "slashAfter": false, "slashReason": "所有格と名詞の間は区切りません。"},
+      {"text": "size", "slashAfter": true, "slashReason": "① 述部の前（can range の前）なので区切ります。"},
+      {"text": "can", "slashAfter": false, "slashReason": "述部(助動詞＋本動詞)の途中なので区切りません。"},
+      {"text": "range", "slashAfter": true, "slashReason": "② 前置詞(from)の前なので区切ります。"},
+      {"text": "from", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "that", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "a", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "small", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "island", "slashAfter": true, "slashReason": "② 前置詞(to)の前なので区切ります。"},
+      {"text": "to", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "entire", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "world.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "can range は述部なので区切ります。",
-      "from, of, to は前置詞なので区切ります。"
+    "chunks": [
+      {"text": "Its size", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "can range", "svoc": "V", "svocReason": "助動詞を含む述部です。"},
+      {"text": "from that of a small island to the entire world.", "svoc": "-", "svocReason": "範囲を示す修飾語句です。"}
     ]
   }
 ]

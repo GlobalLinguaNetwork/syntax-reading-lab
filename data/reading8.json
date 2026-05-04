@@ -1,114 +1,275 @@
 [
   {
-    "id": "q1",
-    "slashedText": "Writing / more than two centuries ago, Adam Smith / introduced his concept / of 'the invisible hand,' which went on to become one / of the most celebrated and influential ideas / of all time.",
+    "sentence": "Writing more than two centuries ago, Adam Smith introduced his concept of 'the invisible hand,' which went on to become one of the most celebrated and influential ideas of all time.",
     "translation": "2世紀以上前に執筆し, アダム・スミスは「見えざる手」という概念を導入したが, それは史上最も有名で影響力のある考えの一つとなった。",
-    "svoc": [
-      "S: Adam Smith",
-      "V: introduced",
-      "O: his concept"
+    "words": [
+      {"text": "Writing", "slashAfter": true, "slashReason": "分詞構文の塊の終わりであり、主節の主語との区切りのためスラッシュを入れます。"},
+      {"text": "more", "slashAfter": false, "slashReason": "比較表現の途中です。"},
+      {"text": "than", "slashAfter": false, "slashReason": "比較表現の途中です。"},
+      {"text": "two", "slashAfter": false, "slashReason": "数詞と名詞の間は区切りません。"},
+      {"text": "centuries", "slashAfter": false, "slashReason": "名詞句の途中です。"},
+      {"text": "ago,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "Adam", "slashAfter": false, "slashReason": "固有名詞の途中です。"},
+      {"text": "Smith", "slashAfter": true, "slashReason": "① 述部の前（introduced の前）なので区切ります。"},
+      {"text": "introduced", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "his", "slashAfter": false, "slashReason": "所有格と名詞の間は区切りません。"},
+      {"text": "concept", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "'the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "invisible", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "hand,'", "slashAfter": true, "slashReason": "⑦ 関係詞(which)の前なので区切ります。"},
+      {"text": "which", "slashAfter": false, "slashReason": "関係詞節の主語です。"},
+      {"text": "went", "slashAfter": false, "slashReason": "go on は群動詞(V)なので区切りません。"},
+      {"text": "on", "slashAfter": false, "slashReason": "群動詞の途中です。"},
+      {"text": "to", "slashAfter": false, "slashReason": "went on の後に続く不定詞は、群動詞の一部または目的語的な役割であり、名詞を後置修飾していないためルール④に基づき区切りません。"},
+      {"text": "become", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "one", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "most", "slashAfter": false, "slashReason": "最上級の副詞です。"},
+      {"text": "celebrated", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "and", "slashAfter": false, "slashReason": "形容詞の連結です。"},
+      {"text": "influential", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "ideas", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "all", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "time.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "Writingは分詞構文のためその直前にはスラッシュを入れないが、分詞構文の切れ目であるため必要に応じて区切る。ここではWritingの直後に区切りを入れる。",
-      "moreはthanの強調のため区切る。",
-      "thanは準関係詞（比較）として区切る。",
-      "agoの後のカンマの右側はルールにより区切らない。",
-      "Adam Smithは主語のためSとする。",
-      "introducedは述語動詞のためVとする。",
-      "his conceptは目的語のためOとする。",
-      "of以降は修飾語句のため-とする。"
-    ],
-    "chunkElements": ["-", "-", "-", "-", "S", "V", "O", "-", "-", "-"]
+    "chunks": [
+      {"text": "Writing more than two centuries ago,", "svoc": "-", "svocReason": "文頭の分詞構文（修飾語）です。"},
+      {"text": "Adam Smith", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "introduced", "svoc": "V", "svocReason": "述部です。"},
+      {"text": "his concept of 'the invisible hand,'", "svoc": "O", "svocReason": "述部の目的語です。"},
+      {"text": "which went on to become one of the most celebrated and influential ideas of all time.", "svoc": "-", "svocReason": "conceptを修飾する関係詞節です。"}
+    ]
   },
   {
-    "id": "q2",
-    "slashedText": "His idea / was / that individuals / seeking / to promote only their own interests / in the marketplace / would be driven, \"as if / by an invisible hand,\" to promote the greatest good / for all.",
+    "sentence": "His idea was that individuals seeking to promote only their own interests in the marketplace would be driven, \"as if by an invisible hand,\" to promote the greatest good for all.",
     "translation": "彼の考えは, 市場において自分の利益だけを追求しようとする個人が, 「あたかも見えざる手によって」導かれ, 結果としてすべての人にとって最大の利益をもたらすことになるということだった。",
-    "svoc": [
-      "S: idea",
-      "V: was",
-      "C: that individuals... (名詞節)"
+    "words": [
+      {"text": "His", "slashAfter": false, "slashReason": "所有格と名詞の間は区切りません。"},
+      {"text": "idea", "slashAfter": true, "slashReason": "① 述部の前（was の前）なので区切ります。"},
+      {"text": "was", "slashAfter": true, "slashReason": "⑧ 接続詞(that)の前なので区切ります。"},
+      {"text": "that", "slashAfter": false, "slashReason": "接続詞の直後は区切らないルールに基づきます。"},
+      {"text": "individuals", "slashAfter": true, "slashReason": "⑤ 現在分詞(seeking)が後置修飾を開始しているため区切ります。"},
+      {"text": "seeking", "slashAfter": false, "slashReason": "to promote は seek の目的語（名詞的用法）であるため、ルール④に基づき区切りません。"},
+      {"text": "to", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "promote", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "only", "slashAfter": false, "slashReason": "副詞です。"},
+      {"text": "their", "slashAfter": false, "slashReason": "所有格と名詞の間は区切りません。"},
+      {"text": "own", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "interests", "slashAfter": true, "slashReason": "② 前置詞(in)の前なので区切ります。"},
+      {"text": "in", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "marketplace", "slashAfter": true, "slashReason": "① 述部の前（would be driven の前）なので区切ります。"},
+      {"text": "would", "slashAfter": false, "slashReason": "述部(助動詞＋be＋過去分詞)の途中なので区切りません。"},
+      {"text": "be", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "driven,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "\"as", "slashAfter": false, "slashReason": "接続詞的な表現の途中です。"},
+      {"text": "if", "slashAfter": true, "slashReason": "② 前置詞(by)の前なので区切ります。"},
+      {"text": "by", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "an", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "invisible", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "hand,\"", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "to", "slashAfter": false, "slashReason": "driven to... (導かれて〜する) という構造であり、ここでは目的や結果を表す副詞的用法のため、ルール④に基づき区切りません。"},
+      {"text": "promote", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "greatest", "slashAfter": false, "slashReason": "最上級の形容詞です。"},
+      {"text": "good", "slashAfter": true, "slashReason": "② 前置詞(for)の前なので区切ります。"},
+      {"text": "for", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "all.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "His ideaは主語(S)のためSとする。",
-      "wasは主節の動詞(V)のためVとする。",
-      "that以下は名詞節のため全体をCと扱えるが、従属節内の動詞等はルールにより-とする。",
-      "individuals以下は従属節のためすべて-。"
-    ],
-    "chunkElements": ["S", "V", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"]
+    "chunks": [
+      {"text": "His idea", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "was", "svoc": "V", "svocReason": "連結動詞（be動詞）です。"},
+      {"text": "that individuals seeking to promote only their own interests in the marketplace would be driven, \"as if by an invisible hand,\" to promote the greatest good for all.", "svoc": "C", "svocReason": "主語の内容を説明する補語（名詞節）です。"}
+    ]
   },
   {
-    "id": "q3",
-    "slashedText": "Thus producers / seeking / to steal a market share / from their rivals / would develop cost-reducing innovations, which would be copied / by others, and which / in time / would lead / to lower prices / for all.",
+    "sentence": "Thus producers seeking to steal a market share from their rivals would develop cost-reducing innovations, which would be copied by others, and which in time would lead to lower prices for all.",
     "translation": "したがって, 競合から市場シェアを奪おうとする生産者はコスト削減の革新的な技術を開発し, それが他者に模倣され, やがてすべての人にとっての低価格につながる。",
-    "svoc": [
-      "S: producers",
-      "V: would develop",
-      "O: cost-reducing innovations"
+    "words": [
+      {"text": "Thus", "slashAfter": false, "slashReason": "文頭の副詞であり、主語の前なので区切りません。"},
+      {"text": "producers", "slashAfter": true, "slashReason": "⑤ 現在分詞(seeking)が後置修飾を開始しているため区切ります。"},
+      {"text": "seeking", "slashAfter": false, "slashReason": "to steal は seek の目的語（名詞的用法）であるため、ルール④に基づき区切りません。"},
+      {"text": "to", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "steal", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "a", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "market", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "share", "slashAfter": true, "slashReason": "② 前置詞(from)の前なので区切ります。"},
+      {"text": "from", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "their", "slashAfter": false, "slashReason": "所有格と名詞の間は区切りません。"},
+      {"text": "rivals", "slashAfter": true, "slashReason": "① 述部の前（would develop の前）なので区切ります。"},
+      {"text": "would", "slashAfter": false, "slashReason": "述部(助動詞＋本動詞)の途中なので区切りません。"},
+      {"text": "develop", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "cost-reducing", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "innovations,", "slashAfter": true, "slashReason": "⑦ 関係詞(which)の前なので区切ります。"},
+      {"text": "which", "slashAfter": false, "slashReason": "関係詞節の主語です。"},
+      {"text": "would", "slashAfter": false, "slashReason": "述部(助動詞＋be＋過去分詞)の途中なので区切りません。"},
+      {"text": "be", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "copied", "slashAfter": true, "slashReason": "② 前置詞(by)の前なので区切ります。"},
+      {"text": "by", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "others,", "slashAfter": true, "slashReason": "⑧ 接続詞(and)および関係詞(which)の前なので区切ります。"},
+      {"text": "and", "slashAfter": false, "slashReason": "接続詞の直後は区切らないルールに基づきます。"},
+      {"text": "which", "slashAfter": false, "slashReason": "関係詞節の主語です。"},
+      {"text": "in", "slashAfter": false, "slashReason": "前置詞句（in time）の途中です。"},
+      {"text": "time", "slashAfter": true, "slashReason": "① 述部の前（would lead to の前）なので区切ります。"},
+      {"text": "would", "slashAfter": false, "slashReason": "lead to は群動詞(V)なので区切りません。"},
+      {"text": "lead", "slashAfter": false, "slashReason": "群動詞の途中です。"},
+      {"text": "to", "slashAfter": false, "slashReason": "群動詞の途中です。"},
+      {"text": "lower", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "prices", "slashAfter": true, "slashReason": "② 前置詞(for)の前なので区切ります。"},
+      {"text": "for", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "all.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "producersはS。",
-      "developはV（wouldは助動詞のため-）。",
-      "innovationsはO。"
-    ],
-    "chunkElements": ["-", "S", "-", "-", "-", "-", "-", "V", "O", "-", "-", "-", "-", "-", "-"]
+    "chunks": [
+      {"text": "Thus producers seeking to steal a market share from their rivals", "svoc": "S", "svocReason": "分詞句を伴う文の主語です。"},
+      {"text": "would develop", "svoc": "V", "svocReason": "助動詞を含む述部です。"},
+      {"text": "cost-reducing innovations,", "svoc": "O", "svocReason": "述部の目的語です。"},
+      {"text": "which would be copied by others, and which in time would lead to lower prices for all.", "svoc": "-", "svocReason": "innovationsを修飾する2つの関係詞節です。"}
+    ]
   },
   {
-    "id": "q4",
-    "slashedText": "Farmers / rush / to adopt higher yielding varieties / of corn / of mixed species; cattlemen / rush / to adopt faster growing breeds / of cattle; and long-distance truckers / rush / to install fuel-saving air foils / on the top / of their cabs.",
+    "sentence": "Farmers rush to adopt higher yielding varieties of corn of mixed species; cattlemen rush to adopt faster growing breeds of cattle; and long-distance truckers rush to install fuel-saving air foils on the top of their cabs.",
     "translation": "農家は収穫量の多い混合種のトウモロコシ品種を急いで導入し, 畜産農家は成長の早い牛の品種を急いで導入し, 長距離トラック運転手はキャブの頂上に燃料節約用のエアフォイルを急いで設置する。",
-    "svoc": [
-      "S1: Farmers, V1: rush, O1: to adopt",
-      "S2: cattlemen, V2: rush, O2: to adopt",
-      "S3: truckers, V3: rush, O3: to install"
+    "words": [
+      {"text": "Farmers", "slashAfter": true, "slashReason": "① 述部の前（rush の前）なので区切ります。"},
+      {"text": "rush", "slashAfter": false, "slashReason": "to adopt は rush の目的語（名詞的用法）であるため、ルール④に基づき区切りません。"},
+      {"text": "to", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "adopt", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "higher", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "yielding", "slashAfter": false, "slashReason": "形容詞的な分詞で varieties を修飾しています。"},
+      {"text": "varieties", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "corn", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "mixed", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "species;", "slashAfter": false, "slashReason": "セミコロンの直後は区切らないルールに基づきます。"},
+      {"text": "cattlemen", "slashAfter": true, "slashReason": "① 述部の前（rush の前）なので区切ります。"},
+      {"text": "rush", "slashAfter": false, "slashReason": "to adopt は rush の目的語であるため、ルール④に基づき区切りません。"},
+      {"text": "to", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "adopt", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "faster", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "growing", "slashAfter": false, "slashReason": "形容詞的な分詞で breeds を修飾しています。"},
+      {"text": "breeds", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "cattle;", "slashAfter": false, "slashReason": "セミコロンの直後は区切らないルールに基づきます。"},
+      {"text": "and", "slashAfter": false, "slashReason": "接続詞の直後は区切らないルールに基づきます。"},
+      {"text": "long-distance", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "truckers", "slashAfter": true, "slashReason": "① 述部の前（rush の前）なので区切ります。"},
+      {"text": "rush", "slashAfter": false, "slashReason": "to install は rush の目的語であるため、ルール④に基づき区切りません。"},
+      {"text": "to", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "install", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "fuel-saving", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "air", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "foils", "slashAfter": true, "slashReason": "② 前置詞(on)の前なので区切ります。"},
+      {"text": "on", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "top", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "their", "slashAfter": false, "slashReason": "所有格と名詞の間は区切りません。"},
+      {"text": "cabs.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "各節のS, V, Oを特定する。"
-    ],
-    "chunkElements": ["S", "V", "-", "O", "-", "-", "S", "V", "-", "O", "-", "-", "S", "V", "-", "O", "-", "-"]
+    "chunks": [
+      {"text": "Farmers", "svoc": "S", "svocReason": "1つ目の節の主語です。"},
+      {"text": "rush", "svoc": "V", "svocReason": "述部です。"},
+      {"text": "to adopt higher yielding varieties of corn of mixed species", "svoc": "O", "svocReason": "述部の目的語となる不定詞句です。"},
+      {"text": "cattlemen", "svoc": "S", "svocReason": "2つ目の節の主語です。"},
+      {"text": "rush", "svoc": "V", "svocReason": "述部です。"},
+      {"text": "to adopt faster growing breeds of cattle", "svoc": "O", "svocReason": "述部の目的語となる不定詞句です。"},
+      {"text": "and long-distance truckers", "svoc": "S", "svocReason": "3つ目の節の主語です。"},
+      {"text": "rush", "svoc": "V", "svocReason": "述部です。"},
+      {"text": "to install fuel-saving air foils on the top of their cabs.", "svoc": "O", "svocReason": "述部の目的語となる不定詞句です。"}
+    ]
   },
   {
-    "id": "q5",
-    "slashedText": "In each case the early adopters / enjoy lower costs / than their rivals and hence / reap higher profits.",
+    "sentence": "In each case the early adopters enjoy lower costs than their rivals and hence reap higher profits.",
     "translation": "いずれの場合も, 早期導入者は競合よりもコストを低く抑えられ, それゆえに高い利益を得る。",
-    "svoc": [
-      "S: adopters",
-      "V1: enjoy, O1: lower costs",
-      "V2: reap, O2: higher profits"
+    "words": [
+      {"text": "In", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "each", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "case", "slashAfter": true, "slashReason": "① 述部の前（enjoy の前）なので区切ります。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "early", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "adopters", "slashAfter": true, "slashReason": "① 述部の前（enjoy の前）なので区切ります。"},
+      {"text": "enjoy", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "lower", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "costs", "slashAfter": true, "slashReason": "⑧ 接続詞(than)の前なので区切ります。"},
+      {"text": "than", "slashAfter": false, "slashReason": "比較構文の途中です。"},
+      {"text": "their", "slashAfter": false, "slashReason": "所有格と名詞の間は区切りません。"},
+      {"text": "rivals", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "and", "slashAfter": false, "slashReason": "接続詞の直後は区切らないルールに基づきます。"},
+      {"text": "hence", "slashAfter": true, "slashReason": "① 述部の前（reap の前）なので区切ります。"},
+      {"text": "reap", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "higher", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "profits.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "early adoptersはS。",
-      "enjoyはV1, lower costsはO1。",
-      "reapはV2, higher profitsはO2。"
-    ],
-    "chunkElements": ["-", "S", "V", "O", "-", "-", "-", "V", "O"]
+    "chunks": [
+      {"text": "In each case", "svoc": "-", "svocReason": "状況を示す修飾語句です。"},
+      {"text": "the early adopters", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "enjoy", "svoc": "V", "svocReason": "1つ目の述部です。"},
+      {"text": "lower costs than their rivals", "svoc": "O", "svocReason": "1つ目の述部の目的語です。"},
+      {"text": "and hence reap", "svoc": "V", "svocReason": "2つ目の述部です。"},
+      {"text": "higher profits.", "svoc": "O", "svocReason": "2つ目の述部の目的語です。"}
+    ]
   },
   {
-    "id": "q6",
-    "slashedText": "But / as the superior methods / spread, increasing supplies / drive prices down, causing profits to return / to levels / that / prevail / in other sectors.",
+    "sentence": "But as the superior methods spread, increasing supplies drive prices down, causing profits to return to levels that prevail in other sectors.",
     "translation": "しかし, 優れた手法が普及すると, 供給量が増えて価格が下がり, 利益は他の部門で一般的になレベルまで戻ることになる。",
-    "svoc": [
-      "S(main): supplies, V(main): drive, O: prices, C: down"
+    "words": [
+      {"text": "But", "slashAfter": true, "slashReason": "⑧ 接続詞(as)の前なので区切ります。"},
+      {"text": "as", "slashAfter": false, "slashReason": "接続詞の直後は区切らないルールに基づきます。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "superior", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "methods", "slashAfter": true, "slashReason": "① 述部の前（spread の前）なので区切ります。"},
+      {"text": "spread,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "increasing", "slashAfter": false, "slashReason": "形容詞的な現在分詞であり supplies を修飾しています。"},
+      {"text": "supplies", "slashAfter": true, "slashReason": "① 述部の前（drive ... down の前）なので区切ります。"},
+      {"text": "drive", "slashAfter": false, "slashReason": "drive down は群動詞(V)なので区切りません。"},
+      {"text": "prices", "slashAfter": false, "slashReason": "群動詞の目的語が間に挟まっています。"},
+      {"text": "down,", "slashAfter": true, "slashReason": "⑤ 現在分詞(causing)が後置修飾（または付帯状況）を開始しているため区切ります。"},
+      {"text": "causing", "slashAfter": false, "slashReason": "causing profits to return の構造であり、to return は causing の補語的役割であるため、ルール④に基づき区切りません。"},
+      {"text": "profits", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "to", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "return", "slashAfter": true, "slashReason": "② 前置詞(to)の前なので区切ります。"},
+      {"text": "to", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "levels", "slashAfter": true, "slashReason": "⑦ 関係詞(that)の前なので区切ります。"},
+      {"text": "that", "slashAfter": false, "slashReason": "関係詞節の主語です。"},
+      {"text": "prevail", "slashAfter": true, "slashReason": "② 前置詞(in)の前なので区切ります。"},
+      {"text": "in", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "other", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "sectors.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "主節のS, V, O, Cを特定する。"
-    ],
-    "chunkElements": ["-", "-", "-", "-", "-", "S", "V", "O", "C", "-", "-", "-", "-", "-"]
+    "chunks": [
+      {"text": "But as the superior methods spread,", "svoc": "-", "svocReason": "時を表す従属節（修飾語）です。"},
+      {"text": "increasing supplies", "svoc": "S", "svocReason": "主節の主語です。"},
+      {"text": "drive prices down,", "svoc": "V", "svocReason": "群動詞を含む述部（pricesはO）です。"},
+      {"text": "causing profits to return to levels that prevail in other sectors.", "svoc": "-", "svocReason": "結果を表す分詞構文（修飾語）です。"}
+    ]
   },
   {
-    "id": "q7",
-    "slashedText": "Those / who enjoy benefits / in the end / are the consumers / who / pay lower prices.",
+    "sentence": "Those who enjoy benefits in the end are the consumers who pay lower prices.",
     "translation": "最終的に恩恵を受けるのは, より低い価格で支払う消費者である。",
-    "svoc": [
-      "S: Those (who enjoy benefits in the end)",
-      "V: are",
-      "C: consumers (who pay lower prices)"
+    "words": [
+      {"text": "Those", "slashAfter": true, "slashReason": "⑦ 関係詞(who)の前なので区切ります。"},
+      {"text": "who", "slashAfter": false, "slashReason": "関係詞節の主語です。"},
+      {"text": "enjoy", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "benefits", "slashAfter": true, "slashReason": "② 前置詞(in)の前なので区切ります。"},
+      {"text": "in", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "end", "slashAfter": true, "slashReason": "① 述部の前（are の前）なので区切ります。"},
+      {"text": "are", "slashAfter": false, "slashReason": "述部です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "consumers", "slashAfter": true, "slashReason": "⑦ 関係詞(who)の前なので区切ります。"},
+      {"text": "who", "slashAfter": false, "slashReason": "関係詞節の主語です。"},
+      {"text": "pay", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "lower", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "prices.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "ThoseはS。",
-      "areはV。",
-      "the consumersはC。"
-    ],
-    "chunkElements": ["S", "-", "-", "V", "C", "-"]
+    "chunks": [
+      {"text": "Those who enjoy benefits in the end", "svoc": "S", "svocReason": "関係詞節を伴う主語です。"},
+      {"text": "are", "svoc": "V", "svocReason": "連結動詞（be動詞）です。"},
+      {"text": "the consumers who pay lower prices.", "svoc": "C", "svocReason": "関係詞節を伴う補語です。"}
+    ]
   }
 ]

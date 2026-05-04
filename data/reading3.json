@@ -1,97 +1,212 @@
 [
   {
-    "id": "q1",
-    "slashedText": "One / of the most pressing questions / Japan / is now facing / is / how to restructure its postwar economic and business systems / in a rapidly changing external and internal environment.",
+    "sentence": "One of the most pressing questions Japan is now facing is how to restructure its postwar economic and business systems in a rapidly changing external and internal environment.",
     "translation": "日本が現在直面している最も差し迫った問題の一つは、急速に変化する内外の環境の中で、戦後の経済およびビジネスシステムをどのように再構築するかということである。",
-    "svoc": [
-      "S: One of the most pressing questions (Japan is now facing)",
-      "V: is",
-      "C: how to restructure its postwar economic and business systems"
+    "words": [
+      {"text": "One", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "most", "slashAfter": false, "slashReason": "最上級の修飾語なので区切りません。"},
+      {"text": "pressing", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "questions", "slashAfter": true, "slashReason": "⑦ 関係代名詞(that/which)が省略されており、後置修飾の起点となるため区切ります。"},
+      {"text": "Japan", "slashAfter": true, "slashReason": "① 述部の前(is now facing)なので区切ります。"},
+      {"text": "is", "slashAfter": false, "slashReason": "現在進行形の助動詞であり、述部の塊なので区切りません。"},
+      {"text": "now", "slashAfter": false, "slashReason": "述部の中にある副詞なので区切りません。"},
+      {"text": "facing", "slashAfter": true, "slashReason": "① 主節の述部の前(is)なので区切ります。"},
+      {"text": "is", "slashAfter": false, "slashReason": "述部と補語(how to...)の間は、意味のまとまりを優先し区切りません。"},
+      {"text": "how", "slashAfter": false, "slashReason": "疑問詞句の内部なので区切りません。"},
+      {"text": "to", "slashAfter": false, "slashReason": "不定詞の内部なので区切りません。"},
+      {"text": "restructure", "slashAfter": false, "slashReason": "動詞と目的語(its...systems)の間は区切りません。"},
+      {"text": "its", "slashAfter": false, "slashReason": "所有格と名詞の間は区切りません。"},
+      {"text": "postwar", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "economic", "slashAfter": false, "slashReason": "形容詞同士の間は区切りません。"},
+      {"text": "and", "slashAfter": false, "slashReason": "ルールに基づき、and の前後は区切りません。"},
+      {"text": "business", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "systems", "slashAfter": true, "slashReason": "② 前置詞(in)の前なので区切ります。"},
+      {"text": "in", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "a", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "rapidly", "slashAfter": false, "slashReason": "副詞と形容詞の間は区切りません。"},
+      {"text": "changing", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "external", "slashAfter": false, "slashReason": "形容詞同士の間は区切りません。"},
+      {"text": "and", "slashAfter": false, "slashReason": "ルールに基づき、and の前後は区切りません。"},
+      {"text": "internal", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "environment.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "Japan is now facing は関係代名詞が省略されており、questions を修飾しています。",
-      "how to restructure... は名詞句として補語(C)になっています。",
-      "in a rapidly changing... は環境を示す修飾語(M)です。"
+    "chunks": [
+      {"text": "One", "svoc": "S", "svocReason": "文の核となる主語です。"},
+      {"text": "of the most pressing questions Japan is now facing", "svoc": "-", "svocReason": "Oneを修飾する前置詞句および関係詞節（修飾語）です。"},
+      {"text": "is", "svoc": "V", "svocReason": "文の述部（be動詞）です。"},
+      {"text": "how to restructure its postwar economic and business systems", "svoc": "C", "svocReason": "主語の内容を説明する補語（名詞句）です。"},
+      {"text": "in a rapidly changing external and internal environment", "svoc": "-", "svocReason": "状況を示す前置詞句（修飾語）です。"}
     ],
-    "chunkElements": ["S", "-", "-", "-", "-", "V", "-", "-", "C", "-"]
+    "translation": "日本が現在直面している最も差し迫った問題の一つは、急速に変化する内外の環境の中で、戦後の経済およびビジネスシステムをどのように再構築するかということである。"
   },
   {
-    "id": "q2",
-    "slashedText": "\"Globalization\" / is the key phrase / that / describes the direction / in which the Japanese economy / is heading.",
+    "sentence": "\"Globalization\" is the key phrase that describes the direction in which the Japanese economy is heading.",
     "translation": "「グローバリゼーション」は、日本経済が進んでいる方向を説明する重要なフレーズである。",
-    "svoc": [
-      "S: \"Globalization\"",
-      "V: is",
-      "C: the key phrase (that describes...)"
+    "words": [
+      {"text": "\"Globalization\"", "slashAfter": true, "slashReason": "① 述部の前(is)なので区切ります。"},
+      {"text": "is", "slashAfter": false, "slashReason": "述部と補語(the key phrase)の間は区切りません。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "key", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "phrase", "slashAfter": true, "slashReason": "⑦ 関係詞(that)の前なので区切ります。"},
+      {"text": "that", "slashAfter": false, "slashReason": "関係詞節の主語であり、直後に述部が続くため区切りません。"},
+      {"text": "describes", "slashAfter": false, "slashReason": "動詞と目的語(the direction)の間は区切りません。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "direction", "slashAfter": true, "slashReason": "⑦ 関係詞(in which)の前なので区切ります。"},
+      {"text": "in", "slashAfter": false, "slashReason": "関係詞節の内部なので区切りません。"},
+      {"text": "which", "slashAfter": false, "slashReason": "関係詞節の主語(the Japanese economy)が続くため区切りません。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "Japanese", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "economy", "slashAfter": true, "slashReason": "① 述部の前(is heading)なので区切ります。"},
+      {"text": "is", "slashAfter": false, "slashReason": "現在進行形の助動詞であり、述部の塊なので区切りません。"},
+      {"text": "heading.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "that describes the direction は関係代名詞節で phrase を修飾しています。",
-      "in which the Japanese economy is heading は関係代名詞節で direction を修飾しています。"
+    "chunks": [
+      {"text": "\"Globalization\"", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "is", "svoc": "V", "svocReason": "文の述部（be動詞）です。"},
+      {"text": "the key phrase", "svoc": "C", "svocReason": "主語の内容を説明する補語です。"},
+      {"text": "that describes the direction in which the Japanese economy is heading", "svoc": "-", "svocReason": "phraseを後置修飾する関係詞節（修飾語）です。"}
     ],
-    "chunkElements": ["S", "V", "C", "-", "-", "-", "-", "-", "-", "-"]
+    "translation": "「グローバリゼーション」は、日本経済が進んでいる方向を説明する重要なフレーズである。"
   },
   {
-    "id": "q3",
-    "slashedText": "There /are, however, many problems / that Japan / must overcome / in order to win the trust / of the global community.",
+    "sentence": "There are, however, many problems that Japan must overcome in order to win the trust of the global community.",
     "translation": "しかしながら、国際社会の信頼を得るために、日本が克服しなければならない多くの問題がある。",
-    "svoc": [
-      "V: are",
-      "S: many problems (that Japan must overcome)"
+    "words": [
+      {"text": "There", "slashAfter": false, "slashReason": "There are 構文の導入部であり、述部(are)と一体のため区切りません。"},
+      {"text": "are,", "slashAfter": false, "slashReason": "ルールに基づき、カンマの直後にはスラッシュを入れません。"},
+      {"text": "however,", "slashAfter": false, "slashReason": "ルールに基づき、カンマの直後にはスラッシュを入れません。"},
+      {"text": "many", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "problems", "slashAfter": true, "slashReason": "⑦ 関係詞(that)の前なので区切ります。"},
+      {"text": "that", "slashAfter": false, "slashReason": "関係詞節の主語(Japan)が続くため区切りません。"},
+      {"text": "Japan", "slashAfter": true, "slashReason": "① 述部の前(must overcome)なので区切ります。"},
+      {"text": "must", "slashAfter": false, "slashReason": "助動詞であり、述部の塊なので区切りません。"},
+      {"text": "overcome", "slashAfter": true, "slashReason": "④ to不定詞(in order to)による副詞的用法の付け足し説明なので区切ります。"},
+      {"text": "in", "slashAfter": false, "slashReason": "群前置詞的な表現(in order to)の内部なので区切りません。"},
+      {"text": "order", "slashAfter": false, "slashReason": "不定詞の内部なので区切りません。"},
+      {"text": "to", "slashAfter": false, "slashReason": "不定詞の内部なので区切りません。"},
+      {"text": "win", "slashAfter": false, "slashReason": "動詞と目的語(the trust)の間は区切りません。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "trust", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "global", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "community.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "There are 構文のため、主語は are の後に来る many problems です。",
-      "that Japan must overcome は関係代名詞節で problems を修飾しています。",
-      "in order to... は目的を表す副詞的表現です。"
+    "chunks": [
+      {"text": "There are", "svoc": "V", "svocReason": "存在を示す述部です。"},
+      {"text": "many problems that Japan must overcome", "svoc": "S", "svocReason": "There are 構文における実質的な主語です。"},
+      {"text": "in order to win the trust of the global community", "svoc": "-", "svocReason": "目的を示す副詞的表現（修飾語）です。"}
     ],
-    "chunkElements": ["-", "V", "S", "-", "-", "-", "-", "-", "-", "-", "-"]
+    "translation": "しかしながら、国際社会の信頼を得るために、日本が克服しなければならない多くの問題がある。"
   },
   {
-    "id": "q4",
-    "slashedText": "For a long time, internationalization / was associated / with Westernization or Americanization / in Japan.",
+    "sentence": "For a long time, internationalization was associated with Westernization or Americanization in Japan.",
     "translation": "長い間、日本において国際化は欧米化またはアメリカ化と結びついていた。",
-    "svoc": [
-      "S: internationalization",
-      "V: was associated",
-      "M: with Westernization or Americanization"
+    "words": [
+      {"text": "For", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "a", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "long", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "time,", "slashAfter": false, "slashReason": "ルールに基づき、カンマの直後にはスラッシュを入れません。"},
+      {"text": "internationalization", "slashAfter": true, "slashReason": "① 述部の前(was associated)なので区切ります。"},
+      {"text": "was", "slashAfter": false, "slashReason": "受動態の塊(was associated)なので内部で区切りません。"},
+      {"text": "associated", "slashAfter": true, "slashReason": "② 前置詞(with)の前なので区切ります。"},
+      {"text": "with", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "Westernization", "slashAfter": false, "slashReason": "or で結ばれた名詞の途中なので区切りません。"},
+      {"text": "or", "slashAfter": false, "slashReason": "ルールに基づき、or の前後は区切りません。"},
+      {"text": "Americanization", "slashAfter": true, "slashReason": "② 前置詞(in)の前なので区切ります。"},
+      {"text": "in", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "Japan.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "be associated with... で「〜と結びついている/関連している」という熟語的表現です。",
-      "For a long time および in Japan は時と場所を示す修飾語(M)です。"
+    "chunks": [
+      {"text": "For a long time", "svoc": "-", "svocReason": "時を表す前置詞句（修飾語）です。"},
+      {"text": "internationalization", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "was associated", "svoc": "V", "svocReason": "受動態の述部です。塊として扱います。"},
+      {"text": "with Westernization or Americanization", "svoc": "-", "svocReason": "associatedと結びつく前置詞句（修飾語）です。"},
+      {"text": "in Japan", "svoc": "-", "svocReason": "場所を示す前置詞句（修飾語）です。"}
     ],
-    "chunkElements": ["-", "S", "-", "V", "-", "-"]
+    "translation": "長い間、日本において国際化は欧米化またはアメリカ化と結びついていた。"
   },
   {
-    "id": "q5",
-    "slashedText": "Japan / borrowed / what it / saw / as the necessary parts / of Western culture, science and technology and / used them / to pursue its own development / for its own benefit.",
+    "sentence": "Japan borrowed what it saw as the necessary parts of Western culture, science and technology and used them to pursue its own development for its own benefit.",
     "translation": "日本は、西洋の文化、科学、技術の必要な部分であると考えたものを借用し、自らの利益のために自国の発展を追求するためにそれらを利用した。",
-    "svoc": [
-      "S: Japan",
-      "V1: borrowed",
-      "O1: what it saw as the necessary parts...",
-      "V2: used",
-      "O2: them"
+    "words": [
+      {"text": "Japan", "slashAfter": true, "slashReason": "① 述部の前(borrowed)なので区切ります。"},
+      {"text": "borrowed", "slashAfter": false, "slashReason": "述部と目的語(what...)の間は区切りません。"},
+      {"text": "what", "slashAfter": false, "slashReason": "関係代名詞 what 節の内部なので区切りません。"},
+      {"text": "it", "slashAfter": true, "slashReason": "① 述部の前(saw)なので区切ります。"},
+      {"text": "saw", "slashAfter": false, "slashReason": "saw A as B の構造であり、意味のまとまりを優先して区切りません。"},
+      {"text": "as", "slashAfter": false, "slashReason": "前置詞的な役割をしており、内部なので区切りません。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "necessary", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "parts", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "Western", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "culture,", "slashAfter": false, "slashReason": "ルールに基づき、カンマの直後にはスラッシュを入れません。"},
+      {"text": "science", "slashAfter": false, "slashReason": "and で結ばれた名詞の途中なので区切りません。"},
+      {"text": "and", "slashAfter": false, "slashReason": "ルールに基づき、and の前後は区切りません。"},
+      {"text": "technology", "slashAfter": true, "slashReason": "① 2つ目の述部の前(used)なので区切ります。"},
+      {"text": "and", "slashAfter": false, "slashReason": "ルールに基づき、and の前後は区切りません。"},
+      {"text": "used", "slashAfter": false, "slashReason": "述部と目的語(them)の間は区切りません。"},
+      {"text": "them", "slashAfter": true, "slashReason": "④ to不定詞(to pursue)による副詞的用法の付け足し説明なので区切ります。"},
+      {"text": "to", "slashAfter": false, "slashReason": "不定詞の内部なので区切りません。"},
+      {"text": "pursue", "slashAfter": false, "slashReason": "動詞と目的語(its own development)の間は区切りません。"},
+      {"text": "its", "slashAfter": false, "slashReason": "所有格と名詞の間は区切りません。"},
+      {"text": "own", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "development", "slashAfter": true, "slashReason": "② 前置詞(for)の前なので区切ります。"},
+      {"text": "for", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "its", "slashAfter": false, "slashReason": "所有格と名詞の間は区切りません。"},
+      {"text": "own", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "benefit.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "what it saw as... は「〜であると考えたもの」という関係代名詞 what を用いた名詞節で、borrowed の目的語になっています。",
-      "and によって borrowed と used という2つの動詞が結ばれています。",
-      "to pursue... は目的を表す不定詞の副詞的用法です。"
+    "chunks": [
+      {"text": "Japan", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "borrowed", "svoc": "V", "svocReason": "1つ目の述部です。"},
+      {"text": "what it saw as the necessary parts of Western culture, science and technology", "svoc": "O", "svocReason": "borrowedの目的語となる名詞節です。"},
+      {"text": "used", "svoc": "V", "svocReason": "2つ目の述部です。"},
+      {"text": "them", "svoc": "O", "svocReason": "usedの目的語です。"},
+      {"text": "to pursue its own development for its own benefit", "svoc": "-", "svocReason": "目的を示す不定詞句（修飾語）です。"}
     ],
-    "chunkElements": ["S", "V", "O", "-", "-", "-", "-", "-", "-", "V", "O", "-", "-", "-"]
+    "translation": "日本は、西洋の文化、科学、技術の必要な部分であると考えたものを借用し、自らの利益のために自国の発展を追求するためにそれらを利用した。"
   },
   {
-    "id": "q6",
-    "slashedText": "However, the current trend / of rapid globalization / demands / that Japan / must assume its relevant economic and political responsibilities / in order to achieve world peace and prosperity.",
+    "sentence": "However, the current trend of rapid globalization demands that Japan must assume its relevant economic and political responsibilities in order to achieve world peace and prosperity.",
     "translation": "しかしながら、急速なグローバリゼーションの現在の傾向は、世界の平和と繁栄を達成するために、日本が関連する経済的および政治的責任を負わなければならないことを要求している。",
-    "svoc": [
-      "S: the current trend of rapid globalization",
-      "V: demands",
-      "O: that Japan must assume its relevant economic and political responsibilities"
+    "words": [
+      {"text": "However,", "slashAfter": false, "slashReason": "ルールに基づき、カンマの直後にはスラッシュを入れません。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "current", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "trend", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "rapid", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "globalization", "slashAfter": true, "slashReason": "① 述部の前(demands)なので区切ります。"},
+      {"text": "demands", "slashAfter": true, "slashReason": "⑧ 接続詞(that)の前なので区切ります。"},
+      {"text": "that", "slashAfter": false, "slashReason": "that節の内部なので区切りません。"},
+      {"text": "Japan", "slashAfter": true, "slashReason": "① 述部の前(must assume)なので区切ります。"},
+      {"text": "must", "slashAfter": false, "slashReason": "助動詞であり、述部の塊なので区切りません。"},
+      {"text": "assume", "slashAfter": false, "slashReason": "動詞と目的語(its...responsibilities)の間は区切りません。"},
+      {"text": "its", "slashAfter": false, "slashReason": "所有格と名詞の間は区切りません。"},
+      {"text": "relevant", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "economic", "slashAfter": false, "slashReason": "形容詞同士の間は区切りません。"},
+      {"text": "and", "slashAfter": false, "slashReason": "ルールに基づき、and の前後は区切りません。"},
+      {"text": "political", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "responsibilities", "slashAfter": true, "slashReason": "④ to不定詞(in order to)による副詞的用法の付け足し説明なので区切ります。"},
+      {"text": "in", "slashAfter": false, "slashReason": "群前置詞的な表現(in order to)の内部なので区切りません。"},
+      {"text": "order", "slashAfter": false, "slashReason": "不定詞の内部なので区切りません。"},
+      {"text": "to", "slashAfter": false, "slashReason": "不定詞の内部なので区切りません。"},
+      {"text": "achieve", "slashAfter": false, "slashReason": "動詞と目的語(world peace...)の間は区切りません。"},
+      {"text": "world", "slashAfter": false, "slashReason": "名詞同士の複合語なので区切りません。"},
+      {"text": "peace", "slashAfter": false, "slashReason": "and で結ばれた名詞の途中なので区切りません。"},
+      {"text": "and", "slashAfter": false, "slashReason": "ルールに基づき、and の前後は区切りません。"},
+      {"text": "prosperity.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "that 節全体が demands の目的語(O)になっています。",
-      "assume responsibilities で「責任を負う」という意味です。",
-      "in order to achieve... は目的を表す副詞的表現です。"
+    "chunks": [
+      {"text": "the current trend", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "of rapid globalization", "svoc": "-", "svocReason": "trendを修飾する前置詞句です。"},
+      {"text": "demands", "svoc": "V", "svocReason": "文の述部（動詞）です。"},
+      {"text": "that Japan must assume its relevant economic and political responsibilities in order to achieve world peace and prosperity", "svoc": "O", "svocReason": "demandsの目的語となるthat節全体です。"}
     ],
-    "chunkElements": ["S", "-", "V", "-", "-", "-", "-", "-", "-", "-", "-"]
+    "translation": "しかしながら、急速なグローバリゼーションの現在の傾向は、世界の平和と繁栄を達成するために、日本が関連する経済的および政治的責任を負わなければならないことを要求している。"
   }
 ]

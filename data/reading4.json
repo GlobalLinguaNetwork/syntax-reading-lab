@@ -1,72 +1,261 @@
 [
   {
-    "id": "q1",
-    "slashedText": "Part / of the complexity / of globalism / comes / from the different ways / in which globalization / is approached.",
-    "chunkElements": ["S", "-", "-", "-", "V", "-", "-", "-", "-", "-", "-"],
-    "svoc": [
-      "S: Part",
-      "V: comes",
-      "M: from the different ways"
-    ]
+    "sentence": "Part of the complexity of globalism comes from the different ways in which globalization is approached.",
+    "translation": "グローバリズムの複雑さの一部は、グローバリゼーションへのアプローチの様々な方法に由来する。",
+    "words": [
+      {"text": "Part", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "complexity", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "globalism", "slashAfter": true, "slashReason": "① 述部の前(comes)なので区切ります。"},
+      {"text": "comes", "slashAfter": true, "slashReason": "② 前置詞(from)の前なので区切ります。"},
+      {"text": "from", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "different", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "ways", "slashAfter": true, "slashReason": "⑦ 関係詞(in which)の前なので区切ります。"},
+      {"text": "in", "slashAfter": false, "slashReason": "関係詞節の内部なので区切りません。"},
+      {"text": "which", "slashAfter": false, "slashReason": "関係詞節の主語が続くため区切りません。"},
+      {"text": "globalization", "slashAfter": true, "slashReason": "① 述部の前(is approached)なので区切ります。"},
+      {"text": "is", "slashAfter": false, "slashReason": "受動態の塊(is approached)なので内部で区切りません。"},
+      {"text": "approached.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
+    ],
+    "chunks": [
+      {"text": "Part", "svoc": "S", "svocReason": "文の核となる主語です。"},
+      {"text": "of the complexity", "svoc": "-", "svocReason": "Partを修飾する前置詞句です。"},
+      {"text": "of globalism", "svoc": "-", "svocReason": "complexityを修飾する前置詞句です。"},
+      {"text": "comes", "svoc": "V", "svocReason": "文の述部（自動詞）です。"},
+      {"text": "from the different ways", "svoc": "-", "svocReason": "由来を示す前置詞句（修飾語）です。"},
+      {"text": "in which globalization is approached", "svoc": "-", "svocReason": "waysを後置修飾する関係詞節です。"}
+    ],
+    "translation": "グローバリズムの複雑さの一部は、グローバリゼーションへのアプローチの様々な方法に由来する。"
   },
   {
-    "id": "q2",
-    "slashedText": "Some analysts / embrace it enthusiastically / as a positive feature / of a changing world / in which access / to technology, information, services and markets / will be / of benefit / to local communities.",
-    "chunkElements": ["S", "V", "O", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
-    "svoc": [
-      "S: Some analysts",
-      "V: embrace",
-      "O: it"
-    ]
+    "sentence": "Some analysts embrace it enthusiastically as a positive feature of a changing world in which access to technology, information, services and markets will be of benefit to local communities.",
+    "translation": "一部の分析家は、テクノロジー、情報、サービス、そして市場へのアクセスが地域社会に利益をもたらすようになるという、変化する世界の肯定的な特徴として、それを熱狂的に受け入れている。",
+    "words": [
+      {"text": "Some", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "analysts", "slashAfter": true, "slashReason": "① 述部の前(embrace)なので区切ります。"},
+      {"text": "embrace", "slashAfter": false, "slashReason": "動詞と目的語(it)の間は区切りません。"},
+      {"text": "it", "slashAfter": true, "slashReason": "② 前置詞(as)の前なので区切ります。"},
+      {"text": "enthusiastically", "slashAfter": false, "slashReason": "副詞が目的語の後に置かれていますが、意味のまとまりを優先し、直後のasの前で区切ります。"},
+      {"text": "as", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "a", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "positive", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "feature", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "a", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "changing", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "world", "slashAfter": true, "slashReason": "⑦ 関係詞(in which)の前なので区切ります。"},
+      {"text": "in", "slashAfter": false, "slashReason": "関係詞節の内部なので区切りません。"},
+      {"text": "which", "slashAfter": false, "slashReason": "関係詞節の主語(access)が続くため区切りません。"},
+      {"text": "access", "slashAfter": true, "slashReason": "② 前置詞(to)の前なので区切ります。"},
+      {"text": "to", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "technology,", "slashAfter": false, "slashReason": "ルールに基づき、カンマの直後にはスラッシュを入れません。"},
+      {"text": "information,", "slashAfter": false, "slashReason": "ルールに基づき、カンマの直後にはスラッシュを入れません。"},
+      {"text": "services", "slashAfter": false, "slashReason": "andで結ばれた名詞の途中なので区切りません。"},
+      {"text": "and", "slashAfter": false, "slashReason": "ルールに基づき、andの前後は区切りません。"},
+      {"text": "markets", "slashAfter": true, "slashReason": "① 述部の前(will be)なので区切ります。"},
+      {"text": "will", "slashAfter": false, "slashReason": "助動詞であり、述部の塊なので区切りません。"},
+      {"text": "be", "slashAfter": false, "slashReason": "述部と補語(of benefit)の間は、意味のまとまりを優先し区切りません。"},
+      {"text": "of", "slashAfter": false, "slashReason": "be of benefit(利益になる)という熟語的表現のため区切りません。"},
+      {"text": "benefit", "slashAfter": true, "slashReason": "② 前置詞(to)の前なので区切ります。"},
+      {"text": "to", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "local", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "communities.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
+    ],
+    "chunks": [
+      {"text": "Some analysts", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "embrace", "svoc": "V", "svocReason": "文の述部（動詞）です。"},
+      {"text": "it", "svoc": "O", "svocReason": "embraceの目的語です。"},
+      {"text": "enthusiastically", "svoc": "-", "svocReason": "動詞を修飾する副詞です。"},
+      {"text": "as a positive feature of a changing world", "svoc": "-", "svocReason": "役割・性質を示す前置詞句（修飾語）です。"},
+      {"text": "in which access to technology, information, services and markets will be of benefit to local communities", "svoc": "-", "svocReason": "worldを後置修飾する関係詞節です。"}
+    ],
+    "translation": "一部の分析家は、テクノロジー、情報、サービス、そして市場へのアクセスが地域社会に利益をもたらすようになるという、変化する世界の肯定的な特徴として、それを熱狂的に受け入れている。"
   },
   {
-    "id": "q3",
-    "slashedText": "They / believe / that, by globalization, dominant forms / of social organization / will lead / to universal prosperity, peace, and freedom.",
-    "chunkElements": ["S", "V", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
-    "svoc": [
-      "S: They",
-      "V: believe",
-      "O: that節"
-    ]
+    "sentence": "They believe that, by globalization, dominant forms of social organization will lead to universal prosperity, peace, and freedom.",
+    "translation": "彼らは、グローバリゼーションによって、社会組織の支配的な形態が普遍的な繁栄、平和、そして自由につながると信じている。",
+    "words": [
+      {"text": "They", "slashAfter": true, "slashReason": "① 述部の前(believe)なので区切ります。"},
+      {"text": "believe", "slashAfter": true, "slashReason": "⑧ 接続詞(that)の前なので区切ります。"},
+      {"text": "that,", "slashAfter": false, "slashReason": "ルールに基づき、カンマの直後にはスラッシュを入れません。"},
+      {"text": "by", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "globalization,", "slashAfter": false, "slashReason": "ルールに基づき、カンマの直後にはスラッシュを入れません。"},
+      {"text": "dominant", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "forms", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "social", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "organization", "slashAfter": true, "slashReason": "① 述部の前(will lead)なので区切ります。"},
+      {"text": "will", "slashAfter": false, "slashReason": "助動詞であり、述部の塊なので区切りません。"},
+      {"text": "lead", "slashAfter": true, "slashReason": "② 前置詞(to)の前なので区切ります。"},
+      {"text": "to", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "universal", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "prosperity,", "slashAfter": false, "slashReason": "ルールに基づき、カンマの直後にはスラッシュを入れません。"},
+      {"text": "peace,", "slashAfter": false, "slashReason": "ルールに基づき、カンマの直後にはスラッシュを入れません。"},
+      {"text": "and", "slashAfter": false, "slashReason": "ルールに基づき、andの前後は区切りません。"},
+      {"text": "freedom.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
+    ],
+    "chunks": [
+      {"text": "They", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "believe", "svoc": "V", "svocReason": "文の述部（動詞）です。"},
+      {"text": "that by globalization, dominant forms of social organization will lead to universal prosperity, peace, and freedom", "svoc": "O", "svocReason": "believeの目的語となるthat節全体です。"}
+    ],
+    "translation": "彼らは、グローバリゼーションによって、社会組織の支配的な形態が普遍的な繁栄、平和、そして自由につながると信じている。"
   },
   {
-    "id": "q4",
-    "slashedText": "They even / expect / that perception / of a global environment / will lead / to a global ecological concern.",
-    "chunkElements": ["S", "-", "V", "-", "-", "-", "-", "-", "-", "-", "-"],
-    "svoc": [
-      "S: They",
-      "V: even expect",
-      "O: that節"
-    ]
+    "sentence": "They even expect that perception of a global environment will lead to a global ecological concern.",
+    "translation": "彼らはさらに、地球環境への認識が、地球規模の生態学的懸念につながるだろうと予想している。",
+    "words": [
+      {"text": "They", "slashAfter": false, "slashReason": "主語と副詞(even)の間は区切りません。"},
+      {"text": "even", "slashAfter": true, "slashReason": "① 述部の前(expect)なので区切ります。"},
+      {"text": "expect", "slashAfter": true, "slashReason": "⑧ 接続詞(that)の前なので区切ります。"},
+      {"text": "that", "slashAfter": false, "slashReason": "that節の内部なので区切りません。"},
+      {"text": "perception", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "a", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "global", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "environment", "slashAfter": true, "slashReason": "① 述部の前(will lead)なので区切ります。"},
+      {"text": "will", "slashAfter": false, "slashReason": "助動詞であり、述部の塊なので区切りません。"},
+      {"text": "lead", "slashAfter": true, "slashReason": "② 前置詞(to)の前なので区切ります。"},
+      {"text": "to", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "a", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "global", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "ecological", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "concern.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
+    ],
+    "chunks": [
+      {"text": "They", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "even expect", "svoc": "V", "svocReason": "文の述部（動詞）です。"},
+      {"text": "that perception of a global environment will lead to a global ecological concern", "svoc": "O", "svocReason": "expectの目的語となるthat節全体です。"}
+    ],
+    "translation": "彼らはさらに、地球環境への認識が、地球規模の生態学的懸念につながるだろうと予想している。"
   },
   {
-    "id": "q5",
-    "slashedText": "For this group, globalism / is a term / for values / which / treat global issues / as a matter / of personal and collective responsibility.",
-    "chunkElements": ["-", "-", "S", "V", "C", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
-    "svoc": [
-      "S: globalism",
-      "V: is",
-      "C: a term"
-    ]
+    "sentence": "For this group, globalism is a term for values which treat global issues as a matter of personal and collective responsibility.",
+    "translation": "このグループにとって、グローバリズムとは、地球規模の問題を個人的および集団的な責任の問題として扱う価値観のための用語である。",
+    "words": [
+      {"text": "For", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "this", "slashAfter": false, "slashReason": "限定詞と名詞の間は区切りません。"},
+      {"text": "group,", "slashAfter": false, "slashReason": "ルールに基づき、カンマの直後にはスラッシュを入れません。"},
+      {"text": "globalism", "slashAfter": true, "slashReason": "① 述部の前(is)なので区切ります。"},
+      {"text": "is", "slashAfter": false, "slashReason": "述部と補語(a term)の間は区切りません。"},
+      {"text": "a", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "term", "slashAfter": true, "slashReason": "② 前置詞(for)の前なので区切ります。"},
+      {"text": "for", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "values", "slashAfter": true, "slashReason": "⑦ 関係詞(which)の前なので区切ります。"},
+      {"text": "which", "slashAfter": false, "slashReason": "関係詞節の主語であり、直後に述部が続くため区切りません。"},
+      {"text": "treat", "slashAfter": false, "slashReason": "動詞と目的語(global issues)の間は区切りません。"},
+      {"text": "global", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "issues", "slashAfter": true, "slashReason": "② 前置詞(as)の前なので区切ります。"},
+      {"text": "as", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "a", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "matter", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "personal", "slashAfter": false, "slashReason": "形容詞同士の間は区切りません。"},
+      {"text": "and", "slashAfter": false, "slashReason": "ルールに基づき、andの前後は区切りません。"},
+      {"text": "collective", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "responsibility.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
+    ],
+    "chunks": [
+      {"text": "For this group", "svoc": "-", "svocReason": "文全体にかかる前置詞句（修飾語）です。"},
+      {"text": "globalism", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "is", "svoc": "V", "svocReason": "文の述部（be動詞）です。"},
+      {"text": "a term", "svoc": "C", "svocReason": "主語の内容を説明する補語です。"},
+      {"text": "for values which treat global issues as a matter of personal and collective responsibility", "svoc": "-", "svocReason": "termを修飾する前置詞句（修飾語）です。"}
+    ],
+    "translation": "このグループにとって、グローバリズムとは、地球規模の問題を個人的および集団的な責任の問題として扱う価値観のための用語である。"
   },
   {
-    "id": "q6",
-    "slashedText": "Others / reject it / as a form / of domination / by advanced countries / over developing ones, in which individual distinctions / of culture and society / become erased / by an increasingly homogeneous global culture / while local economies / are more firmly incorporated / into a system / of global capital.",
-    "chunkElements": ["S", "V", "O", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "V", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
-    "svoc": [
-      "S: Others",
-      "V: reject",
-      "O: it"
-    ]
+    "sentence": "Others reject it as a form of domination by advanced countries over developing ones, in which individual distinctions of culture and society become erased by an increasingly homogeneous global culture while local economies are more firmly incorporated into a system of global capital.",
+    "translation": "他の人々は、それを先進国による発展途上国への支配の一形態として拒絶しており、そこでは文化や社会の個別の差異が、ますます均質化する世界文化によって消し去られ、一方で地域経済は世界資本のシステムに、より強固に組み込まれている。",
+    "words": [
+      {"text": "Others", "slashAfter": true, "slashReason": "① 述部の前(reject)なので区切ります。"},
+      {"text": "reject", "slashAfter": false, "slashReason": "動詞と目的語(it)の間は区切りません。"},
+      {"text": "it", "slashAfter": true, "slashReason": "② 前置詞(as)の前なので区切ります。"},
+      {"text": "as", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "a", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "form", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "domination", "slashAfter": true, "slashReason": "② 前置詞(by)の前なので区切ります。"},
+      {"text": "by", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "advanced", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "countries", "slashAfter": true, "slashReason": "② 前置詞(over)の前なので区切ります。"},
+      {"text": "over", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "developing", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "ones,", "slashAfter": false, "slashReason": "ルールに基づき、カンマの直後にはスラッシュを入れません。"},
+      {"text": "in", "slashAfter": false, "slashReason": "関係詞節の内部なので区切りません。"},
+      {"text": "which", "slashAfter": false, "slashReason": "関係詞節の主語(individual distinctions)が続くため区切りません。"},
+      {"text": "individual", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "distinctions", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "culture", "slashAfter": false, "slashReason": "andで結ばれた名詞の途中なので区切りません。"},
+      {"text": "and", "slashAfter": false, "slashReason": "ルールに基づき、andの前後は区切りません。"},
+      {"text": "society", "slashAfter": true, "slashReason": "① 述部の前(become erased)なので区切ります。"},
+      {"text": "become", "slashAfter": false, "slashReason": "受動態的な塊(become erased)なので内部で区切りません。"},
+      {"text": "erased", "slashAfter": true, "slashReason": "② 前置詞(by)の前なので区切ります。"},
+      {"text": "by", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "an", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "increasingly", "slashAfter": false, "slashReason": "副詞と形容詞の間は区切りません。"},
+      {"text": "homogeneous", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "global", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "culture", "slashAfter": true, "slashReason": "⑧ 接続詞(while)の前なので区切ります。"},
+      {"text": "while", "slashAfter": false, "slashReason": "接続詞節の内部なので区切りません。"},
+      {"text": "local", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "economies", "slashAfter": true, "slashReason": "① 述部の前(are incorporated)なので区切ります。"},
+      {"text": "are", "slashAfter": false, "slashReason": "受動態の塊(are incorporated)なので内部で区切りません。"},
+      {"text": "more", "slashAfter": false, "slashReason": "比較級の副詞であり、述部の塊の一部なので区切りません。"},
+      {"text": "firmly", "slashAfter": false, "slashReason": "副詞と動詞の間は区切りません。"},
+      {"text": "incorporated", "slashAfter": true, "slashReason": "② 前置詞(into)の前なので区切ります。"},
+      {"text": "into", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "a", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "system", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "global", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "capital.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
+    ],
+    "chunks": [
+      {"text": "Others", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "reject", "svoc": "V", "svocReason": "文の述部（動詞）です。"},
+      {"text": "it", "svoc": "O", "svocReason": "rejectの目的語です。"},
+      {"text": "as a form of domination by advanced countries over developing ones", "svoc": "-", "svocReason": "役割を示す前置詞句（修飾語）です。"},
+      {"text": "in which individual distinctions of culture and society become erased by an increasingly homogeneous global culture", "svoc": "-", "svocReason": "onesを後置修飾する関係詞節です。"},
+      {"text": "while local economies are more firmly incorporated into a system of global capital", "svoc": "-", "svocReason": "対比を示す接続詞 while 以下の節（修飾語）です。"}
+    ],
+    "translation": "他の人々は、それを先進国による発展途上国への支配の一形態として拒絶しており、そこでは文化や社会の個別の差異が、ますます均質化する世界文化によって消し去られ、一方で地域経済は世界資本のシステムに、より強固に組み込まれている。"
   },
   {
-    "id": "q7",
-    "slashedText": "For this group, globalism / is a political doctrine / which / provides, explains, and justifies an interlocking system / of world trade.",
-    "chunkElements": ["-", "-", "S", "V", "C", "-", "-", "-", "-", "-"],
-    "svoc": [
-      "S: globalism",
-      "V: is",
-      "C: a political doctrine"
-    ]
+    "sentence": "For this group, globalism is a political doctrine which provides, explains, and justifies an interlocking system of world trade.",
+    "translation": "このグループにとって、グローバリズムとは、世界貿易の相互に関連したシステムを提供し、説明し、正当化する政治的な教義である。",
+    "words": [
+      {"text": "For", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "this", "slashAfter": false, "slashReason": "限定詞と名詞の間は区切りません。"},
+      {"text": "group,", "slashAfter": false, "slashReason": "ルールに基づき、カンマの直後にはスラッシュを入れません。"},
+      {"text": "globalism", "slashAfter": true, "slashReason": "① 述部の前(is)なので区切ります。"},
+      {"text": "is", "slashAfter": false, "slashReason": "述部と補語(a political doctrine)の間は区切りません。"},
+      {"text": "a", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "political", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "doctrine", "slashAfter": true, "slashReason": "⑦ 関係詞(which)の前なので区切ります。"},
+      {"text": "which", "slashAfter": false, "slashReason": "関係詞節の主語であり、直後に述部が続くため区切りません。"},
+      {"text": "provides,", "slashAfter": false, "slashReason": "ルールに基づき、カンマの直後にはスラッシュを入れません。"},
+      {"text": "explains,", "slashAfter": false, "slashReason": "ルールに基づき、カンマの直後にはスラッシュを入れません。"},
+      {"text": "and", "slashAfter": false, "slashReason": "ルールに基づき、andの前後は区切りません。"},
+      {"text": "justifies", "slashAfter": false, "slashReason": "動詞と目的語(an interlocking system)の間は区切りません。"},
+      {"text": "an", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "interlocking", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "system", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の内部なので区切りません。"},
+      {"text": "world", "slashAfter": false, "slashReason": "名詞同士の複合語なので区切りません。"},
+      {"text": "trade.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
+    ],
+    "chunks": [
+      {"text": "For this group", "svoc": "-", "svocReason": "文全体にかかる前置詞句（修飾語）です。"},
+      {"text": "globalism", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "is", "svoc": "V", "svocReason": "文の述部（be動詞）です。"},
+      {"text": "a political doctrine", "svoc": "C", "svocReason": "主語の内容を説明する補語です。"},
+      {"text": "which provides, explains, and justifies an interlocking system of world trade", "svoc": "-", "svocReason": "doctrineを後置修飾する関係詞節です。"}
+    ],
+    "translation": "このグループにとって、グローバリズムとは、世界貿易の相互に関連したシステムを提供し、説明し、正当化する政治的な教義である。"
   }
 ]

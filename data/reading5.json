@@ -1,143 +1,363 @@
 [
   {
-    "id": "q1",
-    "slashedText": "We / can see them almost every night / on the TV news / thousands of refugees / who /have chosen to cross international borders / to save their lives.",
-    "chunkElements": ["S", "-", "V", "O", "-", "-", "-", "-", "-"],
+    "sentence": "We can see them almost every night on the TV news thousands of refugees who have chosen to cross international borders to save their lives.",
     "translation": "私たちは、生き延びるために国境を越えることを選んだ何千人もの難民の姿を、ほぼ毎晩テレビニュースで目にすることができる。",
-    "svoc": [
-      "S: We",
-      "V: see",
-      "O: them"
+    "words": [
+      {"text": "We", "slashAfter": true, "slashReason": "① 述部の前（can see の前）なので区切ります。"},
+      {"text": "can", "slashAfter": false, "slashReason": "述部(助動詞＋本動詞)の途中なので区切りません。"},
+      {"text": "see", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "them", "slashAfter": false, "slashReason": "目的語であり、直後の almost every night は修飾語ですが、ルールに該当する区切り箇所ではありません。"},
+      {"text": "almost", "slashAfter": false, "slashReason": "副詞句の途中です。"},
+      {"text": "every", "slashAfter": false, "slashReason": "副詞句の途中です。"},
+      {"text": "night", "slashAfter": true, "slashReason": "② 前置詞(on)の前なので区切ります。"},
+      {"text": "on", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "TV", "slashAfter": false, "slashReason": "名詞の途中です。"},
+      {"text": "news", "slashAfter": true, "slashReason": "⑦ 関係詞の省略（them, who are thousands of...）があるため、後置修飾の起点として区切ります。"},
+      {"text": "thousands", "slashAfter": false, "slashReason": "名詞句の途中です。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞 of は名詞 thousands を修飾する塊の一部です。"},
+      {"text": "refugees", "slashAfter": true, "slashReason": "⑦ 関係詞(who)の前なので区切ります。"},
+      {"text": "who", "slashAfter": false, "slashReason": "関係詞節の主語です。"},
+      {"text": "have", "slashAfter": false, "slashReason": "述部(完了形)の途中なので区切りません。"},
+      {"text": "chosen", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "to", "slashAfter": false, "slashReason": "to不定詞が動詞(chosen)の目的語になっているため、ルール④に基づき区切りません。"},
+      {"text": "cross", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "international", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "borders", "slashAfter": false, "slashReason": "to save their lives は目的を表す副詞的用法であり、名詞を後置修飾しているわけではないため、ルール④に基づき区切りません。"},
+      {"text": "to", "slashAfter": false, "slashReason": "副詞的用法の不定詞のため区切りません。"},
+      {"text": "save", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "their", "slashAfter": false, "slashReason": "所有格と名詞の間は区切りません。"},
+      {"text": "lives.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
+    ],
+    "chunks": [
+      {"text": "We", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "can see", "svoc": "V", "svocReason": "助動詞を含む述部です。"},
+      {"text": "them almost every night", "svoc": "O", "svocReason": "述部の目的語とそれを修飾する副詞句です。"},
+      {"text": "on the TV news", "svoc": "-", "svocReason": "場所を示す修飾語です。"},
+      {"text": "thousands of refugees", "svoc": "-", "svocReason": "themを具体的に説明する同格的な修飾語です。"},
+      {"text": "who have chosen to cross international borders to save their lives.", "svoc": "-", "svocReason": "refugeesを修飾する関係詞節です。"}
     ]
   },
   {
-    "id": "q2",
-    "slashedText": "What / is causing these enormous floods / of refugees?",
-    "chunkElements": ["S", "-", "V", "O", "-"],
+    "sentence": "What is causing these enormous floods of refugees?",
     "translation": "何がこのような膨大な数の難民の流出を引き起こしているのだろうか。",
-    "svoc": [
-      "S: What",
-      "V: causing",
-      "O: floods"
+    "words": [
+      {"text": "What", "slashAfter": true, "slashReason": "① 述部の前（is causing の前）なので区切ります。"},
+      {"text": "is", "slashAfter": false, "slashReason": "述部(進行形)の途中なので区切りません。"},
+      {"text": "causing", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "these", "slashAfter": false, "slashReason": "指示形容詞と名詞の間は区切りません。"},
+      {"text": "enormous", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "floods", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "refugees?", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
+    ],
+    "chunks": [
+      {"text": "What", "svoc": "S", "svocReason": "疑問代名詞が主語になっています。"},
+      {"text": "is causing", "svoc": "V", "svocReason": "現在進行形の述部です。"},
+      {"text": "these enormous floods", "svoc": "O", "svocReason": "述部の目的語です。"},
+      {"text": "of refugees?", "svoc": "-", "svocReason": "floodsを修飾する形容詞句です。"}
     ]
   },
   {
-    "id": "q3",
-    "slashedText": "The answer / is threefold.",
-    "chunkElements": ["S", "V", "C"],
+    "sentence": "The answer is threefold.",
     "translation": "その答えは3つある。",
-    "svoc": [
-      "S: answer",
-      "V: is",
-      "C: threefold"
+    "words": [
+      {"text": "The", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "answer", "slashAfter": true, "slashReason": "① 述部の前（is の前）なので区切ります。"},
+      {"text": "is", "slashAfter": false, "slashReason": "述部です。"},
+      {"text": "threefold.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
+    ],
+    "chunks": [
+      {"text": "The answer", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "is", "svoc": "V", "svocReason": "連結動詞（be動詞）です。"},
+      {"text": "threefold.", "svoc": "C", "svocReason": "主語の状態を説明する補語です。"}
     ]
   },
   {
-    "id": "q4",
-    "slashedText": "First, millions / of people / are trying / to escape / from political violence.",
-    "chunkElements": ["-", "S", "-", "V", "O", "-"],
+    "sentence": "First, millions of people are trying to escape from political violence.",
     "translation": "第一に、数百万もの人々が政治的暴力から逃れようとしている。",
-    "svoc": [
-      "S: millions",
-      "V: trying",
-      "O: to escape"
+    "words": [
+      {"text": "First,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "millions", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "people", "slashAfter": true, "slashReason": "① 述部の前（are trying の前）なので区切ります。"},
+      {"text": "are", "slashAfter": false, "slashReason": "述部(進行形)の途中なので区切りません。"},
+      {"text": "trying", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "to", "slashAfter": false, "slashReason": "to不定詞が動詞(trying)の目的語になっているため、ルール④に基づき区切りません。"},
+      {"text": "escape", "slashAfter": true, "slashReason": "② 前置詞(from)の前なので区切ります。"},
+      {"text": "from", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "political", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "violence.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
+    ],
+    "chunks": [
+      {"text": "First,", "svoc": "-", "svocReason": "文全体の修飾語です。"},
+      {"text": "millions of people", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "are trying to escape", "svoc": "V", "svocReason": "進行形と不定詞を含む述部の塊です。"},
+      {"text": "from political violence.", "svoc": "-", "svocReason": "escapeを修飾する副詞句です。"}
     ]
   },
   {
-    "id": "q5",
-    "slashedText": "Second, hunger / is driving millions more / from their homeland, especially / in northern and eastern Africa.",
-    "chunkElements": ["-", "S", "-", "V", "O", "-", "-"],
+    "sentence": "Second, hunger is driving millions more from their homeland, especially in northern and eastern Africa.",
     "translation": "第二に、飢餓によってさらに数百万人もの人々が故郷を追われており、特にアフリカ北部と東部で顕著である。",
-    "svoc": [
-      "S: hunger",
-      "V: driving",
-      "O: millions"
+    "words": [
+      {"text": "Second,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "hunger", "slashAfter": true, "slashReason": "① 述部の前（is driving の前）なので区切ります。"},
+      {"text": "is", "slashAfter": false, "slashReason": "述部(進行形)の途中なので区切りません。"},
+      {"text": "driving", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "millions", "slashAfter": false, "slashReason": "目的語の途中です。"},
+      {"text": "more", "slashAfter": true, "slashReason": "② 前置詞(from)の前なので区切ります。"},
+      {"text": "from", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "their", "slashAfter": false, "slashReason": "所有格と名詞の間は区切りません。"},
+      {"text": "homeland,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "especially", "slashAfter": true, "slashReason": "② 前置詞(in)の前なので区切ります。"},
+      {"text": "in", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "northern", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "and", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "eastern", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "Africa.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
+    ],
+    "chunks": [
+      {"text": "Second,", "svoc": "-", "svocReason": "文全体の修飾語です。"},
+      {"text": "hunger", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "is driving", "svoc": "V", "svocReason": "現在進行形の述部です。"},
+      {"text": "millions more", "svoc": "O", "svocReason": "述部の目的語です。"},
+      {"text": "from their homeland,", "svoc": "-", "svocReason": "方向・起点を示す修飾語です。"},
+      {"text": "especially in northern and eastern Africa.", "svoc": "-", "svocReason": "場所を限定する修飾語です。"}
     ]
   },
   {
-    "id": "q6",
-    "slashedText": "And third, there / are / over ten million environmental refugees.",
-    "chunkElements": ["-", "-", "V", "S"],
+    "sentence": "And third, there are over ten million environmental refugees.",
     "translation": "そして第三に、1,000万人以上の環境難民が存在する。",
-    "svoc": [
-      "V: are",
-      "S: refugees"
+    "words": [
+      {"text": "And", "slashAfter": false, "slashReason": "文頭のためスラッシュは入れません。"},
+      {"text": "third,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "there", "slashAfter": true, "slashReason": "① 述部の前（are の前）なので区切ります。"},
+      {"text": "are", "slashAfter": false, "slashReason": "述部です。"},
+      {"text": "over", "slashAfter": false, "slashReason": "数詞を修飾する副詞的な表現であり、ここでは区切りません。"},
+      {"text": "ten", "slashAfter": false, "slashReason": "数詞の途中です。"},
+      {"text": "million", "slashAfter": false, "slashReason": "数詞の途中です。"},
+      {"text": "environmental", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "refugees.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
+    ],
+    "chunks": [
+      {"text": "And third,", "svoc": "-", "svocReason": "文全体の修飾語です。"},
+      {"text": "there", "svoc": "-", "svocReason": "形式上の主語(誘導副詞)です。"},
+      {"text": "are", "svoc": "V", "svocReason": "存在を表す述部です。"},
+      {"text": "over ten million environmental refugees.", "svoc": "S", "svocReason": "実質的な主語です。"}
     ]
   },
   {
-    "id": "q7",
-    "slashedText": "These people / can live / on their own land / because of drought, floods, or other environmental problems.",
-    "chunkElements": ["S", "-", "V", "-", "-"],
+    "sentence": "These people can live on their own land because of drought, floods, or other environmental problems.",
     "translation": "これらの人々は、干ばつや洪水、あるいはその他の環境問題のために、もはや自分たちの土地で暮らすことができない。",
-    "svoc": [
-      "S: people",
-      "V: live"
+    "words": [
+      {"text": "These", "slashAfter": false, "slashReason": "指示形容詞と名詞の間は区切りません。"},
+      {"text": "people", "slashAfter": true, "slashReason": "① 述部の前（can live の前）なので区切ります。"},
+      {"text": "can", "slashAfter": false, "slashReason": "述部(助動詞＋本動詞)の途中なので区切りません。"},
+      {"text": "live", "slashAfter": true, "slashReason": "② 前置詞(on)の前なので区切ります。"},
+      {"text": "on", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "their", "slashAfter": false, "slashReason": "所有格と名詞の間は区切りません。"},
+      {"text": "own", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "land", "slashAfter": true, "slashReason": "③ 群前置詞(because of)の前なので区切ります。"},
+      {"text": "because", "slashAfter": false, "slashReason": "群前置詞の一部です。"},
+      {"text": "of", "slashAfter": false, "slashReason": "群前置詞の一部です。"},
+      {"text": "drought,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "floods,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "or", "slashAfter": false, "slashReason": "or の前は区切らないルールに基づきます。"},
+      {"text": "other", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "environmental", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "problems.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
+    ],
+    "chunks": [
+      {"text": "These people", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "can live", "svoc": "V", "svocReason": "助動詞を含む述部です。"},
+      {"text": "on their own land", "svoc": "-", "svocReason": "場所を示す修飾語です。"},
+      {"text": "because of drought, floods, or other environmental problems.", "svoc": "-", "svocReason": "理由を示す修飾語です。"}
     ]
   },
   {
-    "id": "q8",
-    "slashedText": "In today's world, larger numbers / of people / than ever before / are asking / for political asylum / in other countries.",
-    "chunkElements": ["-", "S", "-", "-", "-", "V", "-", "-"],
+    "sentence": "In today's world, larger numbers of people than ever before are asking for political asylum in other countries.",
     "translation": "今日の世界では、かつてないほど多くの人々が、他国に政治的亡命を求めている。",
-    "svoc": [
-      "S: numbers",
-      "V: asking",
-      "O: asylum"
+    "words": [
+      {"text": "In", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "today's", "slashAfter": false, "slashReason": "名詞句の途中です。"},
+      {"text": "world,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "larger", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "numbers", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "people", "slashAfter": true, "slashReason": "⑧ 接続詞(than)の前なので区切ります。"},
+      {"text": "than", "slashAfter": false, "slashReason": "比較構文の途中です。"},
+      {"text": "ever", "slashAfter": false, "slashReason": "比較構文の途中です。"},
+      {"text": "before", "slashAfter": true, "slashReason": "① 述部の前（are asking for の前）なので区切ります。"},
+      {"text": "are", "slashAfter": false, "slashReason": "述部(進行形)の途中なので区切りません。"},
+      {"text": "asking", "slashAfter": false, "slashReason": "ask for は群動詞(V)なので区切りません。"},
+      {"text": "for", "slashAfter": false, "slashReason": "群動詞の途中です。"},
+      {"text": "political", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "asylum", "slashAfter": true, "slashReason": "② 前置詞(in)の前なので区切ります。"},
+      {"text": "in", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "other", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "countries.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
+    ],
+    "chunks": [
+      {"text": "In today's world,", "svoc": "-", "svocReason": "時間を表す修飾語です。"},
+      {"text": "larger numbers of people than ever before", "svoc": "S", "svocReason": "比較表現を含む文の主語です。"},
+      {"text": "are asking for", "svoc": "V", "svocReason": "群動詞を含む進行形の述部です。"},
+      {"text": "political asylum", "svoc": "O", "svocReason": "述部の目的語です。"},
+      {"text": "in other countries.", "svoc": "-", "svocReason": "場所を示す修飾語です。"}
     ]
   },
   {
-    "id": "q9",
-    "slashedText": "One reason / for this / is the bad economic situation / in much / of the world.",
-    "chunkElements": ["S", "-", "V", "C", "-", "-"],
+    "sentence": "One reason for this is the bad economic situation in much of the world.",
     "translation": "この理由の一つは、世界の多くの地域における経済状況の悪化である。",
-    "svoc": [
-      "S: reason",
-      "V: is",
-      "C: situation"
+    "words": [
+      {"text": "One", "slashAfter": false, "slashReason": "数詞と名詞の間は区切りません。"},
+      {"text": "reason", "slashAfter": true, "slashReason": "② 前置詞(for)の前なので区切ります。"},
+      {"text": "for", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "this", "slashAfter": true, "slashReason": "① 述部の前（is の前）なので区切ります。"},
+      {"text": "is", "slashAfter": false, "slashReason": "述部です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "bad", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "economic", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "situation", "slashAfter": true, "slashReason": "② 前置詞(in)の前なので区切ります。"},
+      {"text": "in", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "much", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "world.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
+    ],
+    "chunks": [
+      {"text": "One reason for this", "svoc": "S", "svocReason": "前置詞句を伴う主語です。"},
+      {"text": "is", "svoc": "V", "svocReason": "連結動詞（be動詞）です。"},
+      {"text": "the bad economic situation", "svoc": "C", "svocReason": "主語の内容を説明する補語です。"},
+      {"text": "in much of the world.", "svoc": "-", "svocReason": "状況の範囲を示す修飾語です。"}
     ]
   },
   {
-    "id": "q10",
-    "slashedText": "In bad times, people often / point / to minority groups / as the cause / of their troubles.",
-    "chunkElements": ["-", "S", "-", "V", "-", "-", "-"],
+    "sentence": "In bad times, people often point to minority groups as the cause of their troubles.",
     "translation": "不況の時には、人々はしばしば少数派グループを自分たちの不幸の原因として指し示す。",
-    "svoc": [
-      "S: people",
-      "V: point"
+    "words": [
+      {"text": "In", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "bad", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "times,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "people", "slashAfter": false, "slashReason": "主語の途中（oftenは頻度副詞であり区切りません）です。"},
+      {"text": "often", "slashAfter": true, "slashReason": "① 述部の前（point to の前）なので区切ります。"},
+      {"text": "point", "slashAfter": false, "slashReason": "point to は群動詞(V)なので区切りません。"},
+      {"text": "to", "slashAfter": false, "slashReason": "群動詞の途中です。"},
+      {"text": "minority", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "groups", "slashAfter": true, "slashReason": "② 前置詞(as)の前なので区切ります。"},
+      {"text": "as", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "cause", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "their", "slashAfter": false, "slashReason": "所有格と名詞の間は区切りません。"},
+      {"text": "troubles.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
+    ],
+    "chunks": [
+      {"text": "In bad times,", "svoc": "-", "svocReason": "時間を表す修飾語です。"},
+      {"text": "people often", "svoc": "S", "svocReason": "主語と頻度副詞です。"},
+      {"text": "point to", "svoc": "V", "svocReason": "群動詞としての述部です。"},
+      {"text": "minority groups", "svoc": "O", "svocReason": "述部の目的語です。"},
+      {"text": "as the cause of their troubles.", "svoc": "-", "svocReason": "役割を示す修飾語です。"}
     ]
   },
   {
-    "id": "q11",
-    "slashedText": "Another reason, surprisingly, is the end / of the Cold War.",
-    "chunkElements": ["S", "V", "C", "-"],
+    "sentence": "Another reason, surprisingly, is the end of the Cold War.",
     "translation": "驚くべきことに、もう一つの理由は冷戦の終結である。",
-    "svoc": [
-      "S: reason",
-      "V: is",
-      "C: end"
+    "words": [
+      {"text": "Another", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "reason,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "surprisingly,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "is", "slashAfter": false, "slashReason": "述部です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "end", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "Cold", "slashAfter": false, "slashReason": "名詞の途中です。"},
+      {"text": "War.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
+    ],
+    "chunks": [
+      {"text": "Another reason, surprisingly,", "svoc": "S", "svocReason": "挿入語を含む主語です。"},
+      {"text": "is", "svoc": "V", "svocReason": "連結動詞（be動詞）です。"},
+      {"text": "the end of the Cold War.", "svoc": "C", "svocReason": "主語の内容を説明する補語です。"}
     ]
   },
   {
-    "id": "q12",
-    "slashedText": "Until the late 1980s, communist governments / in eastern Europe and the USSR / did not approve / of religious or political expression, and they / did not allow racial or national conflicts.",
-    "chunkElements": ["-", "S", "-", "-", "-", "V", "-", "-", "S", "-", "-", "V", "O"],
+    "sentence": "Until the late 1980s, communist governments in eastern Europe and the USSR did not approve of religious or political expression, and they did not allow racial or national conflicts.",
     "translation": "1980年代後半まで、東欧やソ連の共産主義政府は宗教的あるいは政治的な表現を認めず、人種的あるいは民族的な紛争を許容しなかった。",
-    "svoc": [
-      "S: governments",
-      "V: approve",
-      "S: they",
-      "V: allow",
-      "O: conflicts"
+    "words": [
+      {"text": "Until", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "late", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "1980s,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "communist", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "governments", "slashAfter": true, "slashReason": "② 前置詞(in)の前なので区切ります。"},
+      {"text": "in", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "eastern", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "Europe", "slashAfter": false, "slashReason": "接続詞 and の前は区切らないルールに基づきます。"},
+      {"text": "and", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "USSR", "slashAfter": true, "slashReason": "① 述部の前（did not approve of の前）なので区切ります。"},
+      {"text": "did", "slashAfter": false, "slashReason": "述部(否定形)の途中なので区切りません。"},
+      {"text": "not", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "approve", "slashAfter": false, "slashReason": "approve of は群動詞(V)なので区切りません。"},
+      {"text": "of", "slashAfter": false, "slashReason": "群動詞の途中です。"},
+      {"text": "religious", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "or", "slashAfter": false, "slashReason": "or の前は区切らないルールに基づきます。"},
+      {"text": "political", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "expression,", "slashAfter": true, "slashReason": "⑧ 接続詞(and)の前なので区切ります。"},
+      {"text": "and", "slashAfter": false, "slashReason": "接続詞の直後は区切らないルールに基づきます。"},
+      {"text": "they", "slashAfter": true, "slashReason": "① 述部の前（did not allow の前）なので区切ります。"},
+      {"text": "did", "slashAfter": false, "slashReason": "述部(否定形)の途中なので区切りません。"},
+      {"text": "not", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "allow", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "racial", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "or", "slashAfter": false, "slashReason": "or の前は区切らないルールに基づきます。"},
+      {"text": "national", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "conflicts.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
+    ],
+    "chunks": [
+      {"text": "Until the late 1980s,", "svoc": "-", "svocReason": "時間を表す修飾語です。"},
+      {"text": "communist governments in eastern Europe and the USSR", "svoc": "S", "svocReason": "前置詞句を伴う主語です。"},
+      {"text": "did not approve of", "svoc": "V", "svocReason": "群動詞を含む否定の述部です。"},
+      {"text": "religious or political expression,", "svoc": "O", "svocReason": "述部の目的語です。"},
+      {"text": "and they", "svoc": "S", "svocReason": "等位接続詞で結ばれた2つ目の主語です。"},
+      {"text": "did not allow", "svoc": "V", "svocReason": "否定の述部です。"},
+      {"text": "racial or national conflicts.", "svoc": "O", "svocReason": "述部の目的語です。"}
     ]
   },
   {
-    "id": "q13",
-    "slashedText": "But / as communism / fell and the former Soviet Union / broke up, old ethnic anger and hatred / began to appear and then / to explode.",
-    "chunkElements": ["-", "-", "-", "-", "-", "-", "-", "-", "S", "V", "-", "-", "-"],
+    "sentence": "But as communism fell and the former Soviet Union broke up, old ethnic anger and hatred began to appear and then to explode.",
     "translation": "しかし、共産主義が崩壊し、旧ソ連が解体されると、古くからの民族的な怒りと憎しみが現れ始め、そして爆発した。",
-    "svoc": [
-      "S: anger",
-      "V: began"
+    "words": [
+      {"text": "But", "slashAfter": true, "slashReason": "⑧ 接続詞(as)の前なので区切ります。"},
+      {"text": "as", "slashAfter": false, "slashReason": "接続詞の直後は区切らないルールに基づきます。"},
+      {"text": "communism", "slashAfter": true, "slashReason": "① 述部の前（fell の前）なので区切ります。"},
+      {"text": "fell", "slashAfter": true, "slashReason": "⑧ 接続詞(and)の前なので区切ります。"},
+      {"text": "and", "slashAfter": false, "slashReason": "接続詞の直後は区切らないルールに基づきます。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "former", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "Soviet", "slashAfter": false, "slashReason": "名詞の途中です。"},
+      {"text": "Union", "slashAfter": true, "slashReason": "① 述部の前（broke up の前）なので区切ります。"},
+      {"text": "broke", "slashAfter": false, "slashReason": "break up は群動詞(V)なので区切りません。"},
+      {"text": "up,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "old", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "ethnic", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "anger", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "and", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "hatred", "slashAfter": true, "slashReason": "① 述部の前（began の前）なので区切ります。"},
+      {"text": "began", "slashAfter": false, "slashReason": "述部です。"},
+      {"text": "to", "slashAfter": false, "slashReason": "to不定詞が動詞(began)の目的語になっているため、ルール④に基づき区切りません。"},
+      {"text": "appear", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "and", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "then", "slashAfter": false, "slashReason": "副詞であり、不定詞句の途中です。"},
+      {"text": "to", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "explode.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
+    ],
+    "chunks": [
+      {"text": "But", "svoc": "-", "svocReason": "文頭の接続詞です。"},
+      {"text": "as communism fell and the former Soviet Union broke up,", "svoc": "-", "svocReason": "条件・時を表す従属節（修飾語）です。"},
+      {"text": "old ethnic anger and hatred", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "began", "svoc": "V", "svocReason": "述部です。"},
+      {"text": "to appear and then to explode.", "svoc": "O", "svocReason": "述部の目的語となる不定詞句です。"}
     ]
   }
 ]

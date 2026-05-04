@@ -1,156 +1,287 @@
 [
   {
-    "id": "q1",
-    "slashedText": "The word \"ethics\" / has caught on / across / the Pacific.",
-    "chunkElements": ["-", "S", "-", "V", "-", "-", "-"],
+    "sentence": "The word \"ethics\" has caught on across the Pacific.",
     "translation": "「倫理」という言葉が太平洋地域に浸透した。",
-    "svoc": [
-      "S: ethics",
-      "V: caught on",
-      "M: across the Pacific"
+    "words": [
+      {"text": "The", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "word", "slashAfter": false, "slashReason": "名詞と名詞の連結です。"},
+      {"text": "\"ethics\"", "slashAfter": true, "slashReason": "① 述部の前（has caught on の前）なので区切ります。"},
+      {"text": "has", "slashAfter": false, "slashReason": "述部(現在完了形)の途中なので区切りません。"},
+      {"text": "caught", "slashAfter": false, "slashReason": "catch on は群動詞(V)なので区切りません。"},
+      {"text": "on", "slashAfter": true, "slashReason": "② 前置詞(across)の前なので区切ります。"},
+      {"text": "across", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "Pacific.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "has caught on は現在完了形。助動詞 has の後、本動詞 caught と副詞 on を分割。",
-      "across は前置詞なので、その前で区切ります。"
+    "chunks": [
+      {"text": "The word \"ethics\"", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "has caught on", "svoc": "V", "svocReason": "群動詞を含む現在完了形の述部です。"},
+      {"text": "across the Pacific.", "svoc": "-", "svocReason": "場所を示す修飾語です。"}
     ]
   },
   {
-    "id": "q2",
-    "slashedText": "Increasingly, people / are using it / in reference / to the behavior / of corporate executives, rather than / about the behavior / of individuals.",
-    "chunkElements": ["-", "S", "-", "V", "O", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+    "sentence": "Increasingly, people are using it in reference to the behavior of corporate executives, rather than about the behavior of individuals.",
     "translation": "ますます多くの人々が、個人の行動についてではなく、企業の経営者の行動に関してこの言葉を使うようになっている。",
-    "svoc": [
-      "S: people",
-      "V: using",
-      "O: it"
+    "words": [
+      {"text": "Increasingly,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "people", "slashAfter": true, "slashReason": "① 述部の前（are using の前）なので区切ります。"},
+      {"text": "are", "slashAfter": false, "slashReason": "述部(進行形)の途中なので区切りません。"},
+      {"text": "using", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "it", "slashAfter": true, "slashReason": "② 前置詞(in)の前なので区切ります。"},
+      {"text": "in", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "reference", "slashAfter": true, "slashReason": "② 前置詞(to)の前なので区切ります。"},
+      {"text": "to", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "behavior", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "corporate", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "executives,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "rather", "slashAfter": false, "slashReason": "rather than は接続詞的に機能します。"},
+      {"text": "than", "slashAfter": true, "slashReason": "② 前置詞(about)の前なので区切ります。"},
+      {"text": "about", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "behavior", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "individuals.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "are using は現在進行形。助動詞 are と本動詞 using を分割。",
-      "前置詞の前で区切ります。"
+    "chunks": [
+      {"text": "Increasingly, people", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "are using", "svoc": "V", "svocReason": "現在進行形の述部です。"},
+      {"text": "it", "svoc": "O", "svocReason": "述部の目的語です。"},
+      {"text": "in reference to the behavior of corporate executives,", "svoc": "-", "svocReason": "関連を示す修飾語句です。"},
+      {"text": "rather than about the behavior of individuals.", "svoc": "-", "svocReason": "対比を示す修飾語句です。"}
     ]
   },
   {
-    "id": "q3",
-    "slashedText": "What / has made it so popular / is widespread dishonest practices / by companies / both in Japan and the United States.",
-    "chunkElements": ["-", "-", "V", "O", "-", "V", "-", "-", "C", "-", "-", "-"],
+    "sentence": "What has made it so popular is widespread dishonest practices by companies both in Japan and the United States.",
     "translation": "それをこれほど普及させたのは、日本と米国の両方における企業の広範な不正行為である。",
-    "svoc": [
-      "S: What has made it so popular (節)",
-      "V: is",
-      "C: practices"
+    "words": [
+      {"text": "What", "slashAfter": false, "slashReason": "関係代名詞節の主語です。"},
+      {"text": "has", "slashAfter": false, "slashReason": "述部(完了形)の途中なので区切りません。"},
+      {"text": "made", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "it", "slashAfter": false, "slashReason": "目的語と補語の間は区切りません。"},
+      {"text": "so", "slashAfter": false, "slashReason": "副詞と形容詞の間は区切りません。"},
+      {"text": "popular", "slashAfter": true, "slashReason": "① 述部の前（is の前）なので区切ります。"},
+      {"text": "is", "slashAfter": false, "slashReason": "述部です。"},
+      {"text": "widespread", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "dishonest", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "practices", "slashAfter": true, "slashReason": "② 前置詞(by)の前なので区切ります。"},
+      {"text": "by", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "companies", "slashAfter": true, "slashReason": "② 前置詞(in)の前なので区切ります。"},
+      {"text": "both", "slashAfter": false, "slashReason": "相関接続詞の途中です。"},
+      {"text": "in", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "Japan", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "and", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "United", "slashAfter": false, "slashReason": "名詞の途中です。"},
+      {"text": "States.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "What 節内は従属節なので SVOC 指定なし。主節の動詞 is を特定。",
-      "by は前置詞なので区切ります。"
+    "chunks": [
+      {"text": "What has made it so popular", "svoc": "S", "svocReason": "名詞節が主語になっています。"},
+      {"text": "is", "svoc": "V", "svocReason": "連結動詞（be動詞）です。"},
+      {"text": "widespread dishonest practices", "svoc": "C", "svocReason": "主語の内容を説明する補語です。"},
+      {"text": "by companies both in Japan and the United States.", "svoc": "-", "svocReason": "practicesを修飾する前置詞句です。"}
     ]
   },
   {
-    "id": "q4",
-    "slashedText": "In America, a sense / of crisis / is / in the air / that capitalism not / tempered / by ethics / is doomed.",
-    "chunkElements": ["-", "-", "S", "-", "-", "V", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+    "sentence": "In America, a sense of crisis is in the air that capitalism not tempered by ethics is doomed.",
     "translation": "アメリカでは、倫理によって抑制されない資本主義は運命づけられている（破滅する）という危機感が漂っている。",
-    "svoc": [
-      "S: sense",
-      "V: doomed"
+    "words": [
+      {"text": "In", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "America,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "a", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "sense", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "crisis", "slashAfter": true, "slashReason": "① 述部の前（is の前）なので区切ります。"},
+      {"text": "is", "slashAfter": false, "slashReason": "述部です。"},
+      {"text": "in", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "air", "slashAfter": true, "slashReason": "⑦ 関係詞(that)の前なので区切ります。"},
+      {"text": "that", "slashAfter": false, "slashReason": "接続詞の直後は区切らないルールに基づきます。"},
+      {"text": "capitalism", "slashAfter": true, "slashReason": "⑥ 過去分詞(tempered)が後置修飾を開始しているため区切ります。"},
+      {"text": "not", "slashAfter": false, "slashReason": "否定語であり分詞の一部です。"},
+      {"text": "tempered", "slashAfter": true, "slashReason": "② 前置詞(by)の前なので区切ります。"},
+      {"text": "by", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "ethics", "slashAfter": true, "slashReason": "① 述部の前（is doomed の前）なので区切ります。"},
+      {"text": "is", "slashAfter": false, "slashReason": "述部(受動態)の途中なので区切りません。"},
+      {"text": "doomed.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "主節の S: sense, V: doomed を特定。that 以下の節内は同格節（従属節）のため要素指定なし。",
-      "過去分詞 tempered は capitalism を修飾するため区切ります。"
+    "chunks": [
+      {"text": "In America,", "svoc": "-", "svocReason": "場所を示す修飾語です。"},
+      {"text": "a sense of crisis", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "is", "svoc": "V", "svocReason": "述部です。"},
+      {"text": "in the air", "svoc": "-", "svocReason": "状態を示す修飾語です。"},
+      {"text": "that capitalism not tempered by ethics is doomed.", "svoc": "-", "svocReason": "senseと同格の内容を説明する節です。"}
     ]
   },
   {
-    "id": "q5",
-    "slashedText": "One after another, revelations / have been made / that financial statements / by failed major corporations / involved window dressing.",
-    "chunkElements": ["-", "S", "-", "-", "V", "-", "-", "-", "-", "-", "-", "-"],
+    "sentence": "One after another, revelations have been made that financial statements by failed major corporations involved window dressing.",
     "translation": "相次いで、破綻した大企業の財務諸表に粉飾決算が含まれていたことが明らかになった。",
-    "svoc": [
-      "S: revelations",
-      "V: made"
+    "words": [
+      {"text": "One", "slashAfter": false, "slashReason": "慣用句(One after another)の途中です。"},
+      {"text": "after", "slashAfter": false, "slashReason": "慣用句の途中です。"},
+      {"text": "another,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "revelations", "slashAfter": true, "slashReason": "① 述部の前（have been made の前）なので区切ります。"},
+      {"text": "have", "slashAfter": false, "slashReason": "述部(現在完了受動態)の途中なので区切りません。"},
+      {"text": "been", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "made", "slashAfter": true, "slashReason": "⑦ 関係詞(that)の前なので区切ります。"},
+      {"text": "that", "slashAfter": false, "slashReason": "接続詞の直後は区切らないルールに基づきます。"},
+      {"text": "financial", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "statements", "slashAfter": true, "slashReason": "② 前置詞(by)の前なので区切ります。"},
+      {"text": "by", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "failed", "slashAfter": false, "slashReason": "形容詞的な分詞で corporations を修飾しています。"},
+      {"text": "major", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "corporations", "slashAfter": true, "slashReason": "① 述部の前（involved の前）なので区切ります。"},
+      {"text": "involved", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "window", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "dressing.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "have been made は現在完了受動態。助動詞 have been を除き made を V とする。",
-      "that 以下は同格の従属節のため指定なし。"
+    "chunks": [
+      {"text": "One after another, revelations", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "have been made", "svoc": "V", "svocReason": "現在完了受動態の述部です。"},
+      {"text": "that financial statements by failed major corporations involved window dressing.", "svoc": "-", "svocReason": "revelationsの内容を説明する同格節です。"}
     ]
   },
   {
-    "id": "q6",
-    "slashedText": "What / makes it worse / is / that the fraud / was committed / with the help / of accounting firms.",
-    "chunkElements": ["-", "V", "O", "-", "V", "-", "-", "-", "-", "-", "-", "-", "-"],
+    "sentence": "What makes it worse is that the fraud was committed with the help of accounting firms.",
     "translation": "さらに悪いことに、その不正は会計事務所の協力を得て行われていた。",
-    "svoc": [
-      "S: What makes it worse(節)",
-      "V: is",
-      "C: that節"
+    "words": [
+      {"text": "What", "slashAfter": false, "slashReason": "関係代名詞節の主語です。"},
+      {"text": "makes", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "it", "slashAfter": false, "slashReason": "目的語と補語の間は区切りません。"},
+      {"text": "worse", "slashAfter": true, "slashReason": "① 述部の前（is の前）なので区切ります。"},
+      {"text": "is", "slashAfter": true, "slashReason": "⑧ 接続詞(that)の前なので区切ります。"},
+      {"text": "that", "slashAfter": false, "slashReason": "接続詞の直後は区切らないルールに基づきます。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "fraud", "slashAfter": true, "slashReason": "① 述部の前（was committed の前）なので区切ります。"},
+      {"text": "was", "slashAfter": false, "slashReason": "述部(受動態)の途中なので区切りません。"},
+      {"text": "committed", "slashAfter": true, "slashReason": "② 前置詞(with)の前なので区切ります。"},
+      {"text": "with", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "help", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "accounting", "slashAfter": false, "slashReason": "形容詞的な分詞で firms を修飾しています。"},
+      {"text": "firms.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "主節の動詞 is を特定。What 節内および that 節内は従属節のため要素指定なし。"
+    "chunks": [
+      {"text": "What makes it worse", "svoc": "S", "svocReason": "名詞節が主語になっています。"},
+      {"text": "is", "svoc": "V", "svocReason": "連結動詞（be動詞）です。"},
+      {"text": "that the fraud was committed with the help of accounting firms.", "svoc": "C", "svocReason": "主語の内容を説明する補語（名詞節）です。"}
     ]
   },
   {
-    "id": "q7",
-    "slashedText": "Anxious / to rebuild corporate America, President George W. Bush / had declared, \"There / is no capitalism / without conscience.\"",
-    "chunkElements": ["-", "-", "-", "-", "S", "-", "-", "V", "-", "V", "-", "-", "-", "-"],
+    "sentence": "Anxious to rebuild corporate America, President George W. Bush had declared, \"There is no capitalism without conscience.\"",
     "translation": "アメリカの企業社会を再建したいと切望し、ジョージ・W・ブッシュ大統領は「良心のない資本主義は存在しない」と宣言した。",
-    "svoc": [
-      "S: Bush",
-      "V: declared"
+    "words": [
+      {"text": "Anxious", "slashAfter": false, "slashReason": "Anxious to...は形容詞句であり、名詞を後置修飾しているわけではないためルール④に基づき区切りません。"},
+      {"text": "to", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "rebuild", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "corporate", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "America,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "President", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "George", "slashAfter": false, "slashReason": "固有名詞の途中です。"},
+      {"text": "W.", "slashAfter": false, "slashReason": "固有名詞の途中です。"},
+      {"text": "Bush", "slashAfter": true, "slashReason": "① 述部の前（had declared の前）なので区切ります。"},
+      {"text": "had", "slashAfter": false, "slashReason": "述部(過去完了形)の途中なので区切りません。"},
+      {"text": "declared,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "\"There", "slashAfter": true, "slashReason": "① 述部の前（is の前）なので区切ります。"},
+      {"text": "is", "slashAfter": false, "slashReason": "述部です。"},
+      {"text": "no", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "capitalism", "slashAfter": true, "slashReason": "② 前置詞(without)の前なので区切ります。"},
+      {"text": "without", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "conscience.\"", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "主節の S: Bush, V: declared を特定。引用節内は副文のため要素指定なし。"
+    "chunks": [
+      {"text": "Anxious to rebuild corporate America,", "svoc": "-", "svocReason": "文頭の形容詞句（修飾語）です。"},
+      {"text": "President George W. Bush", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "had declared,", "svoc": "V", "svocReason": "述部です。"},
+      {"text": "\"There is no capitalism without conscience.\"", "svoc": "O", "svocReason": "述部の目的語（引用句）です。"}
     ]
   },
   {
-    "id": "q8",
-    "slashedText": "Why / did capitalism / develop / in the United States and Europe?",
-    "chunkElements": ["-", "-", "S", "V", "-", "-"],
+    "sentence": "Why did capitalism develop in the United States and Europe?",
     "translation": "なぜ資本主義は米国と欧州で発展したのか。",
-    "svoc": [
-      "S: capitalism",
-      "V: develop"
+    "words": [
+      {"text": "Why", "slashAfter": true, "slashReason": "① 述部の前（did develop の前）なので区切ります。"},
+      {"text": "did", "slashAfter": false, "slashReason": "述部(助動詞＋本動詞)の途中なので区切りません。"},
+      {"text": "capitalism", "slashAfter": true, "slashReason": "① 述部の前（develop の前）なので区切ります。"},
+      {"text": "develop", "slashAfter": true, "slashReason": "② 前置詞(in)の前なので区切ります。"},
+      {"text": "in", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "United", "slashAfter": false, "slashReason": "名詞の途中です。"},
+      {"text": "States", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "and", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "Europe?", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "did は助動詞のため develop を V とする。",
-      "in は前置詞なので区切ります。"
+    "chunks": [
+      {"text": "Why", "svoc": "-", "svocReason": "疑問詞（修飾語）です。"},
+      {"text": "capitalism", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "did develop", "svoc": "V", "svocReason": "疑問文の述部です。"},
+      {"text": "in the United States and Europe?", "svoc": "-", "svocReason": "場所を示す修飾語です。"}
     ]
   },
   {
-    "id": "q9",
-    "slashedText": "Naturally, various theories / have been advanced / about this question.",
-    "chunkElements": ["-", "-", "S", "-", "-", "V", "-", "-"],
+    "sentence": "Naturally, various theories have been advanced about this question.",
     "translation": "当然ながら、この問いについてさまざまな理論が提唱されてきた。",
-    "svoc": [
-      "S: theories",
-      "V: advanced"
+    "words": [
+      {"text": "Naturally,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "various", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "theories", "slashAfter": true, "slashReason": "① 述部の前（have been advanced の前）なので区切ります。"},
+      {"text": "have", "slashAfter": false, "slashReason": "述部(現在完了受動態)の途中なので区切りません。"},
+      {"text": "been", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "advanced", "slashAfter": true, "slashReason": "② 前置詞(about)の前なので区切ります。"},
+      {"text": "about", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "this", "slashAfter": false, "slashReason": "指示形容詞と名詞の間は区切りません。"},
+      {"text": "question.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "have been advanced は現在完了受動態。advanced を V とする。"
+    "chunks": [
+      {"text": "Naturally, various theories", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "have been advanced", "svoc": "V", "svocReason": "現在完了受動態の述部です。"},
+      {"text": "about this question.", "svoc": "-", "svocReason": "対象を示す修飾語です。"}
     ]
   },
   {
-    "id": "q10",
-    "slashedText": "German sociologist Max Weber / linked it / to religion.",
-    "chunkElements": ["-", "S", "V", "O", "-", "-"],
+    "sentence": "German sociologist Max Weber linked it to religion.",
     "translation": "ドイツの社会学者マックス・ヴェーバーは、それを宗教に結びつけた。",
-    "svoc": [
-      "S: Weber",
-      "V: linked",
-      "O: it"
+    "words": [
+      {"text": "German", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "sociologist", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "Max", "slashAfter": false, "slashReason": "固有名詞の途中です。"},
+      {"text": "Weber", "slashAfter": true, "slashReason": "① 述部の前（linked の前）なので区切ります。"},
+      {"text": "linked", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "it", "slashAfter": true, "slashReason": "② 前置詞(to)の前なので区切ります。"},
+      {"text": "to", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "religion.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "S: Weber, V: linked, O: it を特定。"
+    "chunks": [
+      {"text": "German sociologist Max Weber", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "linked", "svoc": "V", "svocReason": "述部です。"},
+      {"text": "it", "svoc": "O", "svocReason": "述部の目的語です。"},
+      {"text": "to religion.", "svoc": "-", "svocReason": "結びつきの対象を示す修飾語です。"}
     ]
   },
   {
-    "id": "q11",
-    "slashedText": "Simply put, his theory / boiled down / to: / \"Honesty / is the best marketing policy.\"",
-    "chunkElements": ["-", "-", "S", "V", "-", "-", "-", "-", "-", "-"],
+    "sentence": "Simply put, his theory boiled down to: \"Honesty is the best marketing policy.\"",
     "translation": "簡単に言えば、彼の理論は「正直さは最善のマーケティング戦略である」ということに集約された。",
-    "svoc": [
-      "S: theory",
-      "V: boiled"
+    "words": [
+      {"text": "Simply", "slashAfter": false, "slashReason": "副詞と分詞の間は区切りません。"},
+      {"text": "put,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "his", "slashAfter": false, "slashReason": "所有格と名詞の間は区切りません。"},
+      {"text": "theory", "slashAfter": true, "slashReason": "① 述部の前（boiled down to の前）なので区切ります。"},
+      {"text": "boiled", "slashAfter": false, "slashReason": "boil down to は群動詞(V)なので区切りません。"},
+      {"text": "down", "slashAfter": false, "slashReason": "群動詞の途中です。"},
+      {"text": "to:", "slashAfter": false, "slashReason": "群動詞の末尾であり、直後に引用句が続くためここでは区切りません。"},
+      {"text": "\"Honesty", "slashAfter": true, "slashReason": "① 述部の前（is の前）なので区切ります。"},
+      {"text": "is", "slashAfter": false, "slashReason": "述部です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "best", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "marketing", "slashAfter": false, "slashReason": "形容詞的な分詞で policy を修飾しています。"},
+      {"text": "policy.\"", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "boiled down to は群動詞。boiled を V とする。"
+    "chunks": [
+      {"text": "Simply put, his theory", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "boiled down to:", "svoc": "V", "svocReason": "群動詞としての述部です。"},
+      {"text": "\"Honesty is the best marketing policy.\"", "svoc": "O", "svocReason": "述部の目的語（引用句）です。"}
     ]
   }
 ]

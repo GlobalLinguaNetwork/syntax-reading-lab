@@ -1,160 +1,286 @@
 [
   {
-    "id": "q1",
-    "slashedText": "Through a combination / of immigration and difference / in birthrate / among ethnic groups, many countries / in western Europe / are experiencing a change / in their ethnic and cultural composition.",
+    "sentence": "Through a combination of immigration and difference in birthrate among ethnic groups, many countries in western Europe are experiencing a change in their ethnic and cultural composition.",
     "translation": "移民と民族グループ間の出生率の違いの組み合わせにより、西欧の多くの国々で民族的・文化的な構成に変化が生じている。",
-    "svoc": [
-      "S: many countries in western Europe",
-      "V: are experiencing",
-      "O: a change in their ethnic and cultural composition"
+    "words": [
+      {"text": "Through", "slashAfter": false, "slashReason": "文頭のためスラッシュは入れません。"},
+      {"text": "a", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "combination", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "immigration", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "and", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "difference", "slashAfter": true, "slashReason": "② 前置詞(in)の前なので区切ります。"},
+      {"text": "in", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "birthrate", "slashAfter": true, "slashReason": "② 前置詞(among)の前なので区切ります。"},
+      {"text": "among", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "ethnic", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "groups,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "many", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "countries", "slashAfter": true, "slashReason": "② 前置詞(in)の前なので区切ります。"},
+      {"text": "in", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "western", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "Europe", "slashAfter": true, "slashReason": "① 述部の前（are experiencing の前）なので区切ります。"},
+      {"text": "are", "slashAfter": false, "slashReason": "述部(進行形)の途中なので区切りません。"},
+      {"text": "experiencing", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "a", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "change", "slashAfter": true, "slashReason": "② 前置詞(in)の前なので区切ります。"},
+      {"text": "in", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "their", "slashAfter": false, "slashReason": "所有格と名詞の間は区切りません。"},
+      {"text": "ethnic", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "and", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "cultural", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "composition.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "Through a combination...groups は文全体の修飾語（M）です。",
-      "of, in, among, in などの前置詞の前で区切ります。",
-      "are experiencing は述部（V）なのでその前で区切ります。"
-    ],
-    "chunkElements": ["-", "-", "-", "-", "-", "S", "-", "-", "V", "O", "-"]
+    "chunks": [
+      {"text": "Through a combination of immigration and difference in birthrate among ethnic groups,", "svoc": "-", "svocReason": "原因・手段を示す長い修飾語句です。"},
+      {"text": "many countries in western Europe", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "are experiencing", "svoc": "V", "svocReason": "現在進行形の述部です。"},
+      {"text": "a change in their ethnic and cultural composition.", "svoc": "O", "svocReason": "述部の目的語です。"}
+    ]
   },
   {
-    "id": "q2",
-    "slashedText": "There / are various reactions / to these developments.",
+    "sentence": "There are various reactions to these developments.",
     "translation": "これらの進展に対して、さまざまな反応がある。",
-    "svoc": [
-      "V: are",
-      "S: various reactions to these developments"
+    "words": [
+      {"text": "There", "slashAfter": true, "slashReason": "① 述部の前（are の前）なので区切ります。"},
+      {"text": "are", "slashAfter": false, "slashReason": "述部です。"},
+      {"text": "various", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "reactions", "slashAfter": true, "slashReason": "② 前置詞(to)の前なので区切ります。"},
+      {"text": "to", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "these", "slashAfter": false, "slashReason": "指示形容詞と名詞の間は区切りません。"},
+      {"text": "developments.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "There is/are 構文のため、動詞 are の前で区切ります。",
-      "to these developments は reactions を修飾する前置詞句なので区切ります。"
-    ],
-    "chunkElements": ["-", "V", "S", "-"]
+    "chunks": [
+      {"text": "There", "svoc": "-", "svocReason": "誘導副詞であり、主語ではありません。"},
+      {"text": "are", "svoc": "V", "svocReason": "存在を表す述部です。"},
+      {"text": "various reactions to these developments.", "svoc": "S", "svocReason": "実質的な主語です。"}
+    ]
   },
   {
-    "id": "q3",
-    "slashedText": "At one end / of the range / are the radical cosmopolitans, who view nation states and national identities / as dangerously old-fashioned.",
+    "sentence": "At one end of the range are the radical cosmopolitans, who view nation states and national identities as dangerously old-fashioned.",
     "translation": "その範囲の一端にいるのは急進的なコスモポリタン（世界主義者）であり、彼らは国民国家や国民的アイデンティティを危険なほど時代遅れなものと考えている。",
-    "svoc": [
-      "V: are",
-      "S: the radical cosmopolitans",
-      "M: At one end of the range"
+    "words": [
+      {"text": "At", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "one", "slashAfter": false, "slashReason": "数詞と名詞の間は区切りません。"},
+      {"text": "end", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "range", "slashAfter": true, "slashReason": "① 述部の前（are の前）なので区切ります。"},
+      {"text": "are", "slashAfter": false, "slashReason": "述部です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "radical", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "cosmopolitans,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "who", "slashAfter": false, "slashReason": "関係詞節の主語です。"},
+      {"text": "view", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "nation", "slashAfter": false, "slashReason": "名詞の連結（nation states）です。"},
+      {"text": "states", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "and", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "national", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "identities", "slashAfter": true, "slashReason": "② 前置詞(as)の前なので区切ります。"},
+      {"text": "as", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "dangerously", "slashAfter": false, "slashReason": "副詞と形容詞の間は区切りません。"},
+      {"text": "old-fashioned.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "文頭の At one end... は場所を示す副詞句で、主語と動詞が倒置しています。",
-      "of the range は前置詞句なので区切ります。",
-      ", who... は非制限用法の関係代名詞であり、カンマの直後なのでルールに基づきスラッシュは入れません。",
-      "as... は view A as B（AをBと見なす）の構成要素であり、前置詞的な働きのため区切ります。"
-    ],
-    "chunkElements": ["-", "-", "V", "S", "-"]
+    "chunks": [
+      {"text": "At one end of the range", "svoc": "-", "svocReason": "場所を示す副詞句（倒置の起点）です。"},
+      {"text": "are", "svoc": "V", "svocReason": "述部です。"},
+      {"text": "the radical cosmopolitans,", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "who view nation states and national identities as dangerously old-fashioned.", "svoc": "-", "svocReason": "主語を修飾する関係代名詞節です。"}
+    ]
   },
   {
-    "id": "q4",
-    "slashedText": "At the other end / are / the ethnic nationalists / who /wish to defend the purity / of their own nation / against all newcomers.",
+    "sentence": "At the other end are the ethnic nationalists who wish to defend the purity of their own nation against all newcomers.",
     "translation": "もう一端にいるのは民族主義者であり、彼らはあらゆる新参者から自国の純粋性を守りたいと願っている。",
-    "svoc": [
-      "V: are",
-      "S: nationalists (who wish to defend the purity of their own nation against all newcomers)",
-      "M: At the other end"
+    "words": [
+      {"text": "At", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "other", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "end", "slashAfter": true, "slashReason": "① 述部の前（are の前）なので区切ります。"},
+      {"text": "are", "slashAfter": false, "slashReason": "述部です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "ethnic", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "nationalists", "slashAfter": true, "slashReason": "⑦ 関係詞(who)の前なので区切ります。"},
+      {"text": "who", "slashAfter": false, "slashReason": "関係詞節の主語です。"},
+      {"text": "wish", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "to", "slashAfter": false, "slashReason": "to不定詞が動詞(wish)の目的語になっているため、ルール④に基づき区切りません。"},
+      {"text": "defend", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "purity", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "their", "slashAfter": false, "slashReason": "所有格と名詞の間は区切りません。"},
+      {"text": "own", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "nation", "slashAfter": true, "slashReason": "② 前置詞(against)の前なので区切ります。"},
+      {"text": "against", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "all", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "newcomers.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "前文と同様に倒置が起きています。",
-      "who... は nationalists を修飾する関係代名詞なので区切ります。",
-      "wish to defend の to不定詞は wish の目的語（O）なので区切りません。",
-      "of their own nation および against all newcomers は名詞を修飾する前置詞句なので区切ります。"
-    ],
-    "chunkElements": ["-", "V", "S", "-", "-", "-"]
+    "chunks": [
+      {"text": "At the other end", "svoc": "-", "svocReason": "場所を示す副詞句（倒置の起点）です。"},
+      {"text": "are", "svoc": "V", "svocReason": "述部です。"},
+      {"text": "the ethnic nationalists who wish to defend the purity of their own nation against all newcomers.", "svoc": "S", "svocReason": "関係詞節を伴う主語です。"}
+    ]
   },
   {
-    "id": "q5",
-    "slashedText": "My own position / lies / between these extremes.",
+    "sentence": "My own position lies between these extremes.",
     "translation": "私自身の立場は、これら両極端の中間に位置している。",
-    "svoc": [
-      "S: position",
-      "V: lies",
-      "M: between these extremes"
+    "words": [
+      {"text": "My", "slashAfter": false, "slashReason": "所有格と名詞の間は区切りません。"},
+      {"text": "own", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "position", "slashAfter": true, "slashReason": "① 述部の前（lies の前）なので区切ります。"},
+      {"text": "lies", "slashAfter": true, "slashReason": "② 前置詞(between)の前なので区切ります。"},
+      {"text": "between", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "these", "slashAfter": false, "slashReason": "指示形容詞と名詞の間は区切りません。"},
+      {"text": "extremes.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "lies は述部（V）なのでその前で区切ります。",
-      "between these extremes は前置詞句（M）なので区切ります。"
-    ],
-    "chunkElements": ["S", "V", "-"]
+    "chunks": [
+      {"text": "My own position", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "lies", "svoc": "V", "svocReason": "述部です。"},
+      {"text": "between these extremes.", "svoc": "-", "svocReason": "場所を示す修飾語です。"}
+    ]
   },
   {
-    "id": "q6",
-    "slashedText": "Immigration / on a modest scale / brings benefits / in the form / of diversity and new ideas, but the pace / of the present transformation / in Europe / worries me.",
+    "sentence": "Immigration on a modest scale brings benefits in the form of diversity and new ideas, but the pace of the present transformation in Europe worries me.",
     "translation": "適度な規模の移民は、多様性や新しいアイデアという形での利益をもたらすが、現在のヨーロッパにおける変革のペースは私を不安にさせる。",
-    "svoc": [
-      "S1: Immigration",
-      "V1: brings",
-      "O1: benefits",
-      "S2: the pace",
-      "V2: worries",
-      "O2: me"
+    "words": [
+      {"text": "Immigration", "slashAfter": true, "slashReason": "② 前置詞(on)の前なので区切ります。"},
+      {"text": "on", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "a", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "modest", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "scale", "slashAfter": true, "slashReason": "① 述部の前（brings の前）なので区切ります。"},
+      {"text": "brings", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "benefits", "slashAfter": true, "slashReason": "② 前置詞(in)の前なので区切ります。"},
+      {"text": "in", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "form", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "diversity", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "and", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "new", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "ideas,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "but", "slashAfter": false, "slashReason": "接続詞の直後は区切らないルールに基づきます。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "pace", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "present", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "transformation", "slashAfter": true, "slashReason": "② 前置詞(in)の前なので区切ります。"},
+      {"text": "in", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "Europe", "slashAfter": true, "slashReason": "① 述部の前（worries の前）なので区切ります。"},
+      {"text": "worries", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "me.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "on a modest scale は Immigration を修飾する前置詞句なので区切ります。",
-      "brings は述部（V）なので区切ります。",
-      "in the form および of diversity... は前置詞句なので区切ります。",
-      "but は等位接続詞なのでその前にはスラッシュを入れません。",
-      "of the present transformation および in Europe は名詞を修飾する前置詞句なので区切ります。",
-      "worries は述部（V）なので区切ります。"
-    ],
-    "chunkElements": ["S", "-", "V", "O", "-", "-", "-", "-", "-", "-", "V", "O"]
+    "chunks": [
+      {"text": "Immigration on a modest scale", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "brings", "svoc": "V", "svocReason": "述部です。"},
+      {"text": "benefits in the form of diversity and new ideas,", "svoc": "O", "svocReason": "述部の目的語です。"},
+      {"text": "but the pace of the present transformation in Europe", "svoc": "S", "svocReason": "接続詞後の2つ目の節の主語です。"},
+      {"text": "worries", "svoc": "V", "svocReason": "述部です。"},
+      {"text": "me.", "svoc": "O", "svocReason": "述部の目的語です。"}
+    ]
   },
   {
-    "id": "q7",
-    "slashedText": "I / believe it inevitably / invites conflict.",
+    "sentence": "I believe it inevitably invites conflict.",
     "translation": "それは必然的に紛争を招くと私は信じている。",
-    "svoc": [
-      "S: I",
-      "V: believe",
-      "O: (that) it inevitably invites conflict"
+    "words": [
+      {"text": "I", "slashAfter": true, "slashReason": "① 述部の前（believe の前）なので区切ります。"},
+      {"text": "believe", "slashAfter": true, "slashReason": "⑦ 関係詞(接続詞that)の省略があるため区切ります。"},
+      {"text": "it", "slashAfter": false, "slashReason": "節の主語です。"},
+      {"text": "inevitably", "slashAfter": true, "slashReason": "① 述部の前（invites の前）なので区切ります。"},
+      {"text": "invites", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "conflict.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "believe は述部（V）なので区切ります。",
-      "believe の後の接続詞 that が省略されています。節の切り替わりとして、また invites が述部であるため区切ります。"
-    ],
-    "chunkElements": ["S", "V", "-", "-", "V", "O"]
+    "chunks": [
+      {"text": "I", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "believe", "svoc": "V", "svocReason": "述部です。"},
+      {"text": "it inevitably invites conflict.", "svoc": "O", "svocReason": "believeの目的語となる名詞節です。"}
+    ]
   },
   {
-    "id": "q8",
-    "slashedText": "I also / believe / that nations / are historical communities / that /have the right / to shape their own collective future / as they see fit, and / to resist developments / that gradually / injure their identity and sense / of Continuity.",
+    "sentence": "I also believe that nations are historical communities that have the right to shape their own collective future as they see fit, and to resist developments that gradually injure their identity and sense of Continuity.",
     "translation": "私はまた、国家とは、自分たちが適切だと思うように自らの集団的な未来を形成し、また自らのアイデンティティと継続性を徐々に損なう展開に抵抗する権利を持つ歴史的な共同体であると信じている。",
-    "svoc": [
-      "S: I",
-      "V: believe",
-      "O: that nations are historical communities..."
+    "words": [
+      {"text": "I", "slashAfter": false, "slashReason": "主語の途中（alsoは副詞）です。"},
+      {"text": "also", "slashAfter": true, "slashReason": "① 述部の前（believe の前）なので区切ります。"},
+      {"text": "believe", "slashAfter": true, "slashReason": "⑧ 接続詞(that)の前なので区切ります。"},
+      {"text": "that", "slashAfter": false, "slashReason": "接続詞の直後は区切らないルールに基づきます。"},
+      {"text": "nations", "slashAfter": true, "slashReason": "① 述部の前（are の前）なので区切ります。"},
+      {"text": "are", "slashAfter": false, "slashReason": "述部です。"},
+      {"text": "historical", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "communities", "slashAfter": true, "slashReason": "⑦ 関係詞(that)の前なので区切ります。"},
+      {"text": "that", "slashAfter": false, "slashReason": "関係詞節の主語です。"},
+      {"text": "have", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "right", "slashAfter": true, "slashReason": "④ to不定詞が名詞(right)を後置修飾しているため区切ります。"},
+      {"text": "to", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "shape", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "their", "slashAfter": false, "slashReason": "所有格と名詞の間は区切りません。"},
+      {"text": "own", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "collective", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "future", "slashAfter": true, "slashReason": "⑧ 接続詞(as)の前なので区切ります。"},
+      {"text": "as", "slashAfter": false, "slashReason": "接続詞の直後は区切らないルールに基づきます。"},
+      {"text": "they", "slashAfter": true, "slashReason": "① 述部の前（see の前）なので区切ります。"},
+      {"text": "see", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "fit,", "slashAfter": false, "slashReason": "カンマの直後は区切らないルールに基づきます。"},
+      {"text": "and", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "to", "slashAfter": false, "slashReason": "and で shape と resist が並列されており、右側の to-inf も right を修飾していますが、直前が and なのでルール3に基づき区切りません。"},
+      {"text": "resist", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "developments", "slashAfter": true, "slashReason": "⑦ 関係詞(that)の前なので区切ります。"},
+      {"text": "that", "slashAfter": false, "slashReason": "関係詞節の主語です。"},
+      {"text": "gradually", "slashAfter": true, "slashReason": "① 述部の前（injure の前）なので区切ります。"},
+      {"text": "injure", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "their", "slashAfter": false, "slashReason": "所有格と名詞の間は区切りません。"},
+      {"text": "identity", "slashAfter": false, "slashReason": "and の前は区切らないルールに基づきます。"},
+      {"text": "and", "slashAfter": false, "slashReason": "名詞の連結です。"},
+      {"text": "sense", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "Continuity.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "believe は述部（V）なので区切ります。",
-      "that は接続詞（名詞節）なので区切ります。",
-      "are は述部（V）なので区切ります。",
-      "that have... は communities を修飾する関係代名詞なので区切ります。",
-      "to shape... は right を修飾する不定詞の形容詞的用法なので区切ります。",
-      "as they see fit は接続詞的に機能しているため区切ります。",
-      "to resist... は have the right to... の並列（and）であり、right を修飾する不定詞の形容詞的用法なので区切ります。",
-      "that gradually injure... は developments を修飾する関係代名詞なので区切ります。",
-      "of Continuity は sense を修飾する前置詞句なので区切ります。"
-    ],
-    "chunkElements": ["S", "V", "-", "V", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"]
+    "chunks": [
+      {"text": "I also", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "believe", "svoc": "V", "svocReason": "述部です。"},
+      {"text": "that nations are historical communities that have the right to shape their own collective future as they see fit, and to resist developments that gradually injure their identity and sense of Continuity.", "svoc": "O", "svocReason": "believeの目的語となる長い名詞節です。"}
+    ]
   },
   {
-    "id": "q9",
-    "slashedText": "I / do not believe / that national identity / can or should be remade / at will / by a cosmopolitan elite / to be consistent / with its own vision / of / how the world / should be.",
+    "sentence": "I do not believe that national identity can or should be remade at will by a cosmopolitan elite to be consistent with its own vision of how the world should be.",
     "translation": "私は、国民的アイデンティティというものが、世界はどうあるべきかというコスモポリタンなエリート自身のビジョンと一致させるために、意のままに作り直され得るとも、あるいは作り直されるべきだとも信じない。",
-    "svoc": [
-      "S: I",
-      "V: do not believe",
-      "O: that national identity can... be remade..."
+    "words": [
+      {"text": "I", "slashAfter": true, "slashReason": "① 述部の前（do not believe の前）なので区切ります。"},
+      {"text": "do", "slashAfter": false, "slashReason": "述部(否定形)の途中なので区切りません。"},
+      {"text": "not", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "believe", "slashAfter": true, "slashReason": "⑧ 接続詞(that)の前なので区切ります。"},
+      {"text": "that", "slashAfter": false, "slashReason": "接続詞の直後は区切らないルールに基づきます。"},
+      {"text": "national", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "identity", "slashAfter": true, "slashReason": "① 述部の前（can or should be remade の前）なので区切ります。"},
+      {"text": "can", "slashAfter": false, "slashReason": "述部(助動詞)の途中なので区切りません。"},
+      {"text": "or", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "should", "slashAfter": false, "slashReason": "述部(助動詞)の途中なので区切りません。"},
+      {"text": "be", "slashAfter": false, "slashReason": "述部(受動態)の途中なので区切りません。"},
+      {"text": "remade", "slashAfter": true, "slashReason": "② 前置詞(at)の前なので区切ります。"},
+      {"text": "at", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "will", "slashAfter": true, "slashReason": "② 前置詞(by)の前なので区切ります。"},
+      {"text": "by", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "a", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "cosmopolitan", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "elite", "slashAfter": false, "slashReason": "to be consistent は目的を表す副詞的用法であり、名詞を後置修飾していないためルール④に基づき区切りません。"},
+      {"text": "to", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "be", "slashAfter": false, "slashReason": "不定詞句の途中です。"},
+      {"text": "consistent", "slashAfter": true, "slashReason": "② 前置詞(with)の前なので区切ります。"},
+      {"text": "with", "slashAfter": false, "slashReason": "前置詞句の途中です。"},
+      {"text": "its", "slashAfter": false, "slashReason": "所有格と名詞の間は区切りません。"},
+      {"text": "own", "slashAfter": false, "slashReason": "形容詞と名詞の間は区切りません。"},
+      {"text": "vision", "slashAfter": true, "slashReason": "② 前置詞(of)の前なので区切ります。"},
+      {"text": "of", "slashAfter": true, "slashReason": "⑨ 疑問詞(how)の前なので区切ります。"},
+      {"text": "how", "slashAfter": false, "slashReason": "間接疑問文の途中です。"},
+      {"text": "the", "slashAfter": false, "slashReason": "冠詞と名詞の間は区切りません。"},
+      {"text": "world", "slashAfter": true, "slashReason": "① 述部の前（should be の前）なので区切ります。"},
+      {"text": "should", "slashAfter": false, "slashReason": "述部の途中です。"},
+      {"text": "be.", "slashAfter": false, "slashReason": "文末のためスラッシュは入れません。"}
     ],
-    "explanation": [
-      "do not believe は述部（V）なので区切ります。",
-      "that は接続詞（名詞節）なので区切ります。",
-      "can, or should, be remade は述部（助動詞＋be＋過去分詞）なので区切ります。",
-      "at will, by a cosmopolitan elite は前置詞句（M）なので区切ります。",
-      "to be consistent は目的・結果を表す不定詞の副詞的用法なので区切ります。",
-      "with its own vision および of how... は前置詞句なので区切ります。",
-      "how the world should be は間接疑問文（名詞節）であり、疑問詞 how の前で区切ります。"
-    ],
-    "chunkElements": ["S", "-", "V", "-", "-", "-", "-", "V", "-", "-", "-", "-", "-", "-", "-"]
+    "chunks": [
+      {"text": "I", "svoc": "S", "svocReason": "文の主語です。"},
+      {"text": "do not believe", "svoc": "V", "svocReason": "否定の述部です。"},
+      {"text": "that national identity can or should be remade at will by a cosmopolitan elite to be consistent with its own vision of how the world should be.", "svoc": "O", "svocReason": "believeの目的語となる名詞節です。"}
+    ]
   }
 ]
