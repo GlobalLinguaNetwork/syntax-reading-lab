@@ -1,15 +1,16 @@
 [
   {
     "id": "q1",
-    "slashedText": "The transition / from the communist, centrally planned economy / to a functioning market economy, which / began / in the late 80s / in these countries / that / belonged / to the former Eastern Bloc, was not easy.",
+    "slashedText": "The transition / from the communist, centrally planned economy / to a functioning market economy, / which / began / in the late 80s / in these countries / that / belonged / to the former Eastern Bloc, / was / not easy.",
+    "chunkElements": ["S", "-", "-", "-", "-", "-", "-", "-", "-", "-", "V", "C"],
     "translation": "80年代末に始まった、これら旧東側に属する国々の、共産党による中央計画経済から市場経済が機能するまでへの移行は、簡単ではなかった。",
-    "svoc":[
+    "svoc": [
       "S (主語): transition",
       "V (動詞): was",
       "C (補語): easy",
       "※ not は副詞のため要素には含みません。"
     ],
-    "explanation":[
+    "explanation": [
       "構造: 文全体の骨組みは The transition ... was not easy. です。",
       "S の修飾: from ... to ... が transition を修飾しています。",
       "関係詞: which 以降の非制限用法（コンマ＋関係代名詞）が、直前の market economy（または移行のプロセス全体）を説明しており、さらにその中で that 以下の関係代名詞節が countries を修飾しています。",
@@ -18,14 +19,15 @@
   },
   {
     "id": "q2",
-    "slashedText": "The association / for the Advancement / of Computerization / in Education, founded / in 1993, is an international organization / with the aim / of advancing / information technology / in education.",
+    "slashedText": "The association / for the Advancement / of Computerization / in Education, / founded / in 1993, / is / an international organization / with the aim / of advancing / information technology / in education.",
+    "chunkElements": ["S", "-", "-", "-", "-", "-", "V", "C", "-", "-", "-", "-"],
     "translation": "1993年創設の教育コンピューター化促進協会は、教育における情報工学促進を目的とした国際的教育機関である。",
-    "svoc":[
+    "svoc": [
       "S (主語): association",
       "V (動詞): is",
       "C (補語): organization"
     ],
-    "explanation":[
+    "explanation": [
       "構造: The association ... is ... organization という SVC 文型です。",
       "分詞の挿入: , founded in 1993, は過去分詞句が挿入されており、主語 association を説明しています。",
       "前置詞句: 後半の with the aim ... は organization を修飾する形容詞的な働きをしています。of advancing（動名詞）が aim の内容を説明しています。"
@@ -33,9 +35,10 @@
   },
   {
     "id": "q3",
-    "slashedText": "A sudden increase / on earth / in the supply / of platinum / from space / without a similar increase / in demand / could cause the price / of the metal / to drop.",
+    "slashedText": "A sudden increase / on earth / in the supply / of platinum / from space / without a similar increase / in demand / could / cause / the price / of the metal / to drop.",
+    "chunkElements": ["S", "-", "-", "-", "-", "-", "-", "-", "V", "O", "-", "C"],
     "translation": "宇宙からのプラチナの供給が地球上で突然増加し、それに見合う需要の増加がないとすれば、その金属（プラチナ）の価格が下落する可能性がある。",
-    "svoc":[
+    "svoc": [
       "S (主語): increase",
       "V (動詞): cause",
       "※ルールに従い、助動詞 could は V に含めず、核となる cause のみを特定。",
@@ -43,21 +46,22 @@
       "C (補語): (to drop)",
       "※不定詞句が補語のため、カッコ書きで内容を明記。"
     ],
-    "explanation":[
+    "explanation": [
       "構造: cause O to do（O に～させる／O が～する原因となる）という SVOC 文型をとっています。",
       "主語の特定: 非常に長い名詞句ですが、核となる S は先頭の increase です。それ以降の on earth, in the supply, from space, without ... はすべて increase を修飾する前置詞句の連なりです。"
     ]
   },
   {
     "id": "q4",
-    "slashedText": "The sport / of riding / on waves / on long hardwood surfboards / has been associated / by Europeans / with the Hawaiian Islands / ever since the late 18th century.",
+    "slashedText": "The sport / of riding / on waves / on long hardwood surfboards / has / been / associated / by Europeans / with the Hawaiian Islands / ever since the late 18th century.",
+    "chunkElements": ["S", "-", "-", "-", "-", "-", "V", "-", "-", "-"],
     "translation": "長い堅木のサーフボード上で波に乗るスポーツは、18世紀末からずっとヨーロッパ人によってハワイ諸島と結びつけられてきた。",
-    "svoc":[
+    "svoc": [
       "S (主語): sport",
       "V (動詞): associated",
       "※ルール「完了形を作る have、受動態を作る be 動詞は助動詞である為 V に含めない」に従い、has been を除外した過去分詞 associated を V として特定。"
     ],
-    "explanation":[
+    "explanation": [
       "構造: 受動態の文です。能動態での associate A with B（A を B と結びつける）が受動態になり、A be associated with B となっています。",
       "主語の修飾: of riding ...（動名詞句）が sport の具体的内容を説明しています。",
       "動詞部: has been associated（現在完了受動態）ですが、文の核となる動作は associated です。"
@@ -65,16 +69,17 @@
   },
   {
     "id": "q5",
-    "slashedText": "Computer researchers / hoping / to write programs / containing the rules / that experts / use / to make / decisions / have found / that experts often / don’t know / what rules / they / use / to make decisions.",
+    "slashedText": "Computer researchers / hoping / to write programs / containing the rules / that experts / use / to make / decisions / have / found / that / experts often / don’t / know / what rules / they / use / to make decisions.",
+    "chunkElements": ["S", "-", "-", "-", "-", "-", "-", "-", "-", "V", "-", "-", "-", "-", "-", "-", "-", "-"],
     "translation": "専門家が判断を下す際に使う規則を含んだプログラムを書きたいと望むコンピューターの研究者達が発見したのは、専門家たちも多くの場合、自分が判断を下すのにどのような規則を利用しているのか分かっていない、ということである。",
-    "svoc":[
+    "svoc": [
       "S (主語): researchers",
       "V (動詞): found",
       "※ルールに従い、完了形の have は除外。",
       "O (目的語): (that experts often don’t know what rules they use to make decisions)",
       "※ that 節全体が目的語のため、内容を明記。"
     ],
-    "explanation":[
+    "explanation": [
       "主語の修飾: researchers の後ろにある現在分詞 hoping ... が主語を長く修飾しています。hoping to write ... の中にさらに containing ...（分詞）、that ...（関係詞）が含まれ、構造が複雑になっています。",
       "主節の動詞: 修飾語句が終わった後の have found がこの文のメインの動詞です。",
       "目的語: found の後ろの that 節全体が「～ということを発見した」という目的語になっています。"
@@ -82,14 +87,15 @@
   },
   {
     "id": "q6",
-    "slashedText": "At present, attempts / are being made / by the US Federal Government / to develop a perfect lie detector, as a means / to improve the nation’s security level / in its “war on terrorism.”",
+    "slashedText": "At present, / attempts / are / being / made / by the US Federal Government / to develop a perfect lie detector, / as a means / to improve the nation’s security level / in its “war on terrorism.”",
+    "chunkElements": ["-", "S", "-", "-", "V", "-", "-", "-", "-", "-"],
     "translation": "現在アメリカの連邦政府によって、「テロとの戦い」における国の公安レベルを高める 1 つの手段として、完璧なうそ発見器を開発する試みが進行中である。",
-    "svoc":[
+    "svoc": [
       "S (主語): attempts",
       "V (動詞): made",
       "※ルール「進行形・受動態を作る be 動詞は 助動詞である為 V に含めない」に従い、are being を除外し made を特定。"
     ],
-    "explanation":[
+    "explanation": [
       "構造: make an attempt（試みを行う）という表現の受動態進行形 attempts are being made（試みが行われている最中だ）です。",
       "不定詞の働き: to develop ... は主語である attempts の内容を説明する形容詞的用法（～するという試み）ですが、述部（V）の後ろに置かれています。",
       "前置詞句: , as a means ... は「手段として」という補足説明を加えています。"

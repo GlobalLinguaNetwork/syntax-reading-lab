@@ -1,142 +1,97 @@
 [
   {
     "id": "q1",
-    "slashedText": "Globalization / is the process / in which individual lives and local communities / are affected / by economic and cultural forces / that operate world-wide.",
-    "translation": "グローバル化とは、世界的に作用する経済的および文化的影響によって、個人の生活や地域社会が影響を受けるプロセスのことである。",
+    "slashedText": "One / of the most pressing questions / Japan / is now / facing / is / how / to restructure / its postwar economic and business systems / in a rapidly changing external and internal environment.",
+    "translation": "日本が現在直面している最も差し迫った問題の一つは、急速に変化する内外の環境の中で、戦後の経済およびビジネスシステムをどのように再構築するかということである。",
     "svoc": [
-      "S: Globalization",
+      "S: One of the most pressing questions (Japan is now facing)",
       "V: is",
-      "C: the process"
+      "C: how to restructure its postwar economic and business systems"
     ],
     "explanation": [
-      "is は述部なので、その前にスラッシュを入れます。",
-      "in which は関係代名詞節の始まりなので、後置修飾として区切ります。",
-      "are affected は関係詞節内の述部なので区切ります。",
-      "by は前置詞なので区切ります。",
-      "that は関係代名詞で forces を修飾しているため区切ります。"
-    ]
+      "Japan is now facing は関係代名詞が省略されており、questions を修飾しています。",
+      "how to restructure... は名詞句として補語(C)になっています。",
+      "in a rapidly changing... は環境を示す修飾語(M)です。"
+    ],
+    "chunkElements": ["S", "-", "-", "-", "-", "V", "-", "-", "C", "-"]
   },
   {
     "id": "q2",
-    "slashedText": "In effect, it / is the process / of the world / becoming a single place. Globalism / is the perception / of the world / as a function or result / of the processes / of globalization / upon local communities.",
-    "translation": "実際的に言えば、それは世界が単一の場所になるプロセスである。グローバリズムとは、地域社会に対するグローバル化のプロセスの機能または結果として世界を捉える認識のことである。",
+    "slashedText": "\"Globalization\" / is / the key phrase / that / describes / the direction / in which / the Japanese economy / is / heading.",
+    "translation": "「グローバリゼーション」は、日本経済が進んでいる方向を説明する重要なフレーズである。",
     "svoc": [
-      "Sentence 1: S: it, V: is, C: the process",
-      "Sentence 2: S: Globalism, V: is, C: the perception"
+      "S: \"Globalization\"",
+      "V: is",
+      "C: the key phrase (that describes...)"
     ],
     "explanation": [
-      "is は述部なので区切ります。",
-      "of, as, upon は前置詞なので、それぞれ後置修飾の起点として区切ります。",
-      "becoming は world を説明する現在分詞（動名詞的意味を含む後置修飾）であるため区切ります。"
-    ]
+      "that describes the direction は関係代名詞節で phrase を修飾しています。",
+      "in which the Japanese economy is heading は関係代名詞節で direction を修飾しています。"
+    ],
+    "chunkElements": ["S", "V", "C", "-", "-", "-", "-", "-", "-", "-"]
   },
   {
     "id": "q3",
-    "slashedText": "The word \"global\" / has had a rapid rise / since the mid-1980s, up until which time the word \"international\" / was preferred.",
-    "translation": "「グローバル」という言葉は1980年代半ばから急速に普及したが、それまでは「インターナショナル」という言葉が好まれていた。",
+    "slashedText": "There / are / however, many problems / that / Japan / must / overcome / in order to / win / the trust / of the global community.",
+    "translation": "しかしながら、国際社会の信頼を得るために、日本が克服しなければならない多くの問題がある。",
     "svoc": [
-      "S: The word \"global\"",
-      "V: has had",
-      "O: a rapid rise"
+      "V: are",
+      "S: many problems (that Japan must overcome)"
     ],
     "explanation": [
-      "has had は述部なので区切ります。",
-      "since は時を表す前置詞なので区切ります。",
-      "up until which time の前にあるカンマの直後には、ルールに従いスラッシュを入れません。",
-      "was preferred は従属節の述部なので区切ります。"
-    ]
+      "There are 構文のため、主語は are の後に来る many problems です。",
+      "that Japan must overcome は関係代名詞節で problems を修飾しています。",
+      "in order to... は目的を表す副詞的表現です。"
+    ],
+    "chunkElements": ["-", "V", "S", "-", "-", "-", "-", "-", "-", "-", "-"]
   },
   {
     "id": "q4",
-    "slashedText": "The rise / of the word \"international\" itself / in the eighteenth century / indicated the growing importance / of territorial states / in organizing social relations.",
-    "translation": "18世紀における「インターナショナル」という言葉自体の普及は、社会関係を構築する上での領土国家の重要性の高まりを示していた。",
+    "slashedText": "For a long time, internationalization / was / associated / with Westernization or Americanization / in Japan.",
+    "translation": "長い間、日本において国際化は欧米化またはアメリカ化と結びついていた。",
     "svoc": [
-      "S: The rise",
-      "V: indicated",
-      "O: the growing importance"
+      "S: internationalization",
+      "V: was associated",
+      "M: with Westernization or Americanization"
     ],
     "explanation": [
-      "of, in は名詞を修飾する前置詞なので区切ります。",
-      "indicated は文の主述部（動詞）なので区切ります。"
-    ]
+      "be associated with... で「〜と結びついている/関連している」という熟語的表現です。",
+      "For a long time および in Japan は時と場所を示す修飾語(M)です。"
+    ],
+    "chunkElements": ["-", "S", "-", "V", "-", "-"]
   },
   {
     "id": "q5",
-    "slashedText": "It / can be defined / as an early consequence / of the world-wide perspective / of European imperialism.",
-    "translation": "それは、ヨーロッパ帝国主義の世界的な視点がもたらした初期の結果として定義することができる。",
+    "slashedText": "Japan / borrowed / what / it / saw / as / the necessary parts / of Western culture, science and technology and / used / them / to pursue / its own development / for its own benefit.",
+    "translation": "日本は、西洋の文化、科学、技術の必要な部分であると考えたものを借用し、自らの利益のために自国の発展を追求するためにそれらを利用した。",
     "svoc": [
-      "S: It",
-      "V: can be defined"
+      "S: Japan",
+      "V1: borrowed",
+      "O1: what it saw as the necessary parts...",
+      "V2: used",
+      "O2: them"
     ],
     "explanation": [
-      "can be defined は助動詞＋be＋過去分詞の述部なので区切ります。",
-      "as, of は前置詞なので、後置修飾の起点として区切ります。"
-    ]
+      "what it saw as... は「〜であると考えたもの」という関係代名詞 what を用いた名詞節で、borrowed の目的語になっています。",
+      "and によって borrowed と used という2つの動詞が結ばれています。",
+      "to pursue... は目的を表す不定詞の副詞的用法です。"
+    ],
+    "chunkElements": ["S", "V", "O", "-", "-", "-", "-", "-", "-", "V", "O", "-", "-", "-"]
   },
   {
     "id": "q6",
-    "slashedText": "Similarly, the rapidly increasing interest / in globalization / reflects a changing organization / of world-wide social relations / in this century.",
-    "translation": "同様に、グローバル化に対する関心の急速な高まりは、今世紀における世界的な社会関係の組織的な変化を反映している。",
+    "slashedText": "However, the current trend / of rapid globalization / demands / that / Japan / must / assume / its relevant economic and political responsibilities / in order to / achieve / world peace and prosperity.",
+    "translation": "しかしながら、急速なグローバリゼーションの現在の傾向は、世界の平和と繁栄を達成するために、日本が関連する経済的および政治的責任を負わなければならないことを要求している。",
     "svoc": [
-      "S: the rapidly increasing interest",
-      "V: reflects",
-      "O: a changing organization"
+      "S: the current trend of rapid globalization",
+      "V: demands",
+      "O: that Japan must assume its relevant economic and political responsibilities"
     ],
     "explanation": [
-      "in, of は前置詞なので区切ります。",
-      "reflects は文の述部（動詞）なので区切ります。"
-    ]
-  },
-  {
-    "id": "q7",
-    "slashedText": "The nation / has begun to have a decreasing importance / as individuals and communities, gaining access / to globally shared knowledge and culture, / are affected / by economic realities / that come and go / over the boundaries / of the state.",
-    "translation": "個人やコミュニティが、世界的に共有された知識や文化にアクセスできるようになり、国家の境界を越えて変動する経済的現実に影響を受けるようになるにつれ、国家の重要性は低下し始めている。",
-    "svoc": [
-      "S: The nation",
-      "V: has begun",
-      "O: to have a decreasing importance"
+      "that 節全体が demands の目的語(O)になっています。",
+      "assume responsibilities で「責任を負う」という意味です。",
+      "in order to achieve... は目的を表す副詞的表現です。"
     ],
-    "explanation": [
-      "has begun は述部なので区切ります。",
-      "begun 直後の to have は目的語(O)となる不定詞であるため、ルール④の例外に従い区切りません。",
-      "as は接続詞なので区切ります。",
-      "gaining access の前にあるカンマの直後にはスラッシュを入れません。",
-      "to は前置詞なので区切ります。",
-      "are affected は as 節内の述部なので区切ります。",
-      "by, over, of は前置詞なので区切ります。",
-      "that は関係代名詞なので区切ります。"
-    ]
-  },
-  {
-    "id": "q8",
-    "slashedText": "The basic structure / of globalization / is nationalism / on which the concept of internationalism / is based.",
-    "translation": "グローバル化の基本構造は、インターナショナリズムの概念の基礎となっているナショナリズムである。",
-    "svoc": [
-      "S: The basic structure",
-      "V: is",
-      "C: nationalism"
-    ],
-    "explanation": [
-      "of は前置詞なので区切ります。",
-      "is は述部なので区切ります。",
-      "on which は関係代名詞（前置詞＋関係代名詞）なので区切ります。",
-      "is based は関係詞節内の述部なので区切ります。"
-    ]
-  },
-  {
-    "id": "q9",
-    "slashedText": "Globalization / occurs / when people / in a national framework / are affected / by global economy and communication.",
-    "translation": "グローバル化は、国家的な枠組みの中にいる人々が、世界的な経済や通信によって影響を受けるときに起こる。",
-    "svoc": [
-      "S: Globalization",
-      "V: occurs"
-    ],
-    "explanation": [
-      "occurs は述部なので区切ります。",
-      "when は接続詞なので区切ります。",
-      "in は前置詞なので区切ります。",
-      "are affected は when 節内の述部なので区切ります。",
-      "by は前置詞なので区切ります。"
-    ]
+    "chunkElements": ["S", "-", "V", "-", "-", "-", "-", "-", "-", "-", "-"]
   }
 ]

@@ -63,8 +63,14 @@
         .slash-zone.missed { color: var(--missed) !important; background: #fef5e7; animation: blink 1s infinite; }
         @keyframes blink { 50% { opacity: 0.3; } }
 
+        /* SVOC特定エリア（新規追加） */
+        .chunk-box { background: #f8f9fa; padding: 12px; border-radius: 6px; border: 1px solid var(--border); text-align: center; flex: 1 1 auto; min-width: 120px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .chunk-text { font-weight: bold; margin-bottom: 10px; font-size: 1.05rem; color: var(--primary); }
+        .svoc-select { padding: 6px; font-size: 1rem; border: 1px solid #ccc; border-radius: 4px; width: 100%; cursor: pointer; outline: none; font-weight: bold; color: #333; }
+        .svoc-select:disabled { cursor: not-allowed; opacity: 0.9; }
+
         /* ボタン類 */
-        .btn-group { display: flex; gap: 10px; justify-content: center; }
+        .btn-group { display: flex; gap: 10px; justify-content: center; margin-top: 25px; }
         .action-btn { padding: 12px 24px; font-size: 1.05rem; font-weight: bold; cursor: pointer; border: none; border-radius: 4px; color: #fff; background: var(--primary); transition: 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.15); }
         .action-btn:hover { background: #34495e; transform: translateY(-2px); }
         .action-btn:disabled { background: #ccc; cursor: not-allowed; transform: none; }
@@ -138,15 +144,24 @@
         <div class="question-card">
             <div class="q-header">
                 <span id="qCountDisplay">Question 1 / 6</span>
-                <span id="qHint">💡 クリックしてスラッシュを入れよう</span>
+                <span id="qHint">💡 【Step 1】 クリックしてスラッシュを入れよう</span>
             </div>
             
             <div class="reading-area" id="readingArea">
                 <!-- ここにJSで単語とスラッシュゾーンが生成される -->
             </div>
 
+            <!-- SVOC特定エリア (Step 2) -->
+            <div id="svoc-area" style="display:none; margin-top: 20px; padding-top: 20px; border-top: 2px dashed #ccc; animation: fadeIn 0.4s;">
+                <h3 style="margin-bottom: 15px; font-size: 1.1rem; color: var(--primary);">💡 【Step 2】 メインの文の要素（S・V・O・C）を選択しよう</h3>
+                <div id="svoc-chunks" style="display: flex; flex-wrap: wrap; gap: 10px;">
+                    <!-- JSでチャンクが生成される -->
+                </div>
+            </div>
+
             <div class="btn-group">
-                <button class="action-btn" id="checkBtn" onclick="checkAnswer()">答え合わせ</button>
+                <button class="action-btn" id="checkSlashBtn" onclick="checkSlash()">スラッシュを確定</button>
+                <button class="action-btn" id="checkSvocBtn" style="display:none;" onclick="checkSvoc()">答え合わせ</button>
                 <button class="action-btn secondary" id="nextBtn" style="display:none;" onclick="nextQuestion()">次の問題へ ➡</button>
             </div>
 
@@ -376,13 +391,15 @@
      JavaScript 実装
 ============================================= -->
 <script>
-    // ▼ 変数を空で初期化（データは後から読み込みます） ▼
-    let questionData = [];
-
+    // ▼ 変数を空で初期化 ▼
+    let questionData =[];
     let currentIndex = 0;
     let currentWords =[];
     let correctSlashIndices =[];
     let cleanSentence = "";
+    
+    // スラッシュ判定の結果を保持
+    let slashPerfect = true; 
 
     /* --- ゲーミフィケーション管理 --- */
     let userStats = JSON.parse(localStorage.getItem('slash_stats')) || { xp: 0, level: 1, streak: 0 };
@@ -450,20 +467,18 @@
         return { words, slashes };
     }
 
-    /* --- 問題の描画 --- */
+    /* --- 問題の描画 (UIリセット) --- */
     function loadQuestion() {
         if (questionData.length === 0) return;
 
         const q = questionData[currentIndex];
         document.getElementById('qCountDisplay').innerText = `Question ${currentIndex + 1} / ${questionData.length}`;
         
-        // 解析
         const parsed = parseSlashedText(q.slashedText);
         currentWords = parsed.words;
         correctSlashIndices = parsed.slashes;
         cleanSentence = currentWords.join(' ');
 
-        // UI生成
         const readingArea = document.getElementById('readingArea');
         readingArea.innerHTML = "";
         
@@ -473,7 +488,6 @@
             wordSpan.innerText = word;
             readingArea.appendChild(wordSpan);
 
-            // 最後の単語以外にはスラッシュ判定ゾーンを設ける
             if (i < currentWords.length - 1) {
                 const slashZone = document.createElement('span');
                 slashZone.className = 'slash-zone';
@@ -485,9 +499,11 @@
             }
         });
 
-        // UIリセット
+        // UI表示リセット
         document.getElementById('result-area').style.display = 'none';
-        document.getElementById('checkBtn').style.display = 'block';
+        document.getElementById('svoc-area').style.display = 'none';
+        document.getElementById('checkSlashBtn').style.display = 'block';
+        document.getElementById('checkSvocBtn').style.display = 'none';
         document.getElementById('nextBtn').style.display = 'none';
         
         updateStatsUI();
@@ -495,39 +511,131 @@
         updateHistoryUI();
     }
 
-    /* --- 答え合わせ処理 --- */
-    function checkAnswer() {
-        let isPerfect = true;
+    /* --- Step1: スラッシュの答え合わせとチャンク生成 --- */
+    function checkSlash() {
+        slashPerfect = true;
         
+        // スラッシュの判定
         document.querySelectorAll('.slash-zone').forEach(zone => {
             const idx = parseInt(zone.dataset.index);
             const hasUserSlash = zone.classList.contains('active');
             const hasCorrectSlash = correctSlashIndices.includes(idx);
 
-            // クリック不可にする
-            zone.style.pointerEvents = 'none';
+            zone.style.pointerEvents = 'none'; // 操作不可に
 
             if (hasUserSlash && hasCorrectSlash) {
                 zone.classList.add('correct');
             } else if (hasUserSlash && !hasCorrectSlash) {
                 zone.classList.add('wrong');
-                isPerfect = false;
+                slashPerfect = false;
             } else if (!hasUserSlash && hasCorrectSlash) {
                 zone.classList.add('missed');
-                isPerfect = false;
+                zone.classList.add('active'); // チャンクを可視化するため強制アクティブ化
+                slashPerfect = false;
             }
         });
 
-        const judgment = document.getElementById('judgmentText');
-        const q = questionData[currentIndex];
+        // 正解のスラッシュ位置に基づいてチャンク（塊）を生成
+        renderSvocChunks();
 
-        if (isPerfect) {
-            judgment.innerHTML = "🎉 Perfect! 完璧な解釈です！";
+        // UIの切り替え
+        document.getElementById('svoc-area').style.display = 'block';
+        document.getElementById('checkSlashBtn').style.display = 'none';
+        document.getElementById('checkSvocBtn').style.display = 'block';
+    }
+
+    /* --- チャンク単位のSVOCドロップダウン生成 --- */
+    function renderSvocChunks() {
+        const chunks =[];
+        let currentChunk =[];
+        
+        currentWords.forEach((w, i) => {
+            currentChunk.push(w);
+            // 正解のスラッシュ位置、または文末で区切る
+            if (correctSlashIndices.includes(i) || i === currentWords.length - 1) {
+                chunks.push(currentChunk.join(" "));
+                currentChunk =[];
+            }
+        });
+
+        const svocChunksContainer = document.getElementById('svoc-chunks');
+        svocChunksContainer.innerHTML = '';
+        
+        chunks.forEach((chunkText, idx) => {
+            const chunkBox = document.createElement('div');
+            chunkBox.className = 'chunk-box';
+            
+            const textDiv = document.createElement('div');
+            textDiv.className = 'chunk-text';
+            textDiv.innerText = chunkText;
+            
+            const select = document.createElement('select');
+            select.className = 'svoc-select';
+            select.dataset.chunkIndex = idx;
+            select.innerHTML = `
+                <option value="-">- (修飾語など)</option>
+                <option value="S">S (主語)</option>
+                <option value="V">V (動詞)</option>
+                <option value="O">O (目的語)</option>
+                <option value="C">C (補語)</option>
+            `;
+            
+            chunkBox.appendChild(textDiv);
+            chunkBox.appendChild(select);
+            svocChunksContainer.appendChild(chunkBox);
+        });
+    }
+
+    /* --- Step2: SVOCの答え合わせ ＆ 最終結果表示 --- */
+    function checkSvoc() {
+        const q = questionData[currentIndex];
+        let isSvocPerfect = true;
+        
+        const selects = document.querySelectorAll('.svoc-select');
+        selects.forEach(select => {
+            const idx = parseInt(select.dataset.chunkIndex);
+            const userVal = select.value;
+            // JSONに chunkElements (SVOCの正解配列) があれば使用、なければ '-' を正解とみなす
+            const correctVal = (q.chunkElements && q.chunkElements[idx]) ? q.chunkElements[idx] : "-";
+            
+            select.disabled = true; // 選択不可にする
+            
+            if (userVal === correctVal) {
+                select.style.backgroundColor = '#e8f5e9';
+                select.style.color = '#27ae60';
+                select.style.borderColor = '#27ae60';
+            } else {
+                select.style.backgroundColor = '#fde0dc';
+                select.style.color = '#c0392b';
+                select.style.borderColor = '#c0392b';
+                isSvocPerfect = false;
+                
+                // 不正解の場合は下に正解を表示
+                const ansLabel = document.createElement('div');
+                ansLabel.innerText = `正解: ${correctVal}`;
+                ansLabel.style.fontSize = "0.85rem";
+                ansLabel.style.color = "#c0392b";
+                ansLabel.style.marginTop = "5px";
+                ansLabel.style.fontWeight = "bold";
+                select.parentNode.appendChild(ansLabel);
+            }
+        });
+
+        // 全体の判定処理
+        const judgment = document.getElementById('judgmentText');
+
+        if (slashPerfect && isSvocPerfect) {
+            judgment.innerHTML = "🎉 Perfect! スラッシュも文の要素も完璧です！";
             judgment.className = "judgment-text perfect";
             userStats.streak++;
-            addXP(20); // パーフェクトは20XP
+            addXP(30); // 両方パーフェクトなら30XP
         } else {
-            judgment.innerHTML = "💡 Not quite... 色付けされた箇所を確認しよう！<br><span style='font-size:0.8rem; color:#555;'>緑:正解 / 赤:余計なスラッシュ / 橙点滅:見落とし</span>";
+            let msg = "💡 Not quite... ";
+            if (!slashPerfect && !isSvocPerfect) msg += "スラッシュと文の要素を復習しよう！";
+            else if (!slashPerfect) msg += "スラッシュの位置を確認しよう！";
+            else msg += "文の要素の判定を確認しよう！";
+            
+            judgment.innerHTML = msg;
             judgment.className = "judgment-text mistake";
             userStats.streak = 0;
             addXP(5); // 参加賞 5XP
@@ -540,7 +648,7 @@
         document.getElementById('expList').innerHTML = q.explanation.map(e => `<li>${e}</li>`).join('');
 
         document.getElementById('result-area').style.display = 'block';
-        document.getElementById('checkBtn').style.display = 'none';
+        document.getElementById('checkSvocBtn').style.display = 'none';
         document.getElementById('nextBtn').style.display = 'block';
 
         // 自動で音声読み上げ
@@ -626,7 +734,7 @@
                     <li><b>HTMLファイルを直接ダブルクリックして開いている（CORSエラー）</b><br>
                     → VS Codeの「Live Server」などのローカルサーバー経由で開いてください。</li>
                     <li><b>JSONの文法エラー</b><br>
-                    → 先ほどお伝えした通り、<code>reading1.json</code> の1行目に <code>[</code> が入っているか確認してください。</li>
+                    → <code>reading1.json</code> のフォーマットを確認してください。</li>
                  </ol>
                  </div>`;
         }

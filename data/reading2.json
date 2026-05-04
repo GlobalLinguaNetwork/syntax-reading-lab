@@ -1,7 +1,7 @@
 [
   {
     "id": "q1",
-    "slashedText": "One /of the most pressing questions / Japan is now facing / is / how to restructure its postwar economic and business systems / in a rapidly changing external and internal environment.",
+    "slashedText": "One / of the most pressing questions / Japan / is now / facing / is / how / to restructure / its postwar economic and business systems / in a rapidly changing external and internal environment.",
     "translation": "日本が現在直面している最も差し迫った問題の一つは、急速に変化する内外の環境の中で、戦後の経済およびビジネスシステムをどのように再構築するかということである。",
     "svoc": [
       "S: One of the most pressing questions (Japan is now facing)",
@@ -12,11 +12,12 @@
       "Japan is now facing は関係代名詞が省略されており、questions を修飾しています。",
       "how to restructure... は名詞句として補語(C)になっています。",
       "in a rapidly changing... は環境を示す修飾語(M)です。"
-    ]
+    ],
+    "chunkElements": ["S", "-", "-", "-", "-", "V", "-", "-", "C", "-"]
   },
   {
     "id": "q2",
-    "slashedText": "\"Globalization\" / is the key phrase / that /describes the direction / in which the Japanese economy /is heading.",
+    "slashedText": "\"Globalization\" / is / the key phrase / that / describes / the direction / in which / the Japanese economy / is / heading.",
     "translation": "「グローバリゼーション」は、日本経済が進んでいる方向を説明する重要なフレーズである。",
     "svoc": [
       "S: \"Globalization\"",
@@ -26,11 +27,12 @@
     "explanation": [
       "that describes the direction は関係代名詞節で phrase を修飾しています。",
       "in which the Japanese economy is heading は関係代名詞節で direction を修飾しています。"
-    ]
+    ],
+    "chunkElements": ["S", "V", "C", "-", "-", "-", "-", "-", "-", "-"]
   },
   {
     "id": "q3",
-    "slashedText": "There are, however, many problems / that Japan /must overcome / in order to win the trust /of the global community.",
+    "slashedText": "There / are / however, many problems / that / Japan / must / overcome / in order to / win / the trust / of the global community.",
     "translation": "しかしながら、国際社会の信頼を得るために、日本が克服しなければならない多くの問題がある。",
     "svoc": [
       "V: are",
@@ -40,11 +42,12 @@
       "There are 構文のため、主語は are の後に来る many problems です。",
       "that Japan must overcome は関係代名詞節で problems を修飾しています。",
       "in order to... は目的を表す副詞的表現です。"
-    ]
+    ],
+    "chunkElements": ["-", "V", "S", "-", "-", "-", "-", "-", "-", "-", "-"]
   },
   {
     "id": "q4",
-    "slashedText": "For a long time, / internationalization / was associated / with Westernization or Americanization / in Japan.",
+    "slashedText": "For a long time, internationalization / was / associated / with Westernization or Americanization / in Japan.",
     "translation": "長い間、日本において国際化は欧米化またはアメリカ化と結びついていた。",
     "svoc": [
       "S: internationalization",
@@ -54,11 +57,12 @@
     "explanation": [
       "be associated with... で「〜と結びついている/関連している」という熟語的表現です。",
       "For a long time および in Japan は時と場所を示す修飾語(M)です。"
-    ]
+    ],
+    "chunkElements": ["-", "S", "-", "V", "-", "-"]
   },
   {
     "id": "q5",
-    "slashedText": "Japan / borrowed / what it saw /as the necessary parts /of Western culture, science and technology and used them / to pursue its own development / for its own benefit.",
+    "slashedText": "Japan / borrowed / what / it / saw / as / the necessary parts / of Western culture, science and technology and / used / them / to pursue / its own development / for its own benefit.",
     "translation": "日本は、西洋の文化、科学、技術の必要な部分であると考えたものを借用し、自らの利益のために自国の発展を追求するためにそれらを利用した。",
     "svoc": [
       "S: Japan",
@@ -71,11 +75,12 @@
       "what it saw as... は「〜であると考えたもの」という関係代名詞 what を用いた名詞節で、borrowed の目的語になっています。",
       "and によって borrowed と used という2つの動詞が結ばれています。",
       "to pursue... は目的を表す不定詞の副詞的用法です。"
-    ]
+    ],
+    "chunkElements": ["S", "V", "O", "-", "-", "-", "-", "-", "-", "V", "O", "-", "-", "-"]
   },
   {
     "id": "q6",
-    "slashedText": "However, the current trend /of rapid globalization / demands / that Japan /must assume its relevant economic and political responsibilities / in order to achieve world peace and prosperity.",
+    "slashedText": "However, the current trend / of rapid globalization / demands / that / Japan / must / assume / its relevant economic and political responsibilities / in order to / achieve / world peace and prosperity.",
     "translation": "しかしながら、急速なグローバリゼーションの現在の傾向は、世界の平和と繁栄を達成するために、日本が関連する経済的および政治的責任を負わなければならないことを要求している。",
     "svoc": [
       "S: the current trend of rapid globalization",
@@ -86,6 +91,7 @@
       "that 節全体が demands の目的語(O)になっています。",
       "assume responsibilities で「責任を負う」という意味です。",
       "in order to achieve... は目的を表す副詞的表現です。"
-    ]
+    ],
+    "chunkElements": ["S", "-", "V", "-", "-", "-", "-", "-", "-", "-", "-"]
   }
 ]
