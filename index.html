@@ -20,23 +20,56 @@
         .page-panel.active { display: block; }
         .container { max-width: 900px; margin: 0 auto; padding: 20px; }
 
+        /* セット選択 */
+        .set-selector { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+        .set-btn {
+            padding: 7px 18px; border: 2px solid var(--border); background: #fff;
+            border-radius: 20px; cursor: pointer; font-weight: bold; font-size: 0.85rem;
+            transition: all 0.18s;
+        }
+        .set-btn:hover { border-color: var(--primary); color: var(--primary); }
+        .set-btn.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+        .set-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+
         .game-stats { display: flex; justify-content: space-between; align-items: center; background: #fff; padding: 12px 20px; border-radius: 8px; border: 1px solid var(--border); margin-bottom: 20px; }
         .xp-bar-container { flex-grow: 1; margin: 0 15px; height: 10px; background: #eee; border-radius: 5px; overflow: hidden; }
         .xp-bar-fill { height: 100%; background: #27ae60; width: 0%; transition: width 0.5s; }
 
         .question-card { background: #fff; padding: 30px; border-radius: 8px; border-top: 4px solid var(--primary); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-        .reading-area { font-size: 1.4rem; line-height: 2.5; text-align: justify; }
-        .slash-zone { display: inline-block; padding: 0 8px; cursor: pointer; color: transparent; user-select: none; }
-        .slash-zone::before { content: "/"; color: #ccc; }
+        .q-meta { font-size: 0.85rem; color: #888; margin-bottom: 14px; }
+        .reading-area { font-size: 1.35rem; line-height: 2.8; text-align: justify; }
+
+        .slash-zone { display: inline-block; padding: 0 6px; cursor: pointer; user-select: none; }
+        .slash-zone::before { content: "/"; color: #ddd; font-weight: bold; transition: color 0.12s; }
+        .slash-zone:hover::before { color: #bbb; }
         .slash-zone.active::before { color: var(--accent); font-weight: bold; }
         .slash-zone.correct::before { color: var(--ok); }
         .slash-zone.wrong::before { color: var(--ng); text-decoration: line-through; }
-        .slash-zone.missed::before { color: var(--missed); animation: blink 1s infinite; }
+        .slash-zone.missed::before { color: var(--missed); animation: blink 0.8s infinite; }
+        .slash-zone.locked { pointer-events: none; }
         @keyframes blink { 50% { opacity: 0; } }
 
-        .chunk-box { background: #f8f9fa; padding: 10px; border: 1px solid var(--border); border-radius: 6px; margin: 5px; flex: 1; min-width: 120px; text-align: center; }
-        .action-btn { padding: 12px 24px; font-weight: bold; cursor: pointer; border: none; border-radius: 4px; color: #fff; background: var(--primary); margin: 5px; }
-        .judgment-text { text-align: center; font-size: 1.2rem; font-weight: bold; margin: 20px 0; }
+        .svoc-area { display: none; margin-top: 20px; border-top: 2px dashed #ccc; padding-top: 16px; }
+        .svoc-hint { font-size: 0.88rem; color: #666; margin-bottom: 10px; }
+        .svoc-chunks { display: flex; flex-wrap: wrap; gap: 8px; }
+        .chunk-box { background: #f8f9fa; padding: 10px 12px; border: 1px solid var(--border); border-radius: 6px; min-width: 120px; text-align: center; }
+        .chunk-text { font-size: 0.92rem; margin-bottom: 6px; word-break: break-word; line-height: 1.4; }
+        .svoc-select { width: 100%; padding: 4px; border-radius: 4px; border: 1px solid #ccc; font-size: 0.9rem; cursor: pointer; }
+
+        .btn-group { margin-top: 22px; text-align: center; }
+        .action-btn { padding: 11px 22px; font-weight: bold; cursor: pointer; border: none; border-radius: 4px; color: #fff; background: var(--primary); margin: 4px; transition: opacity 0.18s; }
+        .action-btn:hover { opacity: 0.83; }
+
+        .result-area { display: none; margin-top: 20px; border-top: 2px solid #eee; padding-top: 16px; }
+        .judgment-text { text-align: center; font-size: 1.15rem; font-weight: bold; margin-bottom: 14px; }
+        .explanation-card { background: #f8f9fa; padding: 16px; border-radius: 8px; font-size: 0.93rem; }
+        .trans-text { font-weight: bold; margin-bottom: 10px; line-height: 1.7; }
+        .section-label { font-size: 0.78rem; font-weight: bold; color: #999; text-transform: uppercase; letter-spacing: 0.06em; margin-top: 12px; margin-bottom: 5px; }
+        .svoc-list, .exp-list { padding-left: 18px; }
+        .svoc-list li, .exp-list li { margin-bottom: 5px; line-height: 1.65; }
+
+        .loading-msg { text-align: center; padding: 40px; color: #888; font-size: 1rem; }
+        .error-msg { text-align: center; padding: 30px; color: var(--ng); font-size: 0.95rem; background: #fde0dc; border-radius: 8px; line-height: 1.7; }
     </style>
 </head>
 <body>
@@ -48,6 +81,9 @@
 
 <div id="page-training" class="page-panel active">
     <div class="container">
+
+        <div class="set-selector" id="setSelector"></div>
+
         <div class="game-stats">
             <div id="levelDisplay">Lv. 1</div>
             <div class="xp-bar-container"><div class="xp-bar-fill" id="xpBarFill"></div></div>
@@ -55,130 +91,315 @@
         </div>
 
         <div class="question-card">
-            <div id="qCountDisplay">Question 1 / 6</div>
-            <div class="reading-area" id="readingArea"></div>
-
-            <div id="svoc-area" style="display:none; margin-top: 20px; border-top: 2px dashed #ccc; padding-top: 20px;">
-                <p>💡 文の要素（S・V・O・C）を選択</p>
-                <div id="svoc-chunks" style="display: flex; flex-wrap: wrap;"></div>
+            <div class="q-meta" id="qCountDisplay">— / —</div>
+            <div class="reading-area" id="readingArea">
+                <div class="loading-msg">セットを選んでください</div>
             </div>
 
-            <div class="btn-group" style="margin-top:20px; text-align:center;">
-                <button class="action-btn" id="checkSlashBtn" onclick="checkSlash()">スラッシュを確定</button>
-                <button class="action-btn" id="moveToSvocBtn" style="display:none;" onclick="moveToSvoc()">SVOC判定へ</button>
-                <button class="action-btn" id="checkSvocBtn" style="display:none;" onclick="checkSvoc()">答え合わせ</button>
-                <button class="action-btn" id="nextBtn" style="display:none;" onclick="nextQuestion()">次の問題へ</button>
+            <div class="svoc-area" id="svocArea">
+                <div class="svoc-hint">💡 各チャンクの文の要素（S・V・O・C・－）を選択してください</div>
+                <div class="svoc-chunks" id="svocChunks"></div>
             </div>
 
-            <div id="result-area" style="display:none;">
-                <div id="judgmentText" class="judgment-text"></div>
-                <div id="explanationCard" style="background:#f8f9fa; padding:15px; border-radius:8px;">
-                    <div id="transText" style="font-weight:bold;"></div>
-                    <ul id="svocList"></ul>
-                    <ul id="expList"></ul>
+            <div class="btn-group" id="btnGroup" style="display:none">
+                <button class="action-btn" id="checkSlashBtn" onclick="checkSlash()">✅ スラッシュを確定</button>
+                <button class="action-btn" id="moveToSvocBtn" style="display:none" onclick="moveToSvoc()">📊 SVOC判定へ</button>
+                <button class="action-btn" id="checkSvocBtn"  style="display:none" onclick="checkSvoc()">🔍 答え合わせ</button>
+                <button class="action-btn" id="nextBtn"       style="display:none" onclick="nextQuestion()">▶ 次の問題へ</button>
+            </div>
+
+            <div class="result-area" id="resultArea">
+                <div class="judgment-text" id="judgmentText"></div>
+                <div class="explanation-card">
+                    <div class="trans-text" id="transText"></div>
+                    <div class="section-label" id="svocLabel" style="display:none">SVOC 解説</div>
+                    <ul class="svoc-list" id="svocList"></ul>
+                    <div class="section-label" id="expLabel" style="display:none">構文解説</div>
+                    <ul class="exp-list"  id="expList"></ul>
                 </div>
             </div>
         </div>
+
+    </div>
+</div>
+
+<div id="page-reference" class="page-panel">
+    <div class="container">
+        <p style="padding:30px; color:#888; text-align:center;">英文解釈リファレンス（準備中）</p>
     </div>
 </div>
 
 <script>
-    let questionData = [];
-    let currentIndex = 0;
-    let currentWords = [];
-    let correctSlashIndices = [];
-    let slashPerfect = true;
+// ======================================================
+//  設定: 読み込むセット数（data/reading1.json〜）
+//  新しいJSONを追加したらこの数を増やすだけでOK
+// ======================================================
+const TOTAL_SETS = 10;
 
-    async function init() {
-        try {
-            const response = await fetch('./data/reading1.json');
-            questionData = await response.json();
-            loadQuestion();
-        } catch (e) {
-            console.error("データ読み込み失敗:", e);
-            document.getElementById('readingArea').innerText = "問題データが読み込めません。ローカルサーバー経由で開いてください。";
+let questionData  = [];
+let currentSet    = null;
+let currentIndex  = 0;
+let currentWords  = [];
+let correctSlashIndices = [];
+let slashPerfect  = true;
+let xp = 0, streak = 0;
+const XP_PER_LVL  = 100;
+
+// ── セット選択UI生成 ──────────────────────────────────
+function buildSetSelector() {
+    const cont = document.getElementById('setSelector');
+    for (let i = 1; i <= TOTAL_SETS; i++) {
+        const btn = document.createElement('button');
+        btn.className = 'set-btn';
+        btn.textContent = 'Set ' + i;
+        btn.dataset.set = i;
+        btn.onclick = () => loadSet(i, btn);
+        cont.appendChild(btn);
+    }
+}
+
+// ── fetch でセットを読み込む ─────────────────────────
+async function loadSet(num, btn) {
+    // ボタンをすべて inactive に
+    document.querySelectorAll('.set-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const area = document.getElementById('readingArea');
+    area.innerHTML = '<div class="loading-msg">読み込み中…</div>';
+    document.getElementById('btnGroup').style.display = 'none';
+    document.getElementById('resultArea').style.display = 'none';
+    document.getElementById('svocArea').style.display = 'none';
+
+    try {
+        const res = await fetch('./data/reading' + num + '.json');
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        questionData = await res.json();
+        currentSet   = num;
+        currentIndex = 0;
+        loadQuestion();
+    } catch (e) {
+        area.innerHTML = `<div class="error-msg">
+            ⚠️ data/reading${num}.json が読み込めませんでした。<br>
+            <small>GitHub Pages 等のサーバー経由でアクセスしているか確認してください。<br>
+            ローカルで直接開く場合は Live Server などを使用してください。</small>
+        </div>`;
+        console.error(e);
+    }
+}
+
+// ── 問題を表示 ───────────────────────────────────────
+function loadQuestion() {
+    const q = questionData[currentIndex];
+    document.getElementById('qCountDisplay').textContent =
+        'Question ' + (currentIndex + 1) + ' / ' + questionData.length;
+
+    const tokens = q.slashedText.split(/\s+/);
+    currentWords = [];
+    correctSlashIndices = [];
+
+    const area = document.getElementById('readingArea');
+    area.innerHTML = '';
+
+    tokens.forEach(t => {
+        if (t === '/') {
+            correctSlashIndices.push(currentWords.length - 1);
+        } else {
+            const idx = currentWords.length;
+            currentWords.push(t);
+
+            const wordSpan = document.createElement('span');
+            wordSpan.textContent = t + ' ';
+
+            const sz = document.createElement('span');
+            sz.className = 'slash-zone';
+            sz.dataset.index = idx;
+            sz.addEventListener('click', function () {
+                if (!this.classList.contains('locked')) {
+                    this.classList.toggle('active');
+                }
+            });
+
+            area.appendChild(wordSpan);
+            area.appendChild(sz);
         }
-    }
+    });
 
-    function loadQuestion() {
-        const q = questionData[currentIndex];
-        document.getElementById('qCountDisplay').innerText = `Question ${currentIndex + 1} / ${questionData.length}`;
-        
-        const tokens = q.slashedText.split(/\s+/);
-        currentWords = [];
-        correctSlashIndices = [];
-        let readingArea = document.getElementById('readingArea');
-        readingArea.innerHTML = "";
+    // UIリセット
+    document.getElementById('resultArea').style.display = 'none';
+    document.getElementById('svocArea').style.display   = 'none';
+    document.getElementById('btnGroup').style.display   = 'block';
+    show('checkSlashBtn'); hide('moveToSvocBtn'); hide('checkSvocBtn'); hide('nextBtn');
+    slashPerfect = true;
+}
 
-        tokens.forEach((t, i) => {
-            if (t === '/') { correctSlashIndices.push(currentWords.length - 1); } 
-            else {
-                currentWords.push(t);
-                readingArea.innerHTML += `<span>${t}</span><span class='slash-zone' data-index='${currentWords.length-1}' onclick="this.classList.toggle('active')"></span>`;
-            }
+// ── スラッシュ採点 ───────────────────────────────────
+function checkSlash() {
+    slashPerfect = true;
+    document.querySelectorAll('.slash-zone').forEach(z => {
+        const idx    = parseInt(z.dataset.index);
+        const active = z.classList.contains('active');
+        const correct = correctSlashIndices.includes(idx);
+        z.classList.add('locked');
+        if      (active && correct)   z.classList.add('correct');
+        else if (active && !correct)  { z.classList.add('wrong');  slashPerfect = false; }
+        else if (!active && correct)  { z.classList.add('missed', 'active'); slashPerfect = false; }
+    });
+    hide('checkSlashBtn'); show('moveToSvocBtn');
+}
+
+// ── SVOC 選択UIを生成 ────────────────────────────────
+function moveToSvoc() {
+    const chunks = []; let temp = [];
+    currentWords.forEach((w, i) => {
+        temp.push(w);
+        if (correctSlashIndices.includes(i) || i === currentWords.length - 1) {
+            chunks.push(temp.join(' ')); temp = [];
+        }
+    });
+
+    const q    = questionData[currentIndex];
+    const cont = document.getElementById('svocChunks');
+    cont.innerHTML = '';
+
+    chunks.forEach((text, i) => {
+        const expected = (q.chunkElements && q.chunkElements[i] !== undefined)
+            ? q.chunkElements[i] : '-';
+
+        const box = document.createElement('div');
+        box.className = 'chunk-box';
+
+        const ct = document.createElement('div');
+        ct.className = 'chunk-text';
+        ct.textContent = text;
+
+        const sel = document.createElement('select');
+        sel.className = 'svoc-select';
+        sel.dataset.expected = expected;
+        ['-','S','V','O','C'].forEach(opt => {
+            const o = document.createElement('option');
+            o.value = opt; o.textContent = opt;
+            sel.appendChild(o);
         });
-        
-        document.getElementById('result-area').style.display = 'none';
-        document.getElementById('svoc-area').style.display = 'none';
-        document.getElementById('checkSlashBtn').style.display = 'block';
-        document.getElementById('moveToSvocBtn').style.display = 'none';
-        document.getElementById('checkSvocBtn').style.display = 'none';
-        document.getElementById('nextBtn').style.display = 'none';
-    }
 
-    function checkSlash() {
-        slashPerfect = true;
-        document.querySelectorAll('.slash-zone').forEach(z => {
-            const idx = parseInt(z.dataset.index);
-            const active = z.classList.contains('active');
-            const correct = correctSlashIndices.includes(idx);
-            z.style.pointerEvents = 'none';
-            if (active && correct) z.classList.add('correct');
-            else if (active && !correct) { z.classList.add('wrong'); slashPerfect = false; }
-            else if (!active && correct) { z.classList.add('missed'); z.classList.add('active'); slashPerfect = false; }
+        box.appendChild(ct);
+        box.appendChild(sel);
+        cont.appendChild(box);
+    });
+
+    document.getElementById('svocArea').style.display = 'block';
+    hide('moveToSvocBtn'); show('checkSvocBtn');
+}
+
+// ── SVOC 採点 + 解説表示 ─────────────────────────────
+function checkSvoc() {
+    let svocOk = true;
+    document.querySelectorAll('.svoc-select').forEach(s => {
+        s.disabled = true;
+        const ok = (s.value === s.dataset.expected);
+        s.style.background = ok ? '#e8f5e9' : '#fde0dc';
+        if (!ok) svocOk = false;
+    });
+
+    const q = questionData[currentIndex];
+    const allOk = slashPerfect && svocOk;
+
+    document.getElementById('judgmentText').innerHTML = allOk
+        ? '<span style="color:var(--ok)">✅ 完璧！</span>'
+        : '<span style="color:var(--missed)">📝 解説を確認しよう</span>';
+
+    // 和訳
+    const transEl = document.getElementById('transText');
+    transEl.textContent = q.translation || '';
+    transEl.style.display = q.translation ? 'block' : 'none';
+
+    // SVOC 解説
+    const svocList  = document.getElementById('svocList');
+    const svocLabel = document.getElementById('svocLabel');
+    svocList.innerHTML = '';
+    if (q.svoc && q.svoc.length) {
+        svocLabel.style.display = 'block';
+        q.svoc.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = item;
+            svocList.appendChild(li);
         });
-        document.getElementById('checkSlashBtn').style.display = 'none';
-        document.getElementById('moveToSvocBtn').style.display = 'block';
+    } else {
+        svocLabel.style.display = 'none';
     }
 
-    function moveToSvoc() {
-        const chunks = []; let temp = [];
-        currentWords.forEach((w, i) => {
-            temp.push(w);
-            if (correctSlashIndices.includes(i) || i === currentWords.length - 1) {
-                chunks.push(temp.join(" ")); temp = [];
-            }
+    // 構文解説
+    const expList  = document.getElementById('expList');
+    const expLabel = document.getElementById('expLabel');
+    expList.innerHTML = '';
+    if (q.explanation && q.explanation.length) {
+        expLabel.style.display = 'block';
+        q.explanation.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = item;
+            expList.appendChild(li);
         });
-        const cont = document.getElementById('svoc-chunks'); cont.innerHTML = '';
-        chunks.forEach((t, i) => {
-            cont.innerHTML += `<div class="chunk-box"><div>${t}</div><select class="svoc-select" data-index="${i}"><option>-</option><option>S</option><option>V</option><option>O</option><option>C</option></select></div>`;
-        });
-        document.getElementById('svoc-area').style.display = 'block';
-        document.getElementById('moveToSvocBtn').style.display = 'none';
-        document.getElementById('checkSvocBtn').style.display = 'block';
+    } else {
+        expLabel.style.display = 'none';
     }
 
-    function checkSvoc() {
-        const q = questionData[currentIndex];
-        document.querySelectorAll('.svoc-select').forEach((s, i) => {
-            s.disabled = true;
-            s.style.background = (s.value === (q.chunkElements?.[i] || "-")) ? "#e8f5e9" : "#fde0dc";
-        });
-        document.getElementById('result-area').style.display = 'block';
-        document.getElementById('transText').innerText = q.translation;
-        document.getElementById('checkSvocBtn').style.display = 'none';
-        document.getElementById('nextBtn').style.display = 'block';
+    // XP・streak
+    if (allOk) {
+        streak++;
+        xp += 20 + (streak >= 3 ? 10 : 0);
+    } else {
+        streak = 0;
+        xp += 5;
     }
+    updateStats();
 
-    function nextQuestion() { currentIndex++; if(currentIndex < questionData.length) loadQuestion(); else alert("全問終了！"); }
-    function switchPage(p, btn) {
-        document.querySelectorAll('.page-panel').forEach(el => el.style.display = 'none');
-        document.querySelectorAll('.page-nav button').forEach(b => b.classList.remove('active'));
-        document.getElementById('page-' + p).style.display = 'block';
-        btn.classList.add('active');
+    document.getElementById('resultArea').style.display = 'block';
+    hide('checkSvocBtn'); show('nextBtn');
+}
+
+// ── 次の問題 ─────────────────────────────────────────
+function nextQuestion() {
+    currentIndex++;
+    if (currentIndex < questionData.length) {
+        loadQuestion();
+    } else {
+        document.getElementById('readingArea').innerHTML =
+            '<div class="loading-msg">🎉 セット完了！お疲れさまでした。<br>別のセットを選んでください。</div>';
+        document.getElementById('btnGroup').style.display = 'none';
+        document.getElementById('svocArea').style.display = 'none';
+        document.getElementById('resultArea').style.display = 'none';
     }
+}
 
-    window.onload = init;
+// ── ページ切替 ───────────────────────────────────────
+function switchPage(p, btn) {
+    document.querySelectorAll('.page-panel').forEach(el => {
+        el.classList.remove('active');
+        el.style.display = '';
+    });
+    document.querySelectorAll('.page-nav button').forEach(b => b.classList.remove('active'));
+    const panel = document.getElementById('page-' + p);
+    panel.classList.add('active');
+    panel.style.display = 'block';
+    btn.classList.add('active');
+}
+
+// ── XP / レベル表示 ──────────────────────────────────
+function updateStats() {
+    const lv = Math.floor(xp / XP_PER_LVL) + 1;
+    const pct = (xp % XP_PER_LVL) / XP_PER_LVL * 100;
+    document.getElementById('levelDisplay').textContent = 'Lv. ' + lv;
+    document.getElementById('xpBarFill').style.width = pct + '%';
+    document.getElementById('streakDisplay').textContent = '🔥 ' + streak + ' 連続';
+}
+
+// ── ユーティリティ ───────────────────────────────────
+function show(id) { document.getElementById(id).style.display = 'inline-block'; }
+function hide(id) { document.getElementById(id).style.display = 'none'; }
+
+// ── 初期化 ───────────────────────────────────────────
+window.onload = function () {
+    buildSetSelector();
+};
 </script>
 </body>
 </html>
