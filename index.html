@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -53,6 +57,7 @@
         .chunk-box { background: #f8f9fa; padding: 10px 12px; border: 1px solid var(--border); border-radius: 6px; min-width: 120px; text-align: center; }
         .chunk-text { font-size: 0.92rem; margin-bottom: 6px; word-break: break-word; line-height: 1.4; }
         .svoc-select { width: 100%; padding: 4px; border-radius: 4px; border: 1px solid #ccc; font-size: 0.9rem; cursor: pointer; }
+        .svoc-select:disabled { opacity: 0.9; appearance: none; -webkit-appearance: none; }
 
         .btn-group { margin-top: 22px; text-align: center; }
         .action-btn { padding: 11px 22px; font-weight: bold; cursor: pointer; border: none; border-radius: 4px; color: #fff; background: var(--primary); margin: 4px; transition: opacity 0.18s; }
@@ -438,11 +443,14 @@ const TOTAL_SETS = 10;
 let questionData  =[];
 let currentSet    = null;
 let currentIndex  = 0;
-let currentWords  = [];
+let currentWords  =[];
 let correctSlashIndices =[];
 let slashPerfect  = true;
 let xp = 0, streak = 0;
 const XP_PER_LVL  = 100;
+
+// 基本となる選択肢（JSONのデータからこれ以外の未知の要素も自動で追加されます）
+let availableSvocOptions =['-', 'S', 'V', 'O', 'C', 'SV', 'VO', 'VC', 'SVO', 'SVC', 'VOC', 'SVOC'];
 
 // ── セット選択UI生成 ──────────────────────────────────
 function buildSetSelector() {
@@ -473,6 +481,18 @@ async function loadSet(num, btn) {
         const res = await fetch('./data/reading' + num + '.json');
         if (!res.ok) throw new Error('HTTP ' + res.status);
         questionData = await res.json();
+        
+        // 【修正点】JSONデータ内のすべての chunkElements を走査して、リストにない要素があれば動的に拡張する
+        let optsSet = new Set(availableSvocOptions);
+        questionData.forEach(q => {
+            if (q.chunkElements) {
+                q.chunkElements.forEach(el => {
+                    if (el) optsSet.add(el);
+                });
+            }
+        });
+        availableSvocOptions = Array.from(optsSet);
+
         currentSet   = num;
         currentIndex = 0;
         loadQuestion();
@@ -574,7 +594,17 @@ function moveToSvoc() {
         const sel = document.createElement('select');
         sel.className = 'svoc-select';
         sel.dataset.expected = expected;
-        ['-','S','V','O','C'].forEach(opt => {
+
+        // 【修正点】デフォルトの未選択プレースホルダーを追加
+        const defaultOpt = document.createElement('option');
+        defaultOpt.value = "";
+        defaultOpt.textContent = "▼ 選択";
+        defaultOpt.disabled = true;
+        defaultOpt.selected = true;
+        sel.appendChild(defaultOpt);
+
+        // 拡張された選択肢を描画
+        availableSvocOptions.forEach(opt => {
             const o = document.createElement('option');
             o.value = opt; o.textContent = opt;
             sel.appendChild(o);
@@ -594,9 +624,25 @@ function checkSvoc() {
     let svocOk = true;
     document.querySelectorAll('.svoc-select').forEach(s => {
         s.disabled = true;
-        const ok = (s.value === s.dataset.expected);
+        const expected = s.dataset.expected;
+        const ok = (s.value === expected);
         s.style.background = ok ? '#e8f5e9' : '#fde0dc';
-        if (!ok) svocOk = false;
+        
+        // 【修正点】間違えた場合に、「自分の回答 ➡ 正解」を表示して分かりやすくする
+        if (!ok) {
+            svocOk = false;
+            const myAns = s.value === "" ? "未選択" : s.value;
+            const errorOpt = document.createElement('option');
+            errorOpt.value = s.value;
+            errorOpt.textContent = `${myAns} ➡ ${expected}`;
+            errorOpt.selected = true;
+            s.appendChild(errorOpt);
+            s.style.color = 'var(--ng)';
+            s.style.fontWeight = 'bold';
+        } else {
+            s.style.color = 'var(--ok)';
+            s.style.fontWeight = 'bold';
+        }
     });
 
     const q = questionData[currentIndex];
