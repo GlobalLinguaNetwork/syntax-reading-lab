@@ -27,7 +27,7 @@
   },
   {
     "id": "q2",
-    "slashedText": "It / was / called / The General Theory / of Employment, Interest and Money.",
+    "slashedText": "It / was called / The General Theory / of Employment, Interest and Money.",
     "translation": "それは『雇用・利子および貨幣の一般理論』と呼ばれていた。",
     "svoc": [
       "S: It",
@@ -49,7 +49,7 @@
   },
   {
     "id": "q3",
-    "slashedText": "Keynes' basic idea / was / simple.",
+    "slashedText": "Keynes' basic idea / was simple.",
     "translation": "ケインズの基本的な考えは単純だった。",
     "svoc": [
       "S: idea",
@@ -67,7 +67,7 @@
   },
   {
     "id": "q4",
-    "slashedText": "In order / to keep people fully employed, governments / have / to run / deficits / when the economy / is slowing.",
+    "slashedText": "In order / to keep people fully / employed, governments / have to run deficits / when the economy / is slowing.",
     "translation": "人々を完全に雇用し続けるために、政府は経済が減速している時に赤字を出す必要がある。",
     "svoc": [
       "S: governments",
@@ -95,11 +95,12 @@
   },
   {
     "id": "q5",
-    "slashedText": "That / 's / because the private sector / won't / invest enough.",
+    "slashedText": "That / 's / because the private sector / won't invest enough.",
     "translation": "それは、民間部門が十分に投資しないからである。",
     "svoc": [
       "S: That",
       "V: 's"
+      "C: because the private sector won't invest enough"
     ],
     "explanation": [
       " 's (is)は述部なので区切ります。",
@@ -118,7 +119,7 @@
   },
   {
     "id": "q6",
-    "slashedText": "As their markets / become satisfied, businesses / reduce / their investments, setting / in motion a dangerous cycle: less investment, fewer jobs, less consumption and even less reason / for business / to invest.",
+    "slashedText": "As their markets / become satisfied, businesses / reduce their investments, setting / in motion a dangerous cycle: less investment, fewer jobs, less consumption and even less reason / for business / to invest.",
     "translation": "市場が飽和すると、企業は投資を削減し、投資の減少、雇用の減少、消費の減少、そして企業が投資する理由のさらなる減少という危険なサイクルを引き起こす。",
     "svoc": [
       "S: businesses",
@@ -153,7 +154,7 @@
   },
   {
     "id": "q7",
-    "slashedText": "The economy / may / reach / perfect balance, but / at a cost / of high unemployment and social pain.",
+    "slashedText": "The economy / may reach perfect balance, but / at a cost / of high unemployment and social pain.",
     "translation": "経済は完璧な均衡に達するかもしれないが、それは高い失業率と社会的苦痛という代償を伴う。",
     "svoc": [
       "S: economy",
@@ -178,7 +179,7 @@
   },
   {
     "id": "q8",
-    "slashedText": "It / would / be / better / for governments / to avoid the pain / in the first place / by putting lots of money / into the economy / to get it moving again.",
+    "slashedText": "It / would be better / for governments / to avoid the pain / in the first place / by putting lots of money / into the economy / to get it moving again.",
     "translation": "政府が、経済を再び活性化させるために多額の資金を投入することで、最初からその苦痛を避ける方が良いだろう。",
     "svoc": [
       "S: It",
@@ -211,7 +212,7 @@
   },
   {
     "id": "q9",
-    "slashedText": "The notion / that government deficits / are / good / seems / odd these days.",
+    "slashedText": "The notion / that government deficits / are good / seems / odd these days.",
     "translation": "政府の赤字が良いという考えは、最近では奇妙に思える。",
     "svoc": [
       "S: notion",
@@ -236,7 +237,7 @@
   },
   {
     "id": "q10",
-    "slashedText": "For most / of the past two decades, America's biggest worry / has / been / inflation / brought / on by too much demand / for products.",
+    "slashedText": "For most / of the past two decades, America's biggest worry / has been inflation / brought / on by too much demand / for products.",
     "translation": "過去20年の大部分において、アメリカの最大の懸念は、製品への過剰な需要によってもたらされたインフレであった。",
     "svoc": [
       "S: worry",
@@ -266,12 +267,12 @@
   },
   {
     "id": "q11",
-    "slashedText": "But some 60 years ago, when one / out of four adults / couldn't / find / work, the problem / was / not enough Demand.",
+    "slashedText": "But some 60 years ago, when one / out of four adults / couldn't find work, the problem / was not enough demand.",
     "translation": "しかし約60年前、成人の4人に1人が仕事を見つけられなかったとき、問題は需要不足であった。",
     "svoc": [
       "S: problem",
       "V: was",
-      "C: Demand"
+      "C: demand"
     ],
     "explanation": [
       "whenは接続詞なので区切ります。",
@@ -297,7 +298,7 @@
   },
   {
     "id": "q12",
-    "slashedText": "Even then, Keynes / had / a hard time / getting / his idea accepted.",
+    "slashedText": "Even then, Keynes / had a hard time / getting his idea accepted.",
     "translation": "当時でさえ、ケインズは自分の考えを受け入れさせるのに苦労した。",
     "svoc": [
       "S: Keynes",
@@ -319,7 +320,7 @@
   },
   {
     "id": "q13",
-    "slashedText": "Most economists / of the time / rejected / his idea and / favored / balanced budgets.",
+    "slashedText": "Most economists / of the time / rejected his idea and favored balanced budgets.",
     "translation": "当時のほとんどの経済学者は彼の考えを拒絶し、均衡予算を支持した。",
     "svoc": [
       "S: economists",
@@ -366,14 +367,14 @@
   },
   {
     "id": "q15",
-    "slashedText": "As the Depression / continued, the American president, Roosevelt, / tried / various ways / to restart the economy, but he / never / gave / up / trying / to balance the budget.",
+    "slashedText": "As the Depression / continued, the American president, Roosevelt, tried various ways / to restart the economy, but he never / gave up / trying / to balance the budget.",
     "translation": "恐慌が続く中、アメリカ大統領のルーズベルトは経済を再始動させるためのさまざまな方法を試みたが、予算の均衡を図る努力を完全に諦めることはなかった。",
     "svoc": [
       "S: Roosevelt",
       "V: tried",
       "O: ways",
       "S: he",
-      "V: gave",
+      "V: gave up",
       "O: trying"
     ],
     "explanation": [
@@ -399,7 +400,7 @@
   },
   {
     "id": "q16",
-    "slashedText": "In 1938, the Depression / got / worse.",
+    "slashedText": "In 1938, the Depression / got worse.",
     "translation": "1938年、恐慌は悪化した。",
     "svoc": [
       "S: Depression",
@@ -419,7 +420,7 @@
   },
   {
     "id": "q17",
-    "slashedText": "Reluctantly, Roosevelt / accepted / the only new idea / he / hadn't / tried.",
+    "slashedText": "Reluctantly, Roosevelt / accepted the only new idea / he / hadn't tried.",
     "translation": "しぶしぶながら、ルーズベルトはまだ試したことのない唯一の新しい考えを受け入れた。",
     "svoc": [
       "S: Roosevelt",

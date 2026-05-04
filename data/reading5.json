@@ -1,7 +1,7 @@
 [
   {
     "id": "q1",
-    "slashedText": "We / can / see / them / almost every night / on the TV news / thousands of refugees / who have chosen to cross international borders / to save their lives.",
+    "slashedText": "We / can see them almost every night / on the TV news / thousands of refugees / who /have chosen to cross international borders / to save their lives.",
     "chunkElements": ["S", "-", "V", "O", "-", "-", "-", "-", "-"],
     "translation": "私たちは、生き延びるために国境を越えることを選んだ何千人もの難民の姿を、ほぼ毎晩テレビニュースで目にすることができる。",
     "svoc": [
@@ -12,7 +12,7 @@
   },
   {
     "id": "q2",
-    "slashedText": "What / is / causing / these enormous floods / of refugees?",
+    "slashedText": "What / is causing these enormous floods / of refugees?",
     "chunkElements": ["S", "-", "V", "O", "-"],
     "translation": "何がこのような膨大な数の難民の流出を引き起こしているのだろうか。",
     "svoc": [
@@ -23,7 +23,7 @@
   },
   {
     "id": "q3",
-    "slashedText": "The answer / is / threefold.",
+    "slashedText": "The answer / is threefold.",
     "chunkElements": ["S", "V", "C"],
     "translation": "その答えは3つある。",
     "svoc": [
@@ -34,7 +34,7 @@
   },
   {
     "id": "q4",
-    "slashedText": "First, millions / of people / are / trying / to escape / from political violence.",
+    "slashedText": "First, millions / of people / are trying / to escape / from political violence.",
     "chunkElements": ["-", "S", "-", "V", "O", "-"],
     "translation": "第一に、数百万もの人々が政治的暴力から逃れようとしている。",
     "svoc": [
@@ -45,7 +45,7 @@
   },
   {
     "id": "q5",
-    "slashedText": "Second, hunger / is / driving / millions more / from their homeland, especially / in northern and eastern Africa.",
+    "slashedText": "Second, hunger / is driving millions more / from their homeland, especially / in northern and eastern Africa.",
     "chunkElements": ["-", "S", "-", "V", "O", "-", "-"],
     "translation": "第二に、飢餓によってさらに数百万人もの人々が故郷を追われており、特にアフリカ北部と東部で顕著である。",
     "svoc": [
@@ -66,7 +66,7 @@
   },
   {
     "id": "q7",
-    "slashedText": "These people / can / live / on their own land / because of drought, floods, or other environmental problems.",
+    "slashedText": "These people / can live / on their own land / because of drought, floods, or other environmental problems.",
     "chunkElements": ["S", "-", "V", "-", "-"],
     "translation": "これらの人々は、干ばつや洪水、あるいはその他の環境問題のために、もはや自分たちの土地で暮らすことができない。",
     "svoc": [
@@ -76,7 +76,7 @@
   },
   {
     "id": "q8",
-    "slashedText": "In today's world, larger numbers / of people / than ever before / are / asking / for political asylum / in other countries.",
+    "slashedText": "In today's world, larger numbers / of people / than ever before / are asking / for political asylum / in other countries.",
     "chunkElements": ["-", "S", "-", "-", "-", "V", "-", "-"],
     "translation": "今日の世界では、かつてないほど多くの人々が、他国に政治的亡命を求めている。",
     "svoc": [
@@ -87,7 +87,7 @@
   },
   {
     "id": "q9",
-    "slashedText": "One reason / for this / is / the bad economic situation / in much / of the world.",
+    "slashedText": "One reason / for this / is the bad economic situation / in much / of the world.",
     "chunkElements": ["S", "-", "V", "C", "-", "-"],
     "translation": "この理由の一つは、世界の多くの地域における経済状況の悪化である。",
     "svoc": [
@@ -98,7 +98,7 @@
   },
   {
     "id": "q10",
-    "slashedText": "In bad times, people / often / point / to minority groups / as the cause / of their troubles.",
+    "slashedText": "In bad times, people often / point / to minority groups / as the cause / of their troubles.",
     "chunkElements": ["-", "S", "-", "V", "-", "-", "-"],
     "translation": "不況の時には、人々はしばしば少数派グループを自分たちの不幸の原因として指し示す。",
     "svoc": [
@@ -108,7 +108,7 @@
   },
   {
     "id": "q11",
-    "slashedText": "Another reason, surprisingly, / is / the end / of the Cold War.",
+    "slashedText": "Another reason, surprisingly, is the end / of the Cold War.",
     "chunkElements": ["S", "V", "C", "-"],
     "translation": "驚くべきことに、もう一つの理由は冷戦の終結である。",
     "svoc": [
@@ -119,7 +119,7 @@
   },
   {
     "id": "q12",
-    "slashedText": "Until the late 1980s, communist governments / in eastern Europe and the USSR / did / not / approve / of religious or political expression, and / they / did / not / allow / racial or national conflicts.",
+    "slashedText": "Until the late 1980s, communist governments / in eastern Europe and the USSR / did not approve / of religious or political expression, and they / did not allow racial or national conflicts.",
     "chunkElements": ["-", "S", "-", "-", "-", "V", "-", "-", "S", "-", "-", "V", "O"],
     "translation": "1980年代後半まで、東欧やソ連の共産主義政府は宗教的あるいは政治的な表現を認めず、人種的あるいは民族的な紛争を許容しなかった。",
     "svoc": [
@@ -132,7 +132,7 @@
   },
   {
     "id": "q13",
-    "slashedText": "But / as communism / fell / and the former Soviet Union / broke / up / , old ethnic anger and hatred / began / to appear / and then / to explode.",
+    "slashedText": "But / as communism / fell and the former Soviet Union / broke up, old ethnic anger and hatred / began to appear and then / to explode.",
     "chunkElements": ["-", "-", "-", "-", "-", "-", "-", "-", "S", "V", "-", "-", "-"],
     "translation": "しかし、共産主義が崩壊し、旧ソ連が解体されると、古くからの民族的な怒りと憎しみが現れ始め、そして爆発した。",
     "svoc": [

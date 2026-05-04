@@ -1,7 +1,7 @@
 [
   {
     "id": "q1",
-    "slashedText": "The transition / from the communist, centrally planned economy / to a functioning market economy, / which / began / in the late 80s / in these countries / that / belonged / to the former Eastern Bloc, / was / not easy.",
+    "slashedText": "The transition / from the communist, centrally planned economy / to a functioning market economy, which / began / in the late 80s / in these countries / that / belonged / to the former Eastern Bloc, was / not easy.",
     "chunkElements": ["S", "-", "-", "-", "-", "-", "-", "-", "-", "-", "V", "C"],
     "translation": "80年代末に始まった、これら旧東側に属する国々の、共産党による中央計画経済から市場経済が機能するまでへの移行は、簡単ではなかった。",
     "svoc": [
@@ -19,7 +19,7 @@
   },
   {
     "id": "q2",
-    "slashedText": "The association / for the Advancement / of Computerization / in Education, / founded / in 1993, / is / an international organization / with the aim / of advancing / information technology / in education.",
+    "slashedText": "The association / for the Advancement / of Computerization / in Education, founded / in 1993, is / an international organization / with the aim / of advancing information technology / in education.",
     "chunkElements": ["S", "-", "-", "-", "-", "-", "V", "C", "-", "-", "-", "-"],
     "translation": "1993年創設の教育コンピューター化促進協会は、教育における情報工学促進を目的とした国際的教育機関である。",
     "svoc": [
@@ -35,7 +35,7 @@
   },
   {
     "id": "q3",
-    "slashedText": "A sudden increase / on earth / in the supply / of platinum / from space / without a similar increase / in demand / could / cause / the price / of the metal / to drop.",
+    "slashedText": "A sudden increase / on earth / in the supply / of platinum / from space / without a similar increase / in demand / could cause the price / of the metal / to drop.",
     "chunkElements": ["S", "-", "-", "-", "-", "-", "-", "-", "V", "O", "-", "C"],
     "translation": "宇宙からのプラチナの供給が地球上で突然増加し、それに見合う需要の増加がないとすれば、その金属（プラチナ）の価格が下落する可能性がある。",
     "svoc": [
@@ -53,7 +53,7 @@
   },
   {
     "id": "q4",
-    "slashedText": "The sport / of riding / on waves / on long hardwood surfboards / has / been / associated / by Europeans / with the Hawaiian Islands / ever since the late 18th century.",
+    "slashedText": "The sport / of riding / on waves / on long hardwood surfboards / has been associated / by Europeans / with the Hawaiian Islands / ever since the late 18th century.",
     "chunkElements": ["S", "-", "-", "-", "-", "-", "V", "-", "-", "-"],
     "translation": "長い堅木のサーフボード上で波に乗るスポーツは、18世紀末からずっとヨーロッパ人によってハワイ諸島と結びつけられてきた。",
     "svoc": [
@@ -69,7 +69,7 @@
   },
   {
     "id": "q5",
-    "slashedText": "Computer researchers / hoping / to write programs / containing the rules / that experts / use / to make / decisions / have / found / that / experts often / don’t / know / what rules / they / use / to make decisions.",
+    "slashedText": "Computer researchers / hoping / to write programs / containing the rules / that experts / use / to make decisions / have found / that experts often / don’t know / what rules / they / use / to make decisions.",
     "chunkElements": ["S", "-", "-", "-", "-", "-", "-", "-", "-", "V", "-", "-", "-", "-", "-", "-", "-", "-"],
     "translation": "専門家が判断を下す際に使う規則を含んだプログラムを書きたいと望むコンピューターの研究者達が発見したのは、専門家たちも多くの場合、自分が判断を下すのにどのような規則を利用しているのか分かっていない、ということである。",
     "svoc": [
@@ -87,7 +87,7 @@
   },
   {
     "id": "q6",
-    "slashedText": "At present, / attempts / are / being / made / by the US Federal Government / to develop a perfect lie detector, / as a means / to improve the nation’s security level / in its “war on terrorism.”",
+    "slashedText": "At present, attempts are being made / by the US Federal Government / to develop a perfect lie detector, / as a means / to improve the nation’s security level / in its “war on terrorism.”",
     "chunkElements": ["-", "S", "-", "-", "V", "-", "-", "-", "-", "-"],
     "translation": "現在アメリカの連邦政府によって、「テロとの戦い」における国の公安レベルを高める 1 つの手段として、完璧なうそ発見器を開発する試みが進行中である。",
     "svoc": [

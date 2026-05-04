@@ -1,7 +1,7 @@
 [
   {
     "id": "q1",
-    "slashedText": "Part / of / the complexity / of globalism / comes / from / the different ways / in which / globalization / is / approached.",
+    "slashedText": "Part / of the complexity / of globalism / comes / from the different ways / in which globalization / is approached.",
     "chunkElements": ["S", "-", "-", "-", "V", "-", "-", "-", "-", "-", "-"],
     "svoc": [
       "S: Part",
@@ -11,7 +11,7 @@
   },
   {
     "id": "q2",
-    "slashedText": "Some analysts / embrace / it / enthusiastically / as / a positive feature / of / a changing world / in which / access / to / technology, information, services and markets / will / be / of benefit / to / local communities.",
+    "slashedText": "Some analysts / embrace it enthusiastically / as a positive feature / of a changing world / in which access / to technology, information, services and markets / will be / of benefit / to local communities.",
     "chunkElements": ["S", "V", "O", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
     "svoc": [
       "S: Some analysts",
@@ -21,7 +21,7 @@
   },
   {
     "id": "q3",
-    "slashedText": "They / believe / that, by globalization, dominant forms / of / social organization / will / lead / to / universal prosperity, peace, and freedom.",
+    "slashedText": "They / believe / that, by globalization, dominant forms / of social organization / will lead / to universal prosperity, peace, and freedom.",
     "chunkElements": ["S", "V", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
     "svoc": [
       "S: They",
@@ -31,7 +31,7 @@
   },
   {
     "id": "q4",
-    "slashedText": "They / even / expect / that / perception / of / a global environment / will / lead / to / a global ecological concern.",
+    "slashedText": "They even / expect / that perception / of a global environment / will lead / to a global ecological concern.",
     "chunkElements": ["S", "-", "V", "-", "-", "-", "-", "-", "-", "-", "-"],
     "svoc": [
       "S: They",
@@ -41,7 +41,7 @@
   },
   {
     "id": "q5",
-    "slashedText": "For / this group, globalism / is / a term / for / values / which / treat / global issues / as / a matter / of / personal and collective responsibility.",
+    "slashedText": "For this group, globalism / is a term / for values / which / treat global issues / as a matter / of personal and collective responsibility.",
     "chunkElements": ["-", "-", "S", "V", "C", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
     "svoc": [
       "S: globalism",
@@ -51,7 +51,7 @@
   },
   {
     "id": "q6",
-    "slashedText": "Others / reject / it / as / a form / of / domination / by / advanced countries / over / developing ones, in which / individual distinctions / of / culture and society / become / erased / by / an increasingly homogeneous global culture / while / local economies / are / more firmly / incorporated / into / a system / of / global capital.",
+    "slashedText": "Others / reject it / as a form / of domination / by advanced countries / over developing ones, in which individual distinctions / of culture and society / become erased / by an increasingly homogeneous global culture / while local economies / are more firmly incorporated / into a system / of global capital.",
     "chunkElements": ["S", "V", "O", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "V", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
     "svoc": [
       "S: Others",
@@ -61,7 +61,7 @@
   },
   {
     "id": "q7",
-    "slashedText": "For / this group, globalism / is / a political doctrine / which / provides, explains, and justifies / an interlocking system / of / world trade.",
+    "slashedText": "For this group, globalism / is a political doctrine / which / provides, explains, and justifies an interlocking system / of world trade.",
     "chunkElements": ["-", "-", "S", "V", "C", "-", "-", "-", "-", "-"],
     "svoc": [
       "S: globalism",

@@ -1,7 +1,7 @@
 [
   {
     "id": "q1",
-    "slashedText": "Through a combination / of immigration / and difference / in birthrate / among ethnic groups, / many countries / in western Europe / are experiencing / a change / in their ethnic and cultural composition.",
+    "slashedText": "Through a combination / of immigration and difference / in birthrate / among ethnic groups, many countries / in western Europe / are experiencing a change / in their ethnic and cultural composition.",
     "translation": "移民と民族グループ間の出生率の違いの組み合わせにより、西欧の多くの国々で民族的・文化的な構成に変化が生じている。",
     "svoc": [
       "S: many countries in western Europe",
@@ -17,7 +17,7 @@
   },
   {
     "id": "q2",
-    "slashedText": "There / are / various reactions / to these developments.",
+    "slashedText": "There / are various reactions / to these developments.",
     "translation": "これらの進展に対して、さまざまな反応がある。",
     "svoc": [
       "V: are",
@@ -31,7 +31,7 @@
   },
   {
     "id": "q3",
-    "slashedText": "At one end / of the range / are / the radical cosmopolitans, who view nation states and national identities / as dangerously old-fashioned.",
+    "slashedText": "At one end / of the range / are the radical cosmopolitans, who view nation states and national identities / as dangerously old-fashioned.",
     "translation": "その範囲の一端にいるのは急進的なコスモポリタン（世界主義者）であり、彼らは国民国家や国民的アイデンティティを危険なほど時代遅れなものと考えている。",
     "svoc": [
       "V: are",
@@ -48,11 +48,11 @@
   },
   {
     "id": "q4",
-    "slashedText": "At the other end / are / the ethnic nationalists / who wish to defend the purity / of their own nation / against all newcomers.",
+    "slashedText": "At the other end / are / the ethnic nationalists / who /wish to defend the purity / of their own nation / against all newcomers.",
     "translation": "もう一端にいるのは民族主義者であり、彼らはあらゆる新参者から自国の純粋性を守りたいと願っている。",
     "svoc": [
       "V: are",
-      "S: the ethnic nationalists who wish to defend the purity of their own nation against all newcomers",
+      "S: nationalists (who wish to defend the purity of their own nation against all newcomers)",
       "M: At the other end"
     ],
     "explanation": [
@@ -68,7 +68,7 @@
     "slashedText": "My own position / lies / between these extremes.",
     "translation": "私自身の立場は、これら両極端の中間に位置している。",
     "svoc": [
-      "S: My own position",
+      "S: position",
       "V: lies",
       "M: between these extremes"
     ],
@@ -80,13 +80,13 @@
   },
   {
     "id": "q6",
-    "slashedText": "Immigration / on a modest scale / brings / benefits / in the form / of diversity / and new ideas, but the pace / of the present transformation / in Europe / worries / me.",
+    "slashedText": "Immigration / on a modest scale / brings benefits / in the form / of diversity and new ideas, but the pace / of the present transformation / in Europe / worries me.",
     "translation": "適度な規模の移民は、多様性や新しいアイデアという形での利益をもたらすが、現在のヨーロッパにおける変革のペースは私を不安にさせる。",
     "svoc": [
-      "S1: Immigration on a modest scale",
+      "S1: Immigration",
       "V1: brings",
-      "O1: benefits in the form of diversity and new ideas",
-      "S2: the pace of the present transformation in Europe",
+      "O1: benefits",
+      "S2: the pace",
       "V2: worries",
       "O2: me"
     ],
@@ -102,7 +102,7 @@
   },
   {
     "id": "q7",
-    "slashedText": "I / believe / it / inevitably / invites / conflict.",
+    "slashedText": "I / believe it inevitably / invites conflict.",
     "translation": "それは必然的に紛争を招くと私は信じている。",
     "svoc": [
       "S: I",
@@ -117,11 +117,11 @@
   },
   {
     "id": "q8",
-    "slashedText": "I / also believe / that nations / are / historical communities / that have / the right / to shape / their own collective future / as / they see fit, / and / to resist / developments / that gradually injure / their identity / and sense / of Continuity.",
+    "slashedText": "I also / believe / that nations / are historical communities / that /have the right / to shape their own collective future / as they see fit, and / to resist developments / that gradually / injure their identity and sense / of Continuity.",
     "translation": "私はまた、国家とは、自分たちが適切だと思うように自らの集団的な未来を形成し、また自らのアイデンティティと継続性を徐々に損なう展開に抵抗する権利を持つ歴史的な共同体であると信じている。",
     "svoc": [
       "S: I",
-      "V: also believe",
+      "V: believe",
       "O: that nations are historical communities..."
     ],
     "explanation": [
@@ -139,7 +139,7 @@
   },
   {
     "id": "q9",
-    "slashedText": "I / do not / believe / that national identity / can / or should / be / remade / at will / by a cosmopolitan elite / to be consistent / with its own vision / of / how the world / should be.",
+    "slashedText": "I / do not believe / that national identity / can or should be remade / at will / by a cosmopolitan elite / to be consistent / with its own vision / of / how the world / should be.",
     "translation": "私は、国民的アイデンティティというものが、世界はどうあるべきかというコスモポリタンなエリート自身のビジョンと一致させるために、意のままに作り直され得るとも、あるいは作り直されるべきだとも信じない。",
     "svoc": [
       "S: I",

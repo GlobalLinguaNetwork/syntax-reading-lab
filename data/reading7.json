@@ -1,10 +1,10 @@
 [
   {
     "id": "q1",
-    "slashedText": "Most people / find / it / difficult / to say / what / is / covered / by / the term \"economics.\"",
+    "slashedText": "Most people / find it difficult / to say / what / is covered / by the term \"economics.\"",
     "chunkElements": ["S", "V", "O", "C", "-", "-", "V", "-", "-", "-"],
     "svoc": [
-      "S: Most people",
+      "S: people",
       "V: find",
       "O: it (形式目的語)",
       "C: difficult",
@@ -19,11 +19,11 @@
   },
   {
     "id": "q2",
-    "slashedText": "It / includes / some aspects / of trade, but / it / is / concerned / with / taxation and government expenditure, money and banking, salaries and profits, land and rent, savings and investment, and the structure / of / industry and the distribution / of / goods.",
+    "slashedText": "It / includes some aspects / of trade, but it / is concerned / with taxation and government expenditure, money and banking, salaries and profits, land and rent, savings and investment, and the structure / of industry and the distribution / of goods.",
     "chunkElements": ["S", "V", "-", "-", "S", "-", "V", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
     "svoc": [
-      "（前半）S: It, V: includes, O: some aspects of trade",
-      "（後半）S: it, V: is concerned, 修飾語: with taxation... and the distribution of goods"
+      "（前半）S: It, V: includes, O: aspects",
+      "（後半）S: it, V: concerned, 修飾語: with taxation... and the distribution of goods"
     ],
     "explanation": [
       "includes と is concerned は述部なので区切ります。",
@@ -33,7 +33,7 @@
   },
   {
     "id": "q3",
-    "slashedText": "The element / that / links / all these subjects together / under / the heading / of / economics / is / scarcity.",
+    "slashedText": "The element / that / links all these subjects together / under the heading / of economics / is scarcity.",
     "chunkElements": ["S", "-", "V", "-", "-", "-", "-", "-", "V", "C"],
     "svoc": [
       "S: The element (that links all these subjects together under the heading of economics)",
@@ -48,10 +48,10 @@
   },
   {
     "id": "q4",
-    "slashedText": "Few / of / the material essentials / of / life and none / of / the luxuries / are / available / freely / at / all times / to / everyone / who / wants / them.",
+    "slashedText": "Few / of the material essentials / of life and none / of the luxuries / are available freely / at all times / to everyone / who / wants them.",
     "chunkElements": ["S", "-", "-", "-", "-", "-", "-", "V", "C", "-", "-", "-", "-", "-", "-", "V", "-"],
     "svoc": [
-      "S: Few of the material essentials of life and none of the luxuries",
+      "S: Few",
       "V: are",
       "C: available"
     ],
@@ -63,10 +63,10 @@
   },
   {
     "id": "q5",
-    "slashedText": "The scarcity / of / goods and services / arises / because / the resources / available / at / any one place and time / to / produce / them the skilled labor, machines and raw materials / are / limited.",
+    "slashedText": "The scarcity / of goods and services / arises / because the resources available / at any one place and time / to produce them the skilled labor, machines and raw materials / are limited.",
     "chunkElements": ["S", "-", "-", "V", "-", "S", "-", "-", "-", "-", "V", "-", "-", "-", "-", "-", "V", "C"],
     "svoc": [
-      "S: The scarcity of goods and services",
+      "S: scarcity",
       "V: arises",
       "修飾語: because節（S: the resources ..., V: are, C: limited）"
     ],
@@ -82,10 +82,10 @@
   },
   {
     "id": "q6",
-    "slashedText": "The important factor / in / economics / is / not the availability / of / goods and services, but / what / is / available / in / relation / to / the effective demand / for / them / that is, demand / backed / by / purchasing power.",
+    "slashedText": "The important factor / in economics / is not the availability / of / goods and services, but / what / is available / in relation / to the effective demand / for them, that is, demand / backed by purchasing power.",
     "chunkElements": ["S", "-", "-", "V", "C", "-", "-", "-", "V", "-", "-", "-", "-", "-", "-", "-", "-", "-", "V", "-", "-"],
     "svoc": [
-      "S: The important factor in economics",
+      "S: factor",
       "V: is",
       "C: not the availability ... but what is available ..."
     ],
@@ -99,10 +99,10 @@
   },
   {
     "id": "q7",
-    "slashedText": "Men / may / be / unemployed and / machines / idle / in / the motor industry, / even though / many more people / would / like / to have new cars.",
+    "slashedText": "Men / may be unemployed and machines / idle / in the motor industry, even though / many more people / would like to have new cars.",
     "chunkElements": ["S", "-", "V", "C", "S", "C", "-", "-", "-", "-", "-", "V", "-", "-"],
     "svoc": [
-      "S1: Men, V1: may be, C1: unemployed / S2: machines, (V2: may be), C2: idle",
+      "S1: Men, V1: be, C1: unemployed / S2: machines, (V2: be), C2: idle",
       "修飾語: even though節（S: many more people, V: would like, O: to have new cars）"
     ],
     "explanation": [
@@ -115,7 +115,7 @@
   },
   {
     "id": "q8",
-    "slashedText": "This / happens / because / not everyone / who / would / like / a new car / can / afford / to buy one.",
+    "slashedText": "This / happens / because not everyone / who / would like a new car / can afford / to buy one.",
     "chunkElements": ["S", "V", "-", "S", "-", "-", "V", "-", "-", "V", "-"],
     "svoc": [
       "S: This",
@@ -132,7 +132,7 @@
   },
   {
     "id": "q9",
-    "slashedText": "Economics, then, / deals / with / the problem / of / sharing out / scarce resources / among / alternative users and uses.",
+    "slashedText": "Economics, then, deals / with the problem / of sharing out scarce resources / among alternative users and uses.",
     "chunkElements": ["S", "V", "-", "-", "-", "-", "-", "-", "-"],
     "svoc": [
       "S: Economics",
@@ -146,12 +146,12 @@
   },
   {
     "id": "q10",
-    "slashedText": "An economy / is / the environment / where / this sharing out / takes / place.",
+    "slashedText": "An economy / is the environment / where this sharing out / takes place.",
     "chunkElements": ["S", "V", "C", "-", "-", "V", "-"],
     "svoc": [
-      "S: An economy",
+      "S: economy",
       "V: is",
-      "C: the environment (where this sharing out takes place)"
+      "C: environment (where this sharing out takes place)"
     ],
     "explanation": [
       "is は述部なので区切ります。",
@@ -161,11 +161,11 @@
   },
   {
     "id": "q11",
-    "slashedText": "Its size / can / range / from / that / of / a small island / to / the entire world.",
+    "slashedText": "Its size / can range / from / that / of a small island / to the entire world.",
     "chunkElements": ["S", "-", "V", "-", "-", "-", "-", "-", "-"],
     "svoc": [
-      "S: Its size",
-      "V: can range",
+      "S: size",
+      "V: range",
       "修飾語: from that of a small island to the entire world"
     ],
     "explanation": [

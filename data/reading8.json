@@ -1,7 +1,7 @@
 [
   {
     "id": "q1",
-    "slashedText": "Writing / more / than / two centuries ago, / Adam Smith / introduced / his concept / of 'the invisible hand,' which went on to become one / of the most celebrated and influential ideas / of all time.",
+    "slashedText": "Writing / more than two centuries ago, Adam Smith / introduced his concept / of 'the invisible hand,' which went on to become one / of the most celebrated and influential ideas / of all time.",
     "translation": "2世紀以上前に執筆し, アダム・スミスは「見えざる手」という概念を導入したが, それは史上最も有名で影響力のある考えの一つとなった。",
     "svoc": [
       "S: Adam Smith",
@@ -22,10 +22,10 @@
   },
   {
     "id": "q2",
-    "slashedText": "His idea / was / that / individuals / seeking / to promote only their own interests / in the marketplace / would / be / driven, \"as if / by an invisible hand,\" to promote the greatest good / for all.",
+    "slashedText": "His idea / was / that individuals / seeking / to promote only their own interests / in the marketplace / would be driven, \"as if / by an invisible hand,\" to promote the greatest good / for all.",
     "translation": "彼の考えは, 市場において自分の利益だけを追求しようとする個人が, 「あたかも見えざる手によって」導かれ, 結果としてすべての人にとって最大の利益をもたらすことになるということだった。",
     "svoc": [
-      "S: His idea",
+      "S: idea",
       "V: was",
       "C: that individuals... (名詞節)"
     ],
@@ -39,7 +39,7 @@
   },
   {
     "id": "q3",
-    "slashedText": "Thus producers / seeking / to steal a market share / from their rivals / would / develop / cost-reducing innovations, which would be copied / by others, and which / in time / would / lead / to lower prices / for all.",
+    "slashedText": "Thus producers / seeking / to steal a market share / from their rivals / would develop cost-reducing innovations, which would be copied / by others, and which / in time / would lead / to lower prices / for all.",
     "translation": "したがって, 競合から市場シェアを奪おうとする生産者はコスト削減の革新的な技術を開発し, それが他者に模倣され, やがてすべての人にとっての低価格につながる。",
     "svoc": [
       "S: producers",
@@ -55,12 +55,12 @@
   },
   {
     "id": "q4",
-    "slashedText": "Farmers / rush / to adopt / higher yielding varieties / of corn / of mixed species; cattlemen / rush / to adopt / faster growing breeds / of cattle; and long-distance truckers / rush / to install / fuel-saving air foils / on the top / of their cabs.",
+    "slashedText": "Farmers / rush / to adopt higher yielding varieties / of corn / of mixed species; cattlemen / rush / to adopt faster growing breeds / of cattle; and long-distance truckers / rush / to install fuel-saving air foils / on the top / of their cabs.",
     "translation": "農家は収穫量の多い混合種のトウモロコシ品種を急いで導入し, 畜産農家は成長の早い牛の品種を急いで導入し, 長距離トラック運転手はキャブの頂上に燃料節約用のエアフォイルを急いで設置する。",
     "svoc": [
-      "S1: Farmers, V1: rush to adopt, O1: varieties",
-      "S2: cattlemen, V2: rush to adopt, O2: breeds",
-      "S3: truckers, V3: rush to install, O3: air foils"
+      "S1: Farmers, V1: rush, O1: to adopt",
+      "S2: cattlemen, V2: rush, O2: to adopt",
+      "S3: truckers, V3: rush, O3: to install"
     ],
     "explanation": [
       "各節のS, V, Oを特定する。"
@@ -69,10 +69,10 @@
   },
   {
     "id": "q5",
-    "slashedText": "In each case / the early adopters / enjoy / lower costs / than / their rivals / and hence / reap / higher profits.",
+    "slashedText": "In each case the early adopters / enjoy lower costs / than their rivals and hence / reap higher profits.",
     "translation": "いずれの場合も, 早期導入者は競合よりもコストを低く抑えられ, それゆえに高い利益を得る。",
     "svoc": [
-      "S: the early adopters",
+      "S: adopters",
       "V1: enjoy, O1: lower costs",
       "V2: reap, O2: higher profits"
     ],
@@ -85,10 +85,10 @@
   },
   {
     "id": "q6",
-    "slashedText": "But / as / the superior methods / spread, increasing supplies / drive / prices / down, causing profits to return / to levels / that / prevail / in other sectors.",
+    "slashedText": "But / as the superior methods / spread, increasing supplies / drive prices down, causing profits to return / to levels / that / prevail / in other sectors.",
     "translation": "しかし, 優れた手法が普及すると, 供給量が増えて価格が下がり, 利益は他の部門で一般的になレベルまで戻ることになる。",
     "svoc": [
-      "S(main): increasing supplies, V(main): drive, O: prices, C: down"
+      "S(main): supplies, V(main): drive, O: prices, C: down"
     ],
     "explanation": [
       "主節のS, V, O, Cを特定する。"
@@ -97,12 +97,12 @@
   },
   {
     "id": "q7",
-    "slashedText": "Those / who enjoy benefits / in the end / are / the consumers / who pay lower prices.",
+    "slashedText": "Those / who enjoy benefits / in the end / are the consumers / who / pay lower prices.",
     "translation": "最終的に恩恵を受けるのは, より低い価格で支払う消費者である。",
     "svoc": [
       "S: Those (who enjoy benefits in the end)",
       "V: are",
-      "C: the consumers (who pay lower prices)"
+      "C: consumers (who pay lower prices)"
     ],
     "explanation": [
       "ThoseはS。",
